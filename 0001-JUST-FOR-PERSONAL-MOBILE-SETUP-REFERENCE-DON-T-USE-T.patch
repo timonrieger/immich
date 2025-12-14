@@ -1,0 +1,1315 @@
+From f2152a843ced1ea02623e156a567ab891407f077 Mon Sep 17 00:00:00 2001
+From: timonrieger <mail@timonrieger.de>
+Date: Sun, 14 Dec 2025 02:24:18 +0100
+Subject: [PATCH] JUST FOR PERSONAL MOBILE SETUP REFERENCE, DON'T USE THIS
+ BRANCH
+
+---
+ mobile/ios/Runner.xcodeproj/project.pbxproj   |  77 +-----
+ .../xcshareddata/swiftpm/Package.resolved     | 177 -------------
+ .../xcshareddata/swiftpm/Package.resolved     | 168 -------------
+ mobile/ios/Runner/Info.plist                  |   2 -
+ mobile/ios/Runner/Runner.entitlements         |  10 -
+ mobile/ios/Runner/RunnerProfile.entitlements  |  10 -
+ mobile/ios/Runner/Schemas/Constants.swift     | 177 -------------
+ mobile/ios/Runner/Schemas/Store.swift         | 146 -----------
+ mobile/ios/Runner/Schemas/Tables.swift        | 237 ------------------
+ mobile/ios/ShareExtension/Info.plist          |  50 ++--
+ .../ShareExtension.entitlements               |   4 -
+ .../WidgetExtension.entitlements              |   4 -
+ mobile/test/default.isar-lck                  |   0
+ 13 files changed, 36 insertions(+), 1026 deletions(-)
+ delete mode 100644 mobile/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
+ delete mode 100644 mobile/ios/Runner.xcworkspace/xcshareddata/swiftpm/Package.resolved
+ delete mode 100644 mobile/ios/Runner/Schemas/Constants.swift
+ delete mode 100644 mobile/ios/Runner/Schemas/Store.swift
+ delete mode 100644 mobile/ios/Runner/Schemas/Tables.swift
+ create mode 100644 mobile/test/default.isar-lck
+
+diff --git a/mobile/ios/Runner.xcodeproj/project.pbxproj b/mobile/ios/Runner.xcodeproj/project.pbxproj
+index 599e7990f..d1c4bb8de 100644
+--- a/mobile/ios/Runner.xcodeproj/project.pbxproj
++++ b/mobile/ios/Runner.xcodeproj/project.pbxproj
+@@ -32,9 +32,6 @@
+ 		FEAFA8732E4D42F4001E47FE /* Thumbhash.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAFA8722E4D42F4001E47FE /* Thumbhash.swift */; };
+ 		FED3B1962E253E9B0030FD97 /* ThumbnailsImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED3B1942E253E9B0030FD97 /* ThumbnailsImpl.swift */; };
+ 		FED3B1972E253E9B0030FD97 /* Thumbnails.g.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED3B1932E253E9B0030FD97 /* Thumbnails.g.swift */; };
+-		FEE084F82EC172460045228E /* SQLiteData in Frameworks */ = {isa = PBXBuildFile; productRef = FEE084F72EC172460045228E /* SQLiteData */; };
+-		FEE084FB2EC1725A0045228E /* RawStructuredFieldValues in Frameworks */ = {isa = PBXBuildFile; productRef = FEE084FA2EC1725A0045228E /* RawStructuredFieldValues */; };
+-		FEE084FD2EC1725A0045228E /* StructuredFieldValues in Frameworks */ = {isa = PBXBuildFile; productRef = FEE084FC2EC1725A0045228E /* StructuredFieldValues */; };
+ /* End PBXBuildFile section */
+ 
+ /* Begin PBXContainerItemProxy section */
+@@ -170,9 +167,6 @@
+ 			isa = PBXFrameworksBuildPhase;
+ 			buildActionMask = 2147483647;
+ 			files = (
+-				FEE084F82EC172460045228E /* SQLiteData in Frameworks */,
+-				FEE084FB2EC1725A0045228E /* RawStructuredFieldValues in Frameworks */,
+-				FEE084FD2EC1725A0045228E /* StructuredFieldValues in Frameworks */,
+ 				D218389C4A4C4693F141F7D1 /* Pods_Runner.framework in Frameworks */,
+ 			);
+ 			runOnlyForDeploymentPostprocessing = 0;
+@@ -434,10 +428,6 @@
+ 				Base,
+ 			);
+ 			mainGroup = 97C146E51CF9000F007C117D;
+-			packageReferences = (
+-				FEE084F62EC172460045228E /* XCRemoteSwiftPackageReference "sqlite-data" */,
+-				FEE084F92EC1725A0045228E /* XCRemoteSwiftPackageReference "swift-http-structured-headers" */,
+-			);
+ 			preferredProjectObjectVersion = 77;
+ 			productRefGroup = 97C146EF1CF9000F007C117D /* Products */;
+ 			projectDirPath = "";
+@@ -734,8 +724,7 @@
+ 				CODE_SIGN_IDENTITY = "Apple Development";
+ 				CODE_SIGN_STYLE = Automatic;
+ 				CURRENT_PROJECT_VERSION = 233;
+-				CUSTOM_GROUP_ID = group.app.immich.share;
+-				DEVELOPMENT_TEAM = 2F67MQ8R79;
++				DEVELOPMENT_TEAM = C847CV2S38;
+ 				ENABLE_BITCODE = NO;
+ 				INFOPLIST_FILE = Runner/Info.plist;
+ 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+@@ -744,7 +733,7 @@
+ 					"@executable_path/Frameworks",
+ 				);
+ 				MARKETING_VERSION = 1.121.0;
+-				PRODUCT_BUNDLE_IDENTIFIER = app.alextran.immich.profile;
++				PRODUCT_BUNDLE_IDENTIFIER = app.timonrieger.immich;
+ 				PRODUCT_NAME = "Immich-Profile";
+ 				PROVISIONING_PROFILE_SPECIFIER = "";
+ 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+@@ -878,8 +867,7 @@
+ 				CODE_SIGN_IDENTITY = "Apple Development";
+ 				CODE_SIGN_STYLE = Automatic;
+ 				CURRENT_PROJECT_VERSION = 233;
+-				CUSTOM_GROUP_ID = group.app.immich.share;
+-				DEVELOPMENT_TEAM = 2F67MQ8R79;
++				DEVELOPMENT_TEAM = C847CV2S38;
+ 				ENABLE_BITCODE = NO;
+ 				INFOPLIST_FILE = Runner/Info.plist;
+ 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+@@ -888,7 +876,7 @@
+ 					"@executable_path/Frameworks",
+ 				);
+ 				MARKETING_VERSION = 1.121.0;
+-				PRODUCT_BUNDLE_IDENTIFIER = app.alextran.immich.vdebug;
++				PRODUCT_BUNDLE_IDENTIFIER = app.timonrieger.immich.vdebug;
+ 				PRODUCT_NAME = "Immich-Debug";
+ 				PROVISIONING_PROFILE_SPECIFIER = "";
+ 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+@@ -908,8 +896,7 @@
+ 				CODE_SIGN_IDENTITY = "Apple Development";
+ 				CODE_SIGN_STYLE = Automatic;
+ 				CURRENT_PROJECT_VERSION = 233;
+-				CUSTOM_GROUP_ID = group.app.immich.share;
+-				DEVELOPMENT_TEAM = 2F67MQ8R79;
++				DEVELOPMENT_TEAM = C847CV2S38;
+ 				ENABLE_BITCODE = NO;
+ 				INFOPLIST_FILE = Runner/Info.plist;
+ 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+@@ -918,7 +905,7 @@
+ 					"@executable_path/Frameworks",
+ 				);
+ 				MARKETING_VERSION = 1.121.0;
+-				PRODUCT_BUNDLE_IDENTIFIER = app.alextran.immich;
++				PRODUCT_BUNDLE_IDENTIFIER = app.timonrieger.immich.vdebug;
+ 				PRODUCT_NAME = Immich;
+ 				PROVISIONING_PROFILE_SPECIFIER = "";
+ 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+@@ -942,7 +929,7 @@
+ 				CODE_SIGN_IDENTITY = "Apple Development";
+ 				CODE_SIGN_STYLE = Automatic;
+ 				CURRENT_PROJECT_VERSION = 233;
+-				DEVELOPMENT_TEAM = 2F67MQ8R79;
++				DEVELOPMENT_TEAM = C847CV2S38;
+ 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+ 				GCC_C_LANGUAGE_STANDARD = gnu17;
+ 				GENERATE_INFOPLIST_FILE = YES;
+@@ -959,7 +946,7 @@
+ 				MARKETING_VERSION = 1.0;
+ 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+ 				MTL_FAST_MATH = YES;
+-				PRODUCT_BUNDLE_IDENTIFIER = app.alextran.immich.vdebug.Widget;
++				PRODUCT_BUNDLE_IDENTIFIER = app.timonrieger.immich.vdebug.Widget;
+ 				PRODUCT_NAME = "$(TARGET_NAME)";
+ 				SKIP_INSTALL = YES;
+ 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+@@ -985,7 +972,7 @@
+ 				CODE_SIGN_IDENTITY = "Apple Development";
+ 				CODE_SIGN_STYLE = Automatic;
+ 				CURRENT_PROJECT_VERSION = 233;
+-				DEVELOPMENT_TEAM = 2F67MQ8R79;
++				DEVELOPMENT_TEAM = C847CV2S38;
+ 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+ 				GCC_C_LANGUAGE_STANDARD = gnu17;
+ 				GENERATE_INFOPLIST_FILE = YES;
+@@ -1064,8 +1051,7 @@
+ 				CODE_SIGN_IDENTITY = "Apple Development";
+ 				CODE_SIGN_STYLE = Automatic;
+ 				CURRENT_PROJECT_VERSION = 233;
+-				CUSTOM_GROUP_ID = group.app.immich.share;
+-				DEVELOPMENT_TEAM = 2F67MQ8R79;
++				DEVELOPMENT_TEAM = C847CV2S38;
+ 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+ 				GCC_C_LANGUAGE_STANDARD = gnu17;
+ 				GENERATE_INFOPLIST_FILE = YES;
+@@ -1082,7 +1068,7 @@
+ 				MARKETING_VERSION = 1.0;
+ 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+ 				MTL_FAST_MATH = YES;
+-				PRODUCT_BUNDLE_IDENTIFIER = app.alextran.immich.vdebug.ShareExtension;
++				PRODUCT_BUNDLE_IDENTIFIER = app.timonrieger.immich.vdebug.ShareExtension;
+ 				PRODUCT_NAME = "$(TARGET_NAME)";
+ 				PROVISIONING_PROFILE_SPECIFIER = "";
+ 				SKIP_INSTALL = YES;
+@@ -1108,8 +1094,7 @@
+ 				CODE_SIGN_IDENTITY = "Apple Development";
+ 				CODE_SIGN_STYLE = Automatic;
+ 				CURRENT_PROJECT_VERSION = 233;
+-				CUSTOM_GROUP_ID = group.app.immich.share;
+-				DEVELOPMENT_TEAM = 2F67MQ8R79;
++				DEVELOPMENT_TEAM = C847CV2S38;
+ 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+ 				GCC_C_LANGUAGE_STANDARD = gnu17;
+ 				GENERATE_INFOPLIST_FILE = YES;
+@@ -1149,7 +1134,6 @@
+ 				CODE_SIGN_IDENTITY = "Apple Development";
+ 				CODE_SIGN_STYLE = Automatic;
+ 				CURRENT_PROJECT_VERSION = 233;
+-				CUSTOM_GROUP_ID = group.app.immich.share;
+ 				DEVELOPMENT_TEAM = 2F67MQ8R79;
+ 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+ 				GCC_C_LANGUAGE_STANDARD = gnu17;
+@@ -1220,43 +1204,6 @@
+ 			defaultConfigurationName = Release;
+ 		};
+ /* End XCConfigurationList section */
+-
+-/* Begin XCRemoteSwiftPackageReference section */
+-		FEE084F62EC172460045228E /* XCRemoteSwiftPackageReference "sqlite-data" */ = {
+-			isa = XCRemoteSwiftPackageReference;
+-			repositoryURL = "https://github.com/pointfreeco/sqlite-data";
+-			requirement = {
+-				kind = upToNextMajorVersion;
+-				minimumVersion = 1.3.0;
+-			};
+-		};
+-		FEE084F92EC1725A0045228E /* XCRemoteSwiftPackageReference "swift-http-structured-headers" */ = {
+-			isa = XCRemoteSwiftPackageReference;
+-			repositoryURL = "https://github.com/apple/swift-http-structured-headers.git";
+-			requirement = {
+-				kind = upToNextMajorVersion;
+-				minimumVersion = 1.5.0;
+-			};
+-		};
+-/* End XCRemoteSwiftPackageReference section */
+-
+-/* Begin XCSwiftPackageProductDependency section */
+-		FEE084F72EC172460045228E /* SQLiteData */ = {
+-			isa = XCSwiftPackageProductDependency;
+-			package = FEE084F62EC172460045228E /* XCRemoteSwiftPackageReference "sqlite-data" */;
+-			productName = SQLiteData;
+-		};
+-		FEE084FA2EC1725A0045228E /* RawStructuredFieldValues */ = {
+-			isa = XCSwiftPackageProductDependency;
+-			package = FEE084F92EC1725A0045228E /* XCRemoteSwiftPackageReference "swift-http-structured-headers" */;
+-			productName = RawStructuredFieldValues;
+-		};
+-		FEE084FC2EC1725A0045228E /* StructuredFieldValues */ = {
+-			isa = XCSwiftPackageProductDependency;
+-			package = FEE084F92EC1725A0045228E /* XCRemoteSwiftPackageReference "swift-http-structured-headers" */;
+-			productName = StructuredFieldValues;
+-		};
+-/* End XCSwiftPackageProductDependency section */
+ 	};
+ 	rootObject = 97C146E61CF9000F007C117D /* Project object */;
+ }
+diff --git a/mobile/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved b/mobile/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
+deleted file mode 100644
+index 432e81234..000000000
+--- a/mobile/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
++++ /dev/null
+@@ -1,177 +0,0 @@
+-{
+-  "originHash" : "9be33bfaa68721646604aefff3cabbdaf9a193da192aae024c265065671f6c49",
+-  "pins" : [
+-    {
+-      "identity" : "combine-schedulers",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/combine-schedulers",
+-      "state" : {
+-        "revision" : "fd16d76fd8b9a976d88bfb6cacc05ca8d19c91b6",
+-        "version" : "1.1.0"
+-      }
+-    },
+-    {
+-      "identity" : "grdb.swift",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/groue/GRDB.swift",
+-      "state" : {
+-        "revision" : "18497b68fdbb3a09528d260a0a0e1e7e61c8c53d",
+-        "version" : "7.8.0"
+-      }
+-    },
+-    {
+-      "identity" : "opencombine",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/OpenCombine/OpenCombine.git",
+-      "state" : {
+-        "revision" : "8576f0d579b27020beccbccc3ea6844f3ddfc2c2",
+-        "version" : "0.14.0"
+-      }
+-    },
+-    {
+-      "identity" : "sqlite-data",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/sqlite-data",
+-      "state" : {
+-        "revision" : "b66b894b9a5710f1072c8eb6448a7edfc2d743d9",
+-        "version" : "1.3.0"
+-      }
+-    },
+-    {
+-      "identity" : "swift-case-paths",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/swift-case-paths",
+-      "state" : {
+-        "revision" : "6989976265be3f8d2b5802c722f9ba168e227c71",
+-        "version" : "1.7.2"
+-      }
+-    },
+-    {
+-      "identity" : "swift-clocks",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/swift-clocks",
+-      "state" : {
+-        "revision" : "cc46202b53476d64e824e0b6612da09d84ffde8e",
+-        "version" : "1.0.6"
+-      }
+-    },
+-    {
+-      "identity" : "swift-collections",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/apple/swift-collections",
+-      "state" : {
+-        "revision" : "7b847a3b7008b2dc2f47ca3110d8c782fb2e5c7e",
+-        "version" : "1.3.0"
+-      }
+-    },
+-    {
+-      "identity" : "swift-concurrency-extras",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/swift-concurrency-extras",
+-      "state" : {
+-        "revision" : "5a3825302b1a0d744183200915a47b508c828e6f",
+-        "version" : "1.3.2"
+-      }
+-    },
+-    {
+-      "identity" : "swift-custom-dump",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/swift-custom-dump",
+-      "state" : {
+-        "revision" : "82645ec760917961cfa08c9c0c7104a57a0fa4b1",
+-        "version" : "1.3.3"
+-      }
+-    },
+-    {
+-      "identity" : "swift-dependencies",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/swift-dependencies",
+-      "state" : {
+-        "revision" : "a10f9feeb214bc72b5337b6ef6d5a029360db4cc",
+-        "version" : "1.10.0"
+-      }
+-    },
+-    {
+-      "identity" : "swift-http-structured-headers",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/apple/swift-http-structured-headers.git",
+-      "state" : {
+-        "revision" : "a9f3c352f4d46afd155e00b3c6e85decae6bcbeb",
+-        "version" : "1.5.0"
+-      }
+-    },
+-    {
+-      "identity" : "swift-identified-collections",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/swift-identified-collections",
+-      "state" : {
+-        "revision" : "322d9ffeeba85c9f7c4984b39422ec7cc3c56597",
+-        "version" : "1.1.1"
+-      }
+-    },
+-    {
+-      "identity" : "swift-perception",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/swift-perception",
+-      "state" : {
+-        "revision" : "4f47ebafed5f0b0172cf5c661454fa8e28fb2ac4",
+-        "version" : "2.0.9"
+-      }
+-    },
+-    {
+-      "identity" : "swift-sharing",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/swift-sharing",
+-      "state" : {
+-        "revision" : "3bfc408cc2d0bee2287c174da6b1c76768377818",
+-        "version" : "2.7.4"
+-      }
+-    },
+-    {
+-      "identity" : "swift-snapshot-testing",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/swift-snapshot-testing",
+-      "state" : {
+-        "revision" : "a8b7c5e0ed33d8ab8887d1654d9b59f2cbad529b",
+-        "version" : "1.18.7"
+-      }
+-    },
+-    {
+-      "identity" : "swift-structured-queries",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/swift-structured-queries",
+-      "state" : {
+-        "revision" : "9c84335373bae5f5c9f7b5f0adf3ae10f2cab5b9",
+-        "version" : "0.25.2"
+-      }
+-    },
+-    {
+-      "identity" : "swift-syntax",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/swiftlang/swift-syntax",
+-      "state" : {
+-        "revision" : "4799286537280063c85a32f09884cfbca301b1a1",
+-        "version" : "602.0.0"
+-      }
+-    },
+-    {
+-      "identity" : "swift-tagged",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/swift-tagged",
+-      "state" : {
+-        "revision" : "3907a9438f5b57d317001dc99f3f11b46882272b",
+-        "version" : "0.10.0"
+-      }
+-    },
+-    {
+-      "identity" : "xctest-dynamic-overlay",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/xctest-dynamic-overlay",
+-      "state" : {
+-        "revision" : "4c27acf5394b645b70d8ba19dc249c0472d5f618",
+-        "version" : "1.7.0"
+-      }
+-    }
+-  ],
+-  "version" : 3
+-}
+diff --git a/mobile/ios/Runner.xcworkspace/xcshareddata/swiftpm/Package.resolved b/mobile/ios/Runner.xcworkspace/xcshareddata/swiftpm/Package.resolved
+deleted file mode 100644
+index ff8a53ff4..000000000
+--- a/mobile/ios/Runner.xcworkspace/xcshareddata/swiftpm/Package.resolved
++++ /dev/null
+@@ -1,168 +0,0 @@
+-{
+-  "originHash" : "9be33bfaa68721646604aefff3cabbdaf9a193da192aae024c265065671f6c49",
+-  "pins" : [
+-    {
+-      "identity" : "combine-schedulers",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/combine-schedulers",
+-      "state" : {
+-        "revision" : "5928286acce13def418ec36d05a001a9641086f2",
+-        "version" : "1.0.3"
+-      }
+-    },
+-    {
+-      "identity" : "grdb.swift",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/groue/GRDB.swift",
+-      "state" : {
+-        "revision" : "18497b68fdbb3a09528d260a0a0e1e7e61c8c53d",
+-        "version" : "7.8.0"
+-      }
+-    },
+-    {
+-      "identity" : "sqlite-data",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/sqlite-data",
+-      "state" : {
+-        "revision" : "b66b894b9a5710f1072c8eb6448a7edfc2d743d9",
+-        "version" : "1.3.0"
+-      }
+-    },
+-    {
+-      "identity" : "swift-case-paths",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/swift-case-paths",
+-      "state" : {
+-        "revision" : "6989976265be3f8d2b5802c722f9ba168e227c71",
+-        "version" : "1.7.2"
+-      }
+-    },
+-    {
+-      "identity" : "swift-clocks",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/swift-clocks",
+-      "state" : {
+-        "revision" : "cc46202b53476d64e824e0b6612da09d84ffde8e",
+-        "version" : "1.0.6"
+-      }
+-    },
+-    {
+-      "identity" : "swift-collections",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/apple/swift-collections",
+-      "state" : {
+-        "revision" : "7b847a3b7008b2dc2f47ca3110d8c782fb2e5c7e",
+-        "version" : "1.3.0"
+-      }
+-    },
+-    {
+-      "identity" : "swift-concurrency-extras",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/swift-concurrency-extras",
+-      "state" : {
+-        "revision" : "5a3825302b1a0d744183200915a47b508c828e6f",
+-        "version" : "1.3.2"
+-      }
+-    },
+-    {
+-      "identity" : "swift-custom-dump",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/swift-custom-dump",
+-      "state" : {
+-        "revision" : "82645ec760917961cfa08c9c0c7104a57a0fa4b1",
+-        "version" : "1.3.3"
+-      }
+-    },
+-    {
+-      "identity" : "swift-dependencies",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/swift-dependencies",
+-      "state" : {
+-        "revision" : "a10f9feeb214bc72b5337b6ef6d5a029360db4cc",
+-        "version" : "1.10.0"
+-      }
+-    },
+-    {
+-      "identity" : "swift-http-structured-headers",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/apple/swift-http-structured-headers.git",
+-      "state" : {
+-        "revision" : "a9f3c352f4d46afd155e00b3c6e85decae6bcbeb",
+-        "version" : "1.5.0"
+-      }
+-    },
+-    {
+-      "identity" : "swift-identified-collections",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/swift-identified-collections",
+-      "state" : {
+-        "revision" : "322d9ffeeba85c9f7c4984b39422ec7cc3c56597",
+-        "version" : "1.1.1"
+-      }
+-    },
+-    {
+-      "identity" : "swift-perception",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/swift-perception",
+-      "state" : {
+-        "revision" : "4f47ebafed5f0b0172cf5c661454fa8e28fb2ac4",
+-        "version" : "2.0.9"
+-      }
+-    },
+-    {
+-      "identity" : "swift-sharing",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/swift-sharing",
+-      "state" : {
+-        "revision" : "3bfc408cc2d0bee2287c174da6b1c76768377818",
+-        "version" : "2.7.4"
+-      }
+-    },
+-    {
+-      "identity" : "swift-snapshot-testing",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/swift-snapshot-testing",
+-      "state" : {
+-        "revision" : "a8b7c5e0ed33d8ab8887d1654d9b59f2cbad529b",
+-        "version" : "1.18.7"
+-      }
+-    },
+-    {
+-      "identity" : "swift-structured-queries",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/swift-structured-queries",
+-      "state" : {
+-        "revision" : "1447ea20550f6f02c4b48cc80931c3ed40a9c756",
+-        "version" : "0.25.0"
+-      }
+-    },
+-    {
+-      "identity" : "swift-syntax",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/swiftlang/swift-syntax",
+-      "state" : {
+-        "revision" : "4799286537280063c85a32f09884cfbca301b1a1",
+-        "version" : "602.0.0"
+-      }
+-    },
+-    {
+-      "identity" : "swift-tagged",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/swift-tagged",
+-      "state" : {
+-        "revision" : "3907a9438f5b57d317001dc99f3f11b46882272b",
+-        "version" : "0.10.0"
+-      }
+-    },
+-    {
+-      "identity" : "xctest-dynamic-overlay",
+-      "kind" : "remoteSourceControl",
+-      "location" : "https://github.com/pointfreeco/xctest-dynamic-overlay",
+-      "state" : {
+-        "revision" : "4c27acf5394b645b70d8ba19dc249c0472d5f618",
+-        "version" : "1.7.0"
+-      }
+-    }
+-  ],
+-  "version" : 3
+-}
+diff --git a/mobile/ios/Runner/Info.plist b/mobile/ios/Runner/Info.plist
+index b597912d0..4ce809696 100644
+--- a/mobile/ios/Runner/Info.plist
++++ b/mobile/ios/Runner/Info.plist
+@@ -2,8 +2,6 @@
+ <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+ <plist version="1.0">
+ <dict>
+-	<key>AppGroupId</key>
+-	<string>$(CUSTOM_GROUP_ID)</string>
+ 	<key>BGTaskSchedulerPermittedIdentifiers</key>
+ 	<array>
+ 		<string>app.alextran.immich.background.refreshUpload</string>
+diff --git a/mobile/ios/Runner/Runner.entitlements b/mobile/ios/Runner/Runner.entitlements
+index e5862cb21..6631ffa6f 100644
+--- a/mobile/ios/Runner/Runner.entitlements
++++ b/mobile/ios/Runner/Runner.entitlements
+@@ -2,15 +2,5 @@
+ <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+ <plist version="1.0">
+ <dict>
+-	<key>com.apple.developer.associated-domains</key>
+-	<array>
+-		<string>applinks:my.immich.app</string>
+-	</array>
+-	<key>com.apple.developer.networking.wifi-info</key>
+-	<true/>
+-	<key>com.apple.security.application-groups</key>
+-	<array>
+-		<string>group.app.immich.share</string>
+-	</array>
+ </dict>
+ </plist>
+diff --git a/mobile/ios/Runner/RunnerProfile.entitlements b/mobile/ios/Runner/RunnerProfile.entitlements
+index 6a5c086ba..903def2af 100644
+--- a/mobile/ios/Runner/RunnerProfile.entitlements
++++ b/mobile/ios/Runner/RunnerProfile.entitlements
+@@ -4,15 +4,5 @@
+ <dict>
+ 	<key>aps-environment</key>
+ 	<string>development</string>
+-	<key>com.apple.developer.associated-domains</key>
+-	<array>
+-		<string>applinks:my.immich.app</string>
+-	</array>
+-	<key>com.apple.developer.networking.wifi-info</key>
+-	<true/>
+-	<key>com.apple.security.application-groups</key>
+-	<array>
+-		<string>group.app.immich.share</string>
+-	</array>
+ </dict>
+ </plist>
+diff --git a/mobile/ios/Runner/Schemas/Constants.swift b/mobile/ios/Runner/Schemas/Constants.swift
+deleted file mode 100644
+index a4b0f701a..000000000
+--- a/mobile/ios/Runner/Schemas/Constants.swift
++++ /dev/null
+@@ -1,177 +0,0 @@
+-import SQLiteData
+-
+-struct Endpoint: Codable {
+-  let url: URL
+-  let status: Status
+-
+-  enum Status: String, Codable {
+-    case loading, valid, error, unknown
+-  }
+-}
+-
+-enum StoreKey: Int, CaseIterable, QueryBindable {
+-  // MARK: - Int
+-  case _version = 0
+-  static let version = Typed<Int>(rawValue: ._version)
+-  case _deviceIdHash = 3
+-  static let deviceIdHash = Typed<Int>(rawValue: ._deviceIdHash)
+-  case _backupTriggerDelay = 8
+-  static let backupTriggerDelay = Typed<Int>(rawValue: ._backupTriggerDelay)
+-  case _tilesPerRow = 103
+-  static let tilesPerRow = Typed<Int>(rawValue: ._tilesPerRow)
+-  case _groupAssetsBy = 105
+-  static let groupAssetsBy = Typed<Int>(rawValue: ._groupAssetsBy)
+-  case _uploadErrorNotificationGracePeriod = 106
+-  static let uploadErrorNotificationGracePeriod = Typed<Int>(rawValue: ._uploadErrorNotificationGracePeriod)
+-  case _thumbnailCacheSize = 110
+-  static let thumbnailCacheSize = Typed<Int>(rawValue: ._thumbnailCacheSize)
+-  case _imageCacheSize = 111
+-  static let imageCacheSize = Typed<Int>(rawValue: ._imageCacheSize)
+-  case _albumThumbnailCacheSize = 112
+-  static let albumThumbnailCacheSize = Typed<Int>(rawValue: ._albumThumbnailCacheSize)
+-  case _selectedAlbumSortOrder = 113
+-  static let selectedAlbumSortOrder = Typed<Int>(rawValue: ._selectedAlbumSortOrder)
+-  case _logLevel = 115
+-  static let logLevel = Typed<Int>(rawValue: ._logLevel)
+-  case _mapRelativeDate = 119
+-  static let mapRelativeDate = Typed<Int>(rawValue: ._mapRelativeDate)
+-  case _mapThemeMode = 124
+-  static let mapThemeMode = Typed<Int>(rawValue: ._mapThemeMode)
+-
+-  // MARK: - String
+-  case _assetETag = 1
+-  static let assetETag = Typed<String>(rawValue: ._assetETag)
+-  case _currentUser = 2
+-  static let currentUser = Typed<String>(rawValue: ._currentUser)
+-  case _deviceId = 4
+-  static let deviceId = Typed<String>(rawValue: ._deviceId)
+-  case _accessToken = 11
+-  static let accessToken = Typed<String>(rawValue: ._accessToken)
+-  case _serverEndpoint = 12
+-  static let serverEndpoint = Typed<String>(rawValue: ._serverEndpoint)
+-  case _sslClientCertData = 15
+-  static let sslClientCertData = Typed<String>(rawValue: ._sslClientCertData)
+-  case _sslClientPasswd = 16
+-  static let sslClientPasswd = Typed<String>(rawValue: ._sslClientPasswd)
+-  case _themeMode = 102
+-  static let themeMode = Typed<String>(rawValue: ._themeMode)
+-  case _customHeaders = 127
+-  static let customHeaders = Typed<[String: String]>(rawValue: ._customHeaders)
+-  case _primaryColor = 128
+-  static let primaryColor = Typed<String>(rawValue: ._primaryColor)
+-  case _preferredWifiName = 133
+-  static let preferredWifiName = Typed<String>(rawValue: ._preferredWifiName)
+-
+-  // MARK: - Endpoint
+-  case _externalEndpointList = 135
+-  static let externalEndpointList = Typed<[Endpoint]>(rawValue: ._externalEndpointList)
+-
+-  // MARK: - URL
+-  case _localEndpoint = 134
+-  static let localEndpoint = Typed<URL>(rawValue: ._localEndpoint)
+-  case _serverUrl = 10
+-  static let serverUrl = Typed<URL>(rawValue: ._serverUrl)
+-
+-  // MARK: - Date
+-  case _backupFailedSince = 5
+-  static let backupFailedSince = Typed<Date>(rawValue: ._backupFailedSince)
+-
+-  // MARK: - Bool
+-  case _backupRequireWifi = 6
+-  static let backupRequireWifi = Typed<Bool>(rawValue: ._backupRequireWifi)
+-  case _backupRequireCharging = 7
+-  static let backupRequireCharging = Typed<Bool>(rawValue: ._backupRequireCharging)
+-  case _autoBackup = 13
+-  static let autoBackup = Typed<Bool>(rawValue: ._autoBackup)
+-  case _backgroundBackup = 14
+-  static let backgroundBackup = Typed<Bool>(rawValue: ._backgroundBackup)
+-  case _loadPreview = 100
+-  static let loadPreview = Typed<Bool>(rawValue: ._loadPreview)
+-  case _loadOriginal = 101
+-  static let loadOriginal = Typed<Bool>(rawValue: ._loadOriginal)
+-  case _dynamicLayout = 104
+-  static let dynamicLayout = Typed<Bool>(rawValue: ._dynamicLayout)
+-  case _backgroundBackupTotalProgress = 107
+-  static let backgroundBackupTotalProgress = Typed<Bool>(rawValue: ._backgroundBackupTotalProgress)
+-  case _backgroundBackupSingleProgress = 108
+-  static let backgroundBackupSingleProgress = Typed<Bool>(rawValue: ._backgroundBackupSingleProgress)
+-  case _storageIndicator = 109
+-  static let storageIndicator = Typed<Bool>(rawValue: ._storageIndicator)
+-  case _advancedTroubleshooting = 114
+-  static let advancedTroubleshooting = Typed<Bool>(rawValue: ._advancedTroubleshooting)
+-  case _preferRemoteImage = 116
+-  static let preferRemoteImage = Typed<Bool>(rawValue: ._preferRemoteImage)
+-  case _loopVideo = 117
+-  static let loopVideo = Typed<Bool>(rawValue: ._loopVideo)
+-  case _mapShowFavoriteOnly = 118
+-  static let mapShowFavoriteOnly = Typed<Bool>(rawValue: ._mapShowFavoriteOnly)
+-  case _selfSignedCert = 120
+-  static let selfSignedCert = Typed<Bool>(rawValue: ._selfSignedCert)
+-  case _mapIncludeArchived = 121
+-  static let mapIncludeArchived = Typed<Bool>(rawValue: ._mapIncludeArchived)
+-  case _ignoreIcloudAssets = 122
+-  static let ignoreIcloudAssets = Typed<Bool>(rawValue: ._ignoreIcloudAssets)
+-  case _selectedAlbumSortReverse = 123
+-  static let selectedAlbumSortReverse = Typed<Bool>(rawValue: ._selectedAlbumSortReverse)
+-  case _mapwithPartners = 125
+-  static let mapwithPartners = Typed<Bool>(rawValue: ._mapwithPartners)
+-  case _enableHapticFeedback = 126
+-  static let enableHapticFeedback = Typed<Bool>(rawValue: ._enableHapticFeedback)
+-  case _dynamicTheme = 129
+-  static let dynamicTheme = Typed<Bool>(rawValue: ._dynamicTheme)
+-  case _colorfulInterface = 130
+-  static let colorfulInterface = Typed<Bool>(rawValue: ._colorfulInterface)
+-  case _syncAlbums = 131
+-  static let syncAlbums = Typed<Bool>(rawValue: ._syncAlbums)
+-  case _autoEndpointSwitching = 132
+-  static let autoEndpointSwitching = Typed<Bool>(rawValue: ._autoEndpointSwitching)
+-  case _loadOriginalVideo = 136
+-  static let loadOriginalVideo = Typed<Bool>(rawValue: ._loadOriginalVideo)
+-  case _manageLocalMediaAndroid = 137
+-  static let manageLocalMediaAndroid = Typed<Bool>(rawValue: ._manageLocalMediaAndroid)
+-  case _readonlyModeEnabled = 138
+-  static let readonlyModeEnabled = Typed<Bool>(rawValue: ._readonlyModeEnabled)
+-  case _autoPlayVideo = 139
+-  static let autoPlayVideo = Typed<Bool>(rawValue: ._autoPlayVideo)
+-  case _photoManagerCustomFilter = 1000
+-  static let photoManagerCustomFilter = Typed<Bool>(rawValue: ._photoManagerCustomFilter)
+-  case _betaPromptShown = 1001
+-  static let betaPromptShown = Typed<Bool>(rawValue: ._betaPromptShown)
+-  case _betaTimeline = 1002
+-  static let betaTimeline = Typed<Bool>(rawValue: ._betaTimeline)
+-  case _enableBackup = 1003
+-  static let enableBackup = Typed<Bool>(rawValue: ._enableBackup)
+-  case _useWifiForUploadVideos = 1004
+-  static let useWifiForUploadVideos = Typed<Bool>(rawValue: ._useWifiForUploadVideos)
+-  case _useWifiForUploadPhotos = 1005
+-  static let useWifiForUploadPhotos = Typed<Bool>(rawValue: ._useWifiForUploadPhotos)
+-  case _needBetaMigration = 1006
+-  static let needBetaMigration = Typed<Bool>(rawValue: ._needBetaMigration)
+-  case _shouldResetSync = 1007
+-  static let shouldResetSync = Typed<Bool>(rawValue: ._shouldResetSync)
+-
+-  struct Typed<T>: RawRepresentable {
+-    let rawValue: StoreKey
+-
+-    @_transparent
+-    init(rawValue value: StoreKey) {
+-      self.rawValue = value
+-    }
+-  }
+-}
+-
+-enum BackupSelection: Int, QueryBindable {
+-  case selected, none, excluded
+-}
+-
+-enum AvatarColor: Int, QueryBindable {
+-  case primary, pink, red, yellow, blue, green, purple, orange, gray, amber
+-}
+-
+-enum AlbumUserRole: Int, QueryBindable {
+-  case editor, viewer
+-}
+-
+-enum MemoryType: Int, QueryBindable {
+-  case onThisDay
+-}
+diff --git a/mobile/ios/Runner/Schemas/Store.swift b/mobile/ios/Runner/Schemas/Store.swift
+deleted file mode 100644
+index ee5280b6c..000000000
+--- a/mobile/ios/Runner/Schemas/Store.swift
++++ /dev/null
+@@ -1,146 +0,0 @@
+-import SQLiteData
+-
+-enum StoreError: Error {
+-  case invalidJSON(String)
+-  case invalidURL(String)
+-  case encodingFailed
+-}
+-
+-protocol StoreConvertible {
+-  associatedtype StorageType
+-  static func fromValue(_ value: StorageType) throws(StoreError) -> Self
+-  static func toValue(_ value: Self) throws(StoreError) -> StorageType
+-}
+-
+-extension Int: StoreConvertible {
+-  static func fromValue(_ value: Int) -> Int { value }
+-  static func toValue(_ value: Int) -> Int { value }
+-}
+-
+-extension Bool: StoreConvertible {
+-  static func fromValue(_ value: Int) -> Bool { value == 1 }
+-  static func toValue(_ value: Bool) -> Int { value ? 1 : 0 }
+-}
+-
+-extension Date: StoreConvertible {
+-  static func fromValue(_ value: Int) -> Date { Date(timeIntervalSince1970: TimeInterval(value) / 1000) }
+-  static func toValue(_ value: Date) -> Int { Int(value.timeIntervalSince1970 * 1000) }
+-}
+-
+-extension String: StoreConvertible {
+-  static func fromValue(_ value: String) -> String { value }
+-  static func toValue(_ value: String) -> String { value }
+-}
+-
+-extension URL: StoreConvertible {
+-  static func fromValue(_ value: String) throws(StoreError) -> URL {
+-    guard let url = URL(string: value) else {
+-      throw StoreError.invalidURL(value)
+-    }
+-    return url
+-  }
+-  static func toValue(_ value: URL) -> String { value.absoluteString }
+-}
+-
+-extension StoreConvertible where Self: Codable, StorageType == String {
+-  static var jsonDecoder: JSONDecoder { JSONDecoder() }
+-  static var jsonEncoder: JSONEncoder { JSONEncoder() }
+-
+-  static func fromValue(_ value: String) throws(StoreError) -> Self {
+-    do {
+-      return try jsonDecoder.decode(Self.self, from: Data(value.utf8))
+-    } catch {
+-      throw StoreError.invalidJSON(value)
+-    }
+-  }
+-
+-  static func toValue(_ value: Self) throws(StoreError) -> String {
+-    let encoded: Data
+-    do {
+-      encoded = try jsonEncoder.encode(value)
+-    } catch {
+-      throw StoreError.encodingFailed
+-    }
+-
+-    guard let string = String(data: encoded, encoding: .utf8) else {
+-      throw StoreError.encodingFailed
+-    }
+-    return string
+-  }
+-}
+-
+-extension Array: StoreConvertible where Element: Codable {
+-  typealias StorageType = String
+-}
+-
+-extension Dictionary: StoreConvertible where Key == String, Value: Codable {
+-  typealias StorageType = String
+-}
+-
+-class StoreRepository {
+-  private let db: DatabasePool
+-
+-  init(db: DatabasePool) {
+-    self.db = db
+-  }
+-
+-  func get<T: StoreConvertible>(_ key: StoreKey.Typed<T>) throws -> T? where T.StorageType == Int {
+-    let query = Store.select(\.intValue).where { $0.id.eq(key.rawValue) }
+-    if let value = try db.read({ conn in try query.fetchOne(conn) }) ?? nil {
+-      return try T.fromValue(value)
+-    }
+-    return nil
+-  }
+-
+-  func get<T: StoreConvertible>(_ key: StoreKey.Typed<T>) throws -> T? where T.StorageType == String {
+-    let query = Store.select(\.stringValue).where { $0.id.eq(key.rawValue) }
+-    if let value = try db.read({ conn in try query.fetchOne(conn) }) ?? nil {
+-      return try T.fromValue(value)
+-    }
+-    return nil
+-  }
+-
+-  func get<T: StoreConvertible>(_ key: StoreKey.Typed<T>) async throws -> T? where T.StorageType == Int {
+-    let query = Store.select(\.intValue).where { $0.id.eq(key.rawValue) }
+-    if let value = try await db.read({ conn in try query.fetchOne(conn) }) ?? nil {
+-      return try T.fromValue(value)
+-    }
+-    return nil
+-  }
+-
+-  func get<T: StoreConvertible>(_ key: StoreKey.Typed<T>) async throws -> T? where T.StorageType == String {
+-    let query = Store.select(\.stringValue).where { $0.id.eq(key.rawValue) }
+-    if let value = try await db.read({ conn in try query.fetchOne(conn) }) ?? nil {
+-      return try T.fromValue(value)
+-    }
+-    return nil
+-  }
+-
+-  func set<T: StoreConvertible>(_ key: StoreKey.Typed<T>, value: T) throws where T.StorageType == Int {
+-    let value = try T.toValue(value)
+-    try db.write { conn in
+-      try Store.upsert { Store(id: key.rawValue, stringValue: nil, intValue: value) }.execute(conn)
+-    }
+-  }
+-
+-  func set<T: StoreConvertible>(_ key: StoreKey.Typed<T>, value: T) throws where T.StorageType == String {
+-    let value = try T.toValue(value)
+-    try db.write { conn in
+-      try Store.upsert { Store(id: key.rawValue, stringValue: value, intValue: nil) }.execute(conn)
+-    }
+-  }
+-
+-  func set<T: StoreConvertible>(_ key: StoreKey.Typed<T>, value: T) async throws where T.StorageType == Int {
+-    let value = try T.toValue(value)
+-    try await db.write { conn in
+-      try Store.upsert { Store(id: key.rawValue, stringValue: nil, intValue: value) }.execute(conn)
+-    }
+-  }
+-
+-  func set<T: StoreConvertible>(_ key: StoreKey.Typed<T>, value: T) async throws where T.StorageType == String {
+-    let value = try T.toValue(value)
+-    try await db.write { conn in
+-      try Store.upsert { Store(id: key.rawValue, stringValue: value, intValue: nil) }.execute(conn)
+-    }
+-  }
+-}
+diff --git a/mobile/ios/Runner/Schemas/Tables.swift b/mobile/ios/Runner/Schemas/Tables.swift
+deleted file mode 100644
+index c256b0d0e..000000000
+--- a/mobile/ios/Runner/Schemas/Tables.swift
++++ /dev/null
+@@ -1,237 +0,0 @@
+-import GRDB
+-import SQLiteData
+-
+-@Table("asset_face_entity")
+-struct AssetFace {
+-  let id: String
+-  let assetId: String
+-  let personId: String?
+-  let imageWidth: Int
+-  let imageHeight: Int
+-  let boundingBoxX1: Int
+-  let boundingBoxY1: Int
+-  let boundingBoxX2: Int
+-  let boundingBoxY2: Int
+-  let sourceType: String
+-}
+-
+-@Table("auth_user_entity")
+-struct AuthUser {
+-  let id: String
+-  let name: String
+-  let email: String
+-  let isAdmin: Bool
+-  let hasProfileImage: Bool
+-  let profileChangedAt: Date
+-  let avatarColor: AvatarColor
+-  let quotaSizeInBytes: Int
+-  let quotaUsageInBytes: Int
+-  let pinCode: String?
+-}
+-
+-@Table("local_album_entity")
+-struct LocalAlbum {
+-  let id: String
+-  let backupSelection: BackupSelection
+-  let linkedRemoteAlbumId: String?
+-  let marker_: Bool?
+-  let name: String
+-  let isIosSharedAlbum: Bool
+-  let updatedAt: Date
+-}
+-
+-@Table("local_album_asset_entity")
+-struct LocalAlbumAsset {
+-  let id: ID
+-  let marker_: String?
+-
+-  @Selection
+-  struct ID {
+-    let assetId: String
+-    let albumId: String
+-  }
+-}
+-
+-@Table("local_asset_entity")
+-struct LocalAsset {
+-  let id: String
+-  let checksum: String?
+-  let createdAt: Date
+-  let durationInSeconds: Int?
+-  let height: Int?
+-  let isFavorite: Bool
+-  let name: String
+-  let orientation: String
+-  let type: Int
+-  let updatedAt: Date
+-  let width: Int?
+-}
+-
+-@Table("memory_asset_entity")
+-struct MemoryAsset {
+-  let id: ID
+-
+-  @Selection
+-  struct ID {
+-    let assetId: String
+-    let albumId: String
+-  }
+-}
+-
+-@Table("memory_entity")
+-struct Memory {
+-  let id: String
+-  let createdAt: Date
+-  let updatedAt: Date
+-  let deletedAt: Date?
+-  let ownerId: String
+-  let type: MemoryType
+-  let data: String
+-  let isSaved: Bool
+-  let memoryAt: Date
+-  let seenAt: Date?
+-  let showAt: Date?
+-  let hideAt: Date?
+-}
+-
+-@Table("partner_entity")
+-struct Partner {
+-  let id: ID
+-  let inTimeline: Bool
+-
+-  @Selection
+-  struct ID {
+-    let sharedById: String
+-    let sharedWithId: String
+-  }
+-}
+-
+-@Table("person_entity")
+-struct Person {
+-  let id: String
+-  let createdAt: Date
+-  let updatedAt: Date
+-  let ownerId: String
+-  let name: String
+-  let faceAssetId: String?
+-  let isFavorite: Bool
+-  let isHidden: Bool
+-  let color: String?
+-  let birthDate: Date?
+-}
+-
+-@Table("remote_album_entity")
+-struct RemoteAlbum {
+-  let id: String
+-  let createdAt: Date
+-  let description: String?
+-  let isActivityEnabled: Bool
+-  let name: String
+-  let order: Int
+-  let ownerId: String
+-  let thumbnailAssetId: String?
+-  let updatedAt: Date
+-}
+-
+-@Table("remote_album_asset_entity")
+-struct RemoteAlbumAsset {
+-  let id: ID
+-
+-  @Selection
+-  struct ID {
+-    let assetId: String
+-    let albumId: String
+-  }
+-}
+-
+-@Table("remote_album_user_entity")
+-struct RemoteAlbumUser {
+-  let id: ID
+-  let role: AlbumUserRole
+-
+-  @Selection
+-  struct ID {
+-    let albumId: String
+-    let userId: String
+-  }
+-}
+-
+-@Table("remote_asset_entity")
+-struct RemoteAsset {
+-  let id: String
+-  let checksum: String?
+-  let deletedAt: Date?
+-  let isFavorite: Int
+-  let libraryId: String?
+-  let livePhotoVideoId: String?
+-  let localDateTime: Date?
+-  let orientation: String
+-  let ownerId: String
+-  let stackId: String?
+-  let visibility: Int
+-}
+-
+-@Table("remote_exif_entity")
+-struct RemoteExif {
+-  @Column(primaryKey: true)
+-  let assetId: String
+-  let city: String?
+-  let state: String?
+-  let country: String?
+-  let dateTimeOriginal: Date?
+-  let description: String?
+-  let height: Int?
+-  let width: Int?
+-  let exposureTime: String?
+-  let fNumber: Double?
+-  let fileSize: Int?
+-  let focalLength: Double?
+-  let latitude: Double?
+-  let longitude: Double?
+-  let iso: Int?
+-  let make: String?
+-  let model: String?
+-  let lens: String?
+-  let orientation: String?
+-  let timeZone: String?
+-  let rating: Int?
+-  let projectionType: String?
+-}
+-
+-@Table("stack_entity")
+-struct Stack {
+-  let id: String
+-  let createdAt: Date
+-  let updatedAt: Date
+-  let ownerId: String
+-  let primaryAssetId: String
+-}
+-
+-@Table("store_entity")
+-struct Store {
+-  let id: StoreKey
+-  let stringValue: String?
+-  let intValue: Int?
+-}
+-
+-@Table("user_entity")
+-struct User {
+-  let id: String
+-  let name: String
+-  let email: String
+-  let hasProfileImage: Bool
+-  let profileChangedAt: Date
+-  let avatarColor: AvatarColor
+-}
+-
+-@Table("user_metadata_entity")
+-struct UserMetadata {
+-  let id: ID
+-  let value: Data
+-
+-  @Selection
+-  struct ID {
+-    let userId: String
+-    let key: Date
+-  }
+-}
+diff --git a/mobile/ios/ShareExtension/Info.plist b/mobile/ios/ShareExtension/Info.plist
+index 0f52fbffd..031caff91 100644
+--- a/mobile/ios/ShareExtension/Info.plist
++++ b/mobile/ios/ShareExtension/Info.plist
+@@ -1,35 +1,33 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+ <plist version="1.0">
+-  <dict>
+-    <key>AppGroupId</key>
+-    <string>$(CUSTOM_GROUP_ID)</string>
+-    <key>NSExtension</key>
+-    <dict>
+-      <key>NSExtensionAttributes</key>
+-      <dict>
+-        <key>IntentsSupported</key>
+-        <array>
+-          <string>INSendMessageIntent</string>
+-        </array>
+-        <key>NSExtensionActivationRule</key>
+-        <string>SUBQUERY ( extensionItems, $extensionItem, SUBQUERY ( $extensionItem.attachments,
++<dict>
++	<key>NSExtension</key>
++	<dict>
++		<key>NSExtensionAttributes</key>
++		<dict>
++			<key>IntentsSupported</key>
++			<array>
++				<string>INSendMessageIntent</string>
++			</array>
++			<key>NSExtensionActivationRule</key>
++			<string>SUBQUERY ( extensionItems, $extensionItem, SUBQUERY ( $extensionItem.attachments,
+           $attachment, ( ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.file-url"
+           || ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" || ANY
+           $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.text" || ANY
+           $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.movie" || ANY
+           $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ) ).@count &gt; 0
+           ).@count &gt; 0 </string>
+-        <key>PHSupportedMediaTypes</key>
+-        <array>
+-          <string>Video</string>
+-          <string>Image</string>
+-        </array>
+-      </dict>
+-      <key>NSExtensionMainStoryboard</key>
+-      <string>MainInterface</string>
+-      <key>NSExtensionPointIdentifier</key>
+-      <string>com.apple.share-services</string>
+-    </dict>
+-  </dict>
+-</plist>
+\ No newline at end of file
++			<key>PHSupportedMediaTypes</key>
++			<array>
++				<string>Video</string>
++				<string>Image</string>
++			</array>
++		</dict>
++		<key>NSExtensionMainStoryboard</key>
++		<string>MainInterface</string>
++		<key>NSExtensionPointIdentifier</key>
++		<string>com.apple.share-services</string>
++	</dict>
++</dict>
++</plist>
+diff --git a/mobile/ios/ShareExtension/ShareExtension.entitlements b/mobile/ios/ShareExtension/ShareExtension.entitlements
+index 4ad1a257d..6631ffa6f 100644
+--- a/mobile/ios/ShareExtension/ShareExtension.entitlements
++++ b/mobile/ios/ShareExtension/ShareExtension.entitlements
+@@ -2,9 +2,5 @@
+ <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+ <plist version="1.0">
+ <dict>
+-	<key>com.apple.security.application-groups</key>
+-	<array>
+-		<string>group.app.immich.share</string>
+-	</array>
+ </dict>
+ </plist>
+diff --git a/mobile/ios/WidgetExtension/WidgetExtension.entitlements b/mobile/ios/WidgetExtension/WidgetExtension.entitlements
+index 4ad1a257d..6631ffa6f 100644
+--- a/mobile/ios/WidgetExtension/WidgetExtension.entitlements
++++ b/mobile/ios/WidgetExtension/WidgetExtension.entitlements
+@@ -2,9 +2,5 @@
+ <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+ <plist version="1.0">
+ <dict>
+-	<key>com.apple.security.application-groups</key>
+-	<array>
+-		<string>group.app.immich.share</string>
+-	</array>
+ </dict>
+ </plist>
+diff --git a/mobile/test/default.isar-lck b/mobile/test/default.isar-lck
+new file mode 100644
+index 000000000..e69de29bb
+-- 
+2.50.1 (Apple Git-155)
+
