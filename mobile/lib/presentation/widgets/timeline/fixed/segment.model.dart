@@ -3,6 +3,7 @@ import 'dart:math' as math;
 
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/gestures.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:immich_mobile/domain/models/asset/base_asset.model.dart';
 import 'package:immich_mobile/domain/services/timeline.service.dart';
@@ -200,9 +201,21 @@ class _AssetTileWidget extends ConsumerWidget {
     final isReadonlyModeEnabled = ref.watch(readonlyModeProvider);
 
     return RepaintBoundary(
-      child: GestureDetector(
-        onTap: () => lockSelection ? null : _handleOnTap(context, ref, assetIndex, asset, heroOffset),
-        onLongPress: () => lockSelection || isReadonlyModeEnabled ? null : _handleOnLongPress(ref, asset),
+      child: RawGestureDetector(
+        gestures: {
+          TapGestureRecognizer: GestureRecognizerFactoryWithHandlers<TapGestureRecognizer>(
+            () => TapGestureRecognizer(),
+            (TapGestureRecognizer instance) {
+              instance.onTap = lockSelection ? null : () => _handleOnTap(context, ref, assetIndex, asset, heroOffset);
+            },
+          ),
+          LongPressGestureRecognizer: GestureRecognizerFactoryWithHandlers<LongPressGestureRecognizer>(
+            () => LongPressGestureRecognizer(duration: const Duration(milliseconds: 1000)),
+            (LongPressGestureRecognizer instance) {
+              instance.onLongPress = lockSelection || isReadonlyModeEnabled ? null : () => _handleOnLongPress(ref, asset);
+            },
+          ),
+        },
         child: ThumbnailTile(
           asset,
           lockSelection: lockSelection,

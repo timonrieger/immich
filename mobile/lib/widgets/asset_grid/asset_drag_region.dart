@@ -153,6 +153,8 @@ class _AssetDragRegionState extends State<AssetDragRegion> {
 }
 
 class _CustomLongPressGestureRecognizer extends LongPressGestureRecognizer {
+  _CustomLongPressGestureRecognizer() : super(duration: const Duration(milliseconds: 1000));
+
   @override
   void rejectGesture(int pointer) {
     acceptGesture(pointer);
