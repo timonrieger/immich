@@ -212,7 +212,9 @@ class _AssetTileWidget extends ConsumerWidget {
           LongPressGestureRecognizer: GestureRecognizerFactoryWithHandlers<LongPressGestureRecognizer>(
             () => LongPressGestureRecognizer(duration: const Duration(milliseconds: 1000)),
             (LongPressGestureRecognizer instance) {
-              instance.onLongPress = lockSelection || isReadonlyModeEnabled ? null : () => _handleOnLongPress(ref, asset);
+              instance.onLongPress = lockSelection || isReadonlyModeEnabled
+                  ? null
+                  : () => _handleOnLongPress(ref, asset);
             },
           ),
         },
