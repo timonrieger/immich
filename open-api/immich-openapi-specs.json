@@ -109,6 +109,7 @@
               }
             }
           },
+          "description": "Activity data (like or comment)",
           "required": true
         },
         "responses": {
@@ -234,6 +235,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Activity ID to delete",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -688,6 +690,7 @@
               }
             }
           },
+          "description": "User creation data",
           "required": true
         },
         "responses": {
@@ -745,6 +748,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "User ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -759,6 +763,7 @@
               }
             }
           },
+          "description": "User deletion options",
           "required": true
         },
         "responses": {
@@ -814,6 +819,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "User ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -873,6 +879,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "User ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -887,6 +894,7 @@
               }
             }
           },
+          "description": "User update data",
           "required": true
         },
         "responses": {
@@ -944,6 +952,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "User ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -1003,6 +1012,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "User ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -1017,6 +1027,7 @@
               }
             }
           },
+          "description": "User preferences update data",
           "required": true
         },
         "responses": {
@@ -1074,6 +1085,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "User ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -1135,6 +1147,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "User ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -1199,6 +1212,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "User ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -1358,6 +1372,7 @@
               }
             }
           },
+          "description": "Album creation data",
           "required": true
         },
         "responses": {
@@ -1435,6 +1450,7 @@
               }
             }
           },
+          "description": "Asset and album IDs mapping",
           "required": true
         },
         "responses": {
@@ -1541,6 +1557,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Album ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -1592,6 +1609,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Album ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -1674,6 +1692,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Album ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -1688,6 +1707,7 @@
               }
             }
           },
+          "description": "Album update data",
           "required": true
         },
         "responses": {
@@ -1744,6 +1764,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Album ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -1758,6 +1779,7 @@
               }
             }
           },
+          "description": "Asset IDs to remove",
           "required": true
         },
         "responses": {
@@ -1815,6 +1837,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Album ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -1845,6 +1868,7 @@
               }
             }
           },
+          "description": "Asset IDs to add",
           "required": true
         },
         "responses": {
@@ -1904,6 +1928,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Album ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -1913,6 +1938,7 @@
             "name": "userId",
             "required": true,
             "in": "path",
+            "description": "User ID (use \"me\" to leave shared album)",
             "schema": {
               "type": "string"
             }
@@ -1963,6 +1989,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Album ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -1972,6 +1999,7 @@
             "name": "userId",
             "required": true,
             "in": "path",
+            "description": "User ID (use \"me\" for current user)",
             "schema": {
               "type": "string"
             }
@@ -1985,6 +2013,7 @@
               }
             }
           },
+          "description": "Updated user role",
           "required": true
         },
         "responses": {
@@ -2034,6 +2063,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Album ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -2048,6 +2078,7 @@
               }
             }
           },
+          "description": "Users to share with and their roles",
           "required": true
         },
         "responses": {
@@ -2159,6 +2190,7 @@
               }
             }
           },
+          "description": "API key creation data with name and permissions",
           "required": true
         },
         "responses": {
@@ -2264,6 +2296,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "API key ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -2315,6 +2348,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "API key ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -2373,6 +2407,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "API key ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -2387,6 +2422,7 @@
               }
             }
           },
+          "description": "Updated API key name and permissions",
           "required": true
         },
         "responses": {
@@ -2447,6 +2483,7 @@
               }
             }
           },
+          "description": "Asset IDs to delete",
           "required": true
         },
         "responses": {
@@ -2593,6 +2630,7 @@
               }
             }
           },
+          "description": "Bulk asset update data",
           "required": true
         },
         "responses": {
@@ -2706,6 +2744,7 @@
               }
             }
           },
+          "description": "Source and target asset IDs",
           "required": true
         },
         "responses": {
@@ -2756,6 +2795,7 @@
             "name": "deviceId",
             "required": true,
             "in": "path",
+            "description": "Device ID",
             "schema": {
               "type": "string"
             }
@@ -2877,6 +2917,7 @@
               }
             }
           },
+          "description": "Job type and asset IDs",
           "required": true
         },
         "responses": {
@@ -2929,6 +2970,7 @@
               }
             }
           },
+          "description": "Metadata keys and asset IDs to delete",
           "required": true
         },
         "responses": {
@@ -2976,6 +3018,7 @@
               }
             }
           },
+          "description": "Bulk metadata updates",
           "required": true
         },
         "responses": {
@@ -3168,6 +3211,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Asset ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -3242,6 +3286,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Asset ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -3256,6 +3301,7 @@
               }
             }
           },
+          "description": "Asset update data",
           "required": true
         },
         "responses": {
@@ -3479,6 +3525,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Asset ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -3540,6 +3587,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Asset ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -3554,6 +3602,7 @@
               }
             }
           },
+          "description": "Metadata key-value pairs",
           "required": true
         },
         "responses": {
@@ -3613,6 +3662,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Asset ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -3622,6 +3672,7 @@
             "name": "key",
             "required": true,
             "in": "path",
+            "description": "Metadata key to delete",
             "schema": {
               "type": "string"
             }
@@ -3672,6 +3723,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Asset ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -3681,6 +3733,7 @@
             "name": "key",
             "required": true,
             "in": "path",
+            "description": "Metadata key",
             "schema": {
               "type": "string"
             }
@@ -3740,6 +3793,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Asset ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -4147,6 +4201,7 @@
               }
             }
           },
+          "description": "Admin registration data",
           "required": true
         },
         "responses": {
@@ -4195,6 +4250,7 @@
               }
             }
           },
+          "description": "Current and new password",
           "required": true
         },
         "responses": {
@@ -4255,6 +4311,7 @@
               }
             }
           },
+          "description": "Login credentials",
           "required": true
         },
         "responses": {
@@ -4352,6 +4409,7 @@
               }
             }
           },
+          "description": "Account password to reset PIN",
           "required": true
         },
         "responses": {
@@ -4403,6 +4461,7 @@
               }
             }
           },
+          "description": "PIN code setup data",
           "required": true
         },
         "responses": {
@@ -4454,6 +4513,7 @@
               }
             }
           },
+          "description": "Old and new PIN code",
           "required": true
         },
         "responses": {
@@ -4549,6 +4609,7 @@
               }
             }
           },
+          "description": "PIN code to unlock session",
           "required": true
         },
         "responses": {
@@ -4701,6 +4762,7 @@
               }
             }
           },
+          "description": "Asset IDs to download",
           "required": true
         },
         "responses": {
@@ -4779,6 +4841,7 @@
               }
             }
           },
+          "description": "Asset IDs, album ID, or user ID to download",
           "required": true
         },
         "responses": {
@@ -4839,6 +4902,7 @@
               }
             }
           },
+          "description": "Duplicate asset IDs to delete",
           "required": true
         },
         "responses": {
@@ -4939,6 +5003,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Duplicate asset ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -5484,6 +5549,7 @@
               }
             }
           },
+          "description": "Library creation data",
           "required": true
         },
         "responses": {
@@ -5541,6 +5607,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Library ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -5593,6 +5660,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Library ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -5652,6 +5720,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Library ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -5666,6 +5735,7 @@
               }
             }
           },
+          "description": "Library update data",
           "required": true
         },
         "responses": {
@@ -5723,6 +5793,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Library ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -5777,6 +5848,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Library ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -5838,6 +5910,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Library ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -5852,6 +5925,7 @@
               }
             }
           },
+          "description": "Library settings to validate",
           "required": true
         },
         "responses": {
@@ -6189,6 +6263,7 @@
               }
             }
           },
+          "description": "Memory creation data with name, description, and asset IDs",
           "required": true
         },
         "responses": {
@@ -6347,6 +6422,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Memory ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -6398,6 +6474,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Memory ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -6456,6 +6533,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Memory ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -6470,6 +6548,7 @@
               }
             }
           },
+          "description": "Memory update data",
           "required": true
         },
         "responses": {
@@ -6526,6 +6605,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Memory ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -6540,6 +6620,7 @@
               }
             }
           },
+          "description": "Asset IDs to remove",
           "required": true
         },
         "responses": {
@@ -6597,6 +6678,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Memory ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -6611,6 +6693,7 @@
               }
             }
           },
+          "description": "Asset IDs to add",
           "required": true
         },
         "responses": {
@@ -6674,6 +6757,7 @@
               }
             }
           },
+          "description": "Notification IDs to delete",
           "required": true
         },
         "responses": {
@@ -6810,6 +6894,7 @@
               }
             }
           },
+          "description": "Bulk notification update data",
           "required": true
         },
         "responses": {
@@ -6859,6 +6944,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Notification ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -6910,6 +6996,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Notification ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -6968,6 +7055,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Notification ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -6982,6 +7070,7 @@
               }
             }
           },
+          "description": "Notification update data",
           "required": true
         },
         "responses": {
@@ -7337,6 +7426,7 @@
               }
             }
           },
+          "description": "Partner creation data",
           "required": true
         },
         "responses": {
@@ -7393,6 +7483,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Partner ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -7445,6 +7536,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "User ID to share with",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -7501,6 +7593,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Partner ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -7515,6 +7608,7 @@
               }
             }
           },
+          "description": "Partner update data",
           "required": true
         },
         "responses": {
@@ -7575,6 +7669,7 @@
               }
             }
           },
+          "description": "Person IDs to delete",
           "required": true
         },
         "responses": {
@@ -7724,6 +7819,7 @@
               }
             }
           },
+          "description": "Person creation data",
           "required": true
         },
         "responses": {
@@ -7782,6 +7878,7 @@
               }
             }
           },
+          "description": "Bulk person update data",
           "required": true
         },
         "responses": {
@@ -7841,6 +7938,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Person ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -7892,6 +7990,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Person ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -7950,6 +8049,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Person ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -7964,6 +8064,7 @@
               }
             }
           },
+          "description": "Person update data",
           "required": true
         },
         "responses": {
@@ -8020,6 +8121,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Target person ID to merge into",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -8034,6 +8136,7 @@
               }
             }
           },
+          "description": "Person IDs to merge",
           "required": true
         },
         "responses": {
@@ -8093,6 +8196,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Target person ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -8107,6 +8211,7 @@
               }
             }
           },
+          "description": "Faces to reassign",
           "required": true
         },
         "responses": {
@@ -8166,6 +8271,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Person ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -8226,6 +8332,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Person ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -8385,6 +8492,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Plugin ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -9191,6 +9299,7 @@
               }
             }
           },
+          "description": "Metadata search criteria",
           "required": true
         },
         "responses": {
@@ -9383,6 +9492,7 @@
               }
             }
           },
+          "description": "Random search criteria",
           "required": true
         },
         "responses": {
@@ -9446,6 +9556,7 @@
               }
             }
           },
+          "description": "Smart search query and filters",
           "required": true
         },
         "responses": {
@@ -9506,6 +9617,7 @@
               }
             }
           },
+          "description": "Statistics search criteria",
           "required": true
         },
         "responses": {
@@ -10454,6 +10566,7 @@
               }
             }
           },
+          "description": "Session creation data",
           "required": true
         },
         "responses": {
@@ -10510,6 +10623,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Session ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -10561,6 +10675,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Session ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -10575,6 +10690,7 @@
               }
             }
           },
+          "description": "Session update data",
           "required": true
         },
         "responses": {
@@ -10631,6 +10747,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Session ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -10764,6 +10881,7 @@
               }
             }
           },
+          "description": "Shared link creation data",
           "required": true
         },
         "responses": {
@@ -10903,6 +11021,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Shared link ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -10954,6 +11073,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Shared link ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -11012,6 +11132,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Shared link ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -11026,6 +11147,7 @@
               }
             }
           },
+          "description": "Shared link update data",
           "required": true
         },
         "responses": {
@@ -11082,6 +11204,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Shared link ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -11112,6 +11235,7 @@
               }
             }
           },
+          "description": "Asset IDs to remove",
           "required": true
         },
         "responses": {
@@ -11168,6 +11292,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Shared link ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -11198,6 +11323,7 @@
               }
             }
           },
+          "description": "Asset IDs to add",
           "required": true
         },
         "responses": {
@@ -11260,6 +11386,7 @@
               }
             }
           },
+          "description": "Stack IDs to delete",
           "required": true
         },
         "responses": {
@@ -11372,6 +11499,7 @@
               }
             }
           },
+          "description": "Stack creation data with name and asset IDs",
           "required": true
         },
         "responses": {
@@ -11428,6 +11556,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Stack ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -11479,6 +11608,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Stack ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -11537,6 +11667,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Stack ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -11551,6 +11682,7 @@
               }
             }
           },
+          "description": "Stack update data",
           "required": true
         },
         "responses": {
@@ -11607,6 +11739,7 @@
             "name": "assetId",
             "required": true,
             "in": "path",
+            "description": "Asset ID to remove",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -11616,6 +11749,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Stack ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -12466,6 +12600,7 @@
               }
             }
           },
+          "description": "Tag creation data with name and optional color",
           "required": true
         },
         "responses": {
@@ -12524,6 +12659,7 @@
               }
             }
           },
+          "description": "Tags to create or update",
           "required": true
         },
         "responses": {
@@ -12587,6 +12723,7 @@
               }
             }
           },
+          "description": "Tag and asset IDs mapping",
           "required": true
         },
         "responses": {
@@ -12643,6 +12780,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Tag ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -12694,6 +12832,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Tag ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -12752,6 +12891,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Tag ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -12766,6 +12906,7 @@
               }
             }
           },
+          "description": "Tag update data",
           "required": true
         },
         "responses": {
@@ -12822,6 +12963,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Tag ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -12836,6 +12978,7 @@
               }
             }
           },
+          "description": "Asset IDs to untag",
           "required": true
         },
         "responses": {
@@ -12893,6 +13036,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Tag ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -12907,6 +13051,7 @@
               }
             }
           },
+          "description": "Asset IDs to tag",
           "required": true
         },
         "responses": {
@@ -13415,6 +13560,7 @@
               }
             }
           },
+          "description": "Asset IDs to restore",
           "required": true
         },
         "responses": {
@@ -13576,6 +13722,7 @@
               }
             }
           },
+          "description": "User update data",
           "required": true
         },
         "responses": {
@@ -13725,6 +13872,7 @@
               }
             }
           },
+          "description": "Product key to register",
           "required": true
         },
         "responses": {
@@ -13874,6 +14022,7 @@
               }
             }
           },
+          "description": "Onboarding status update",
           "required": true
         },
         "responses": {
@@ -13982,6 +14131,7 @@
               }
             }
           },
+          "description": "User preferences update data",
           "required": true
         },
         "responses": {
@@ -14140,6 +14290,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "User ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -14200,6 +14351,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "User ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -14425,6 +14577,7 @@
               }
             }
           },
+          "description": "Workflow creation data",
           "required": true
         },
         "responses": {
@@ -14477,6 +14630,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Workflow ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -14524,6 +14678,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Workflow ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -14578,6 +14733,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Workflow ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -14592,6 +14748,7 @@
               }
             }
           },
+          "description": "Workflow update data",
           "required": true
         },
         "responses": {
