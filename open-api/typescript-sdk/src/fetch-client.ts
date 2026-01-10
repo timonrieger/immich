@@ -497,7 +497,8 @@ export type AssetResponseDto = {
     fileModifiedAt: string;
     /** Whether asset has metadata */
     hasMetadata: boolean;
-    height: number | null;
+    /** Asset height */
+    height?: number | null;
     /** Asset ID */
     id: string;
     /** Is archived */
@@ -542,7 +543,8 @@ export type AssetResponseDto = {
     updatedAt: string;
     /** Asset visibility */
     visibility: AssetVisibility;
-    width: number | null;
+    /** Asset width */
+    width?: number | null;
 };
 export type ContributorCountResponseDto = {
     /** Number of assets contributed */

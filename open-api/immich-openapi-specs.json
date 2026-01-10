@@ -16719,6 +16719,7 @@
             "type": "boolean"
           },
           "height": {
+            "description": "Asset height",
             "nullable": true,
             "type": "number"
           },
@@ -16860,14 +16861,15 @@
             "type": "string"
           },
           "visibility": {
-            "description": "Asset visibility",
             "allOf": [
               {
                 "$ref": "#/components/schemas/AssetVisibility"
               }
-            ]
+            ],
+            "description": "Asset visibility"
           },
           "width": {
+            "description": "Asset width",
             "nullable": true,
             "type": "number"
           }
@@ -16880,7 +16882,6 @@
           "fileCreatedAt",
           "fileModifiedAt",
           "hasMetadata",
-          "height",
           "id",
           "isArchived",
           "isFavorite",
@@ -16892,8 +16893,7 @@
           "ownerId",
           "type",
           "updatedAt",
-          "visibility",
-          "width"
+          "visibility"
         ],
         "type": "object"
       },

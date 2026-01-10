@@ -18,12 +18,12 @@ class AssetResponseDto {
     required this.deviceAssetId,
     required this.deviceId,
     this.duplicateId,
-    required this.duration,
+    this.duration,
     this.exifInfo,
     required this.fileCreatedAt,
     required this.fileModifiedAt,
     required this.hasMetadata,
-    required this.height,
+    this.height,
     required this.id,
     required this.isArchived,
     required this.isFavorite,
@@ -41,28 +41,39 @@ class AssetResponseDto {
     this.resized,
     this.stack,
     this.tags = const [],
-    required this.thumbhash,
+    this.thumbhash,
     required this.type,
     this.unassignedFaces = const [],
     required this.updatedAt,
     required this.visibility,
-    required this.width,
+    this.width,
   });
 
-  /// base64 encoded sha1 hash
+  /// Base64 encoded SHA1 hash
   String checksum;
 
   /// The UTC timestamp when the asset was originally uploaded to Immich.
   DateTime createdAt;
 
+  /// Device asset ID
   String deviceAssetId;
 
+  /// Device ID
   String deviceId;
 
+  /// Duplicate group ID
   String? duplicateId;
 
-  String duration;
+  /// Video duration (for videos)
+  ///
+  /// Please note: This property should have been non-nullable! Since the specification file
+  /// does not include a default value (using the "default:" property), however, the generated
+  /// source code must fall back to having a nullable type.
+  /// Consider adding a "default:" property in the specification file to hide this note.
+  ///
+  String? duration;
 
+  /// EXIF metadata
   ///
   /// Please note: This property should have been non-nullable! Since the specification file
   /// does not include a default value (using the "default:" property), however, the generated
@@ -77,29 +88,40 @@ class AssetResponseDto {
   /// The UTC timestamp when the file was last modified on the filesystem. This reflects the last time the physical file was changed, which may be different from when the photo was originally taken.
   DateTime fileModifiedAt;
 
+  /// Whether asset has metadata
   bool hasMetadata;
 
+  /// Asset height
   num? height;
 
+  /// Asset ID
   String id;
 
+  /// Is archived
   bool isArchived;
 
+  /// Is favorite
   bool isFavorite;
 
+  /// Is offline
   bool isOffline;
 
+  /// Is trashed
   bool isTrashed;
 
+  /// Library ID (deprecated)
   String? libraryId;
 
+  /// Live photo video ID
   String? livePhotoVideoId;
 
   /// The local date and time when the photo/video was taken, derived from EXIF metadata. This represents the photographer's local time regardless of timezone, stored as a timezone-agnostic timestamp. Used for timeline grouping by \"local\" days and months.
   DateTime localDateTime;
 
+  /// Original file name
   String originalFileName;
 
+  /// Original MIME type
   ///
   /// Please note: This property should have been non-nullable! Since the specification file
   /// does not include a default value (using the "default:" property), however, the generated
@@ -108,8 +130,10 @@ class AssetResponseDto {
   ///
   String? originalMimeType;
 
+  /// Original file path
   String originalPath;
 
+  /// Owner user details
   ///
   /// Please note: This property should have been non-nullable! Since the specification file
   /// does not include a default value (using the "default:" property), however, the generated
@@ -118,10 +142,13 @@ class AssetResponseDto {
   ///
   UserResponseDto? owner;
 
+  /// Owner user ID
   String ownerId;
 
+  /// Associated people with faces
   List<PersonWithFacesResponseDto> people;
 
+  /// Is resized (deprecated)
   ///
   /// Please note: This property should have been non-nullable! Since the specification file
   /// does not include a default value (using the "default:" property), however, the generated
@@ -130,21 +157,28 @@ class AssetResponseDto {
   ///
   bool? resized;
 
+  /// Stack information
   AssetStackResponseDto? stack;
 
+  /// Associated tags
   List<TagResponseDto> tags;
 
+  /// Thumbhash for thumbnail generation
   String? thumbhash;
 
+  /// Asset type
   AssetTypeEnum type;
 
+  /// Unassigned faces
   List<AssetFaceWithoutPersonResponseDto> unassignedFaces;
 
   /// The UTC timestamp when the asset record was last updated in the database. This is automatically maintained by the database and reflects when any field in the asset was last modified.
   DateTime updatedAt;
 
+  /// Asset visibility
   AssetVisibility visibility;
 
+  /// Asset width
   num? width;
 
   @override
@@ -192,7 +226,7 @@ class AssetResponseDto {
     (deviceAssetId.hashCode) +
     (deviceId.hashCode) +
     (duplicateId == null ? 0 : duplicateId!.hashCode) +
-    (duration.hashCode) +
+    (duration == null ? 0 : duration!.hashCode) +
     (exifInfo == null ? 0 : exifInfo!.hashCode) +
     (fileCreatedAt.hashCode) +
     (fileModifiedAt.hashCode) +
@@ -236,7 +270,11 @@ class AssetResponseDto {
     } else {
     //  json[r'duplicateId'] = null;
     }
+    if (this.duration != null) {
       json[r'duration'] = this.duration;
+    } else {
+    //  json[r'duration'] = null;
+    }
     if (this.exifInfo != null) {
       json[r'exifInfo'] = this.exifInfo;
     } else {
@@ -322,7 +360,7 @@ class AssetResponseDto {
         deviceAssetId: mapValueOfType<String>(json, r'deviceAssetId')!,
         deviceId: mapValueOfType<String>(json, r'deviceId')!,
         duplicateId: mapValueOfType<String>(json, r'duplicateId'),
-        duration: mapValueOfType<String>(json, r'duration')!,
+        duration: mapValueOfType<String>(json, r'duration'),
         exifInfo: ExifResponseDto.fromJson(json[r'exifInfo']),
         fileCreatedAt: mapDateTime(json, r'fileCreatedAt', r'')!,
         fileModifiedAt: mapDateTime(json, r'fileModifiedAt', r'')!,
@@ -406,11 +444,9 @@ class AssetResponseDto {
     'createdAt',
     'deviceAssetId',
     'deviceId',
-    'duration',
     'fileCreatedAt',
     'fileModifiedAt',
     'hasMetadata',
-    'height',
     'id',
     'isArchived',
     'isFavorite',
@@ -420,11 +456,9 @@ class AssetResponseDto {
     'originalFileName',
     'originalPath',
     'ownerId',
-    'thumbhash',
     'type',
     'updatedAt',
     'visibility',
-    'width',
   };
 }
 
