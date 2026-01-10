@@ -9181,7 +9181,7 @@
             "schema": {
               "minimum": -1,
               "maximum": 5,
-              "type": "integer"
+              "type": "number"
             }
           },
           {
@@ -9192,7 +9192,7 @@
             "schema": {
               "minimum": 1,
               "maximum": 1000,
-              "type": "integer"
+              "type": "number"
             }
           },
           {
@@ -15968,7 +15968,7 @@
           },
           "imageHeight": {
             "description": "Image height in pixels",
-            "type": "integer"
+            "type": "number"
           },
           "imageWidth": {
             "description": "Image width in pixels",
@@ -16041,7 +16041,7 @@
           },
           "imageHeight": {
             "description": "Image height in pixels",
-            "type": "integer"
+            "type": "number"
           },
           "imageWidth": {
             "description": "Image width in pixels",
@@ -16136,7 +16136,7 @@
           },
           "imageHeight": {
             "description": "Image height in pixels",
-            "type": "integer"
+            "type": "number"
           },
           "imageWidth": {
             "description": "Image width in pixels",
@@ -17544,13 +17544,13 @@
             "default": null,
             "description": "Image height in pixels",
             "nullable": true,
-            "type": "integer"
+            "type": "number"
           },
           "exifImageWidth": {
             "default": null,
             "description": "Image width in pixels",
             "nullable": true,
-            "type": "integer"
+            "type": "number"
           },
           "exposureTime": {
             "default": null,
@@ -17581,7 +17581,7 @@
             "default": null,
             "description": "ISO sensitivity",
             "nullable": true,
-            "type": "integer"
+            "type": "number"
           },
           "latitude": {
             "default": null,
@@ -18530,7 +18530,7 @@
           "page": {
             "description": "Page number",
             "minimum": 1,
-            "type": "integer"
+            "type": "number"
           },
           "personIds": {
             "description": "Filter by person IDs",
@@ -18548,13 +18548,13 @@
             "description": "Filter by rating (-1 to 5)",
             "maximum": 5,
             "minimum": -1,
-            "type": "integer"
+            "type": "number"
           },
           "size": {
             "description": "Number of results to return",
             "maximum": 1000,
             "minimum": 1,
-            "type": "integer"
+            "type": "number"
           },
           "state": {
             "description": "Filter by state/province name",
@@ -18935,7 +18935,7 @@
           "year": {
             "description": "Year for on this day memory",
             "minimum": 1,
-            "type": "integer"
+            "type": "number"
           }
         },
         "required": [
@@ -20236,13 +20236,13 @@
             "description": "Filter by rating (-1 to 5)",
             "maximum": 5,
             "minimum": -1,
-            "type": "integer"
+            "type": "number"
           },
           "size": {
             "description": "Number of results to return",
             "maximum": 1000,
             "minimum": 1,
-            "type": "integer"
+            "type": "number"
           },
           "state": {
             "description": "Filter by state/province name",
@@ -20995,7 +20995,7 @@
           "duration": {
             "description": "Session duration in seconds",
             "minimum": 1,
-            "type": "integer"
+            "type": "number"
           }
         },
         "type": "object"
@@ -21502,7 +21502,7 @@
           "page": {
             "description": "Page number",
             "minimum": 1,
-            "type": "integer"
+            "type": "number"
           },
           "personIds": {
             "description": "Filter by person IDs",
@@ -21525,13 +21525,13 @@
             "description": "Filter by rating (-1 to 5)",
             "maximum": 5,
             "minimum": -1,
-            "type": "integer"
+            "type": "number"
           },
           "size": {
             "description": "Number of results to return",
             "maximum": 1000,
             "minimum": 1,
-            "type": "integer"
+            "type": "number"
           },
           "state": {
             "description": "Filter by state/province name",
@@ -21760,7 +21760,7 @@
             "description": "Filter by rating (-1 to 5)",
             "maximum": 5,
             "minimum": -1,
-            "type": "integer"
+            "type": "number"
           },
           "state": {
             "description": "Filter by state/province name",
@@ -24951,7 +24951,7 @@
           },
           "order": {
             "description": "Action order",
-            "type": "integer"
+            "type": "number"
           },
           "pluginActionId": {
             "description": "Plugin action ID",
@@ -25047,7 +25047,7 @@
           },
           "order": {
             "description": "Filter order",
-            "type": "integer"
+            "type": "number"
           },
           "pluginFilterId": {
             "description": "Plugin filter ID",
