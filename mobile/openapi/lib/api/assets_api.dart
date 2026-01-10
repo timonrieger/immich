@@ -25,6 +25,7 @@ class AssetsApi {
   /// Parameters:
   ///
   /// * [AssetBulkUploadCheckDto] assetBulkUploadCheckDto (required):
+  ///   SHA1 checksums to check
   Future<Response> checkBulkUploadWithHttpInfo(AssetBulkUploadCheckDto assetBulkUploadCheckDto,) async {
     // ignore: prefer_const_declarations
     final apiPath = r'/assets/bulk-upload-check';
@@ -57,6 +58,7 @@ class AssetsApi {
   /// Parameters:
   ///
   /// * [AssetBulkUploadCheckDto] assetBulkUploadCheckDto (required):
+  ///   SHA1 checksums to check
   Future<AssetBulkUploadCheckResponseDto?> checkBulkUpload(AssetBulkUploadCheckDto assetBulkUploadCheckDto,) async {
     final response = await checkBulkUploadWithHttpInfo(assetBulkUploadCheckDto,);
     if (response.statusCode >= HttpStatus.badRequest) {
@@ -81,6 +83,7 @@ class AssetsApi {
   /// Parameters:
   ///
   /// * [CheckExistingAssetsDto] checkExistingAssetsDto (required):
+  ///   Asset IDs to check
   Future<Response> checkExistingAssetsWithHttpInfo(CheckExistingAssetsDto checkExistingAssetsDto,) async {
     // ignore: prefer_const_declarations
     final apiPath = r'/assets/exist';
@@ -113,6 +116,7 @@ class AssetsApi {
   /// Parameters:
   ///
   /// * [CheckExistingAssetsDto] checkExistingAssetsDto (required):
+  ///   Asset IDs to check
   Future<CheckExistingAssetsResponseDto?> checkExistingAssets(CheckExistingAssetsDto checkExistingAssetsDto,) async {
     final response = await checkExistingAssetsWithHttpInfo(checkExistingAssetsDto,);
     if (response.statusCode >= HttpStatus.badRequest) {
@@ -345,10 +349,12 @@ class AssetsApi {
   /// Parameters:
   ///
   /// * [String] id (required):
+  ///   Asset ID
   ///
   /// * [bool] edited:
   ///
   /// * [String] key:
+  ///   Download key for shared links
   ///
   /// * [String] slug:
   Future<Response> downloadAssetWithHttpInfo(String id, { bool? edited, String? key, String? slug, }) async {
@@ -394,10 +400,12 @@ class AssetsApi {
   /// Parameters:
   ///
   /// * [String] id (required):
+  ///   Asset ID
   ///
   /// * [bool] edited:
   ///
   /// * [String] key:
+  ///   Download key for shared links
   ///
   /// * [String] slug:
   Future<MultipartFile?> downloadAsset(String id, { bool? edited, String? key, String? slug, }) async {
@@ -1013,6 +1021,7 @@ class AssetsApi {
   /// Parameters:
   ///
   /// * [String] id (required):
+  ///   Asset ID
   ///
   /// * [String] key:
   ///
@@ -1057,6 +1066,7 @@ class AssetsApi {
   /// Parameters:
   ///
   /// * [String] id (required):
+  ///   Asset ID
   ///
   /// * [String] key:
   ///
@@ -1134,6 +1144,7 @@ class AssetsApi {
   /// Parameters:
   ///
   /// * [String] id (required):
+  ///   Asset ID
   ///
   /// * [MultipartFile] assetData (required):
   ///   Asset file data
@@ -1233,6 +1244,7 @@ class AssetsApi {
   /// Parameters:
   ///
   /// * [String] id (required):
+  ///   Asset ID
   ///
   /// * [MultipartFile] assetData (required):
   ///   Asset file data
@@ -1780,10 +1792,12 @@ class AssetsApi {
   /// Parameters:
   ///
   /// * [String] id (required):
+  ///   Asset ID
   ///
   /// * [bool] edited:
   ///
   /// * [String] key:
+  ///   Access key for shared links
   ///
   /// * [AssetMediaSize] size:
   ///   Asset media size
@@ -1835,10 +1849,12 @@ class AssetsApi {
   /// Parameters:
   ///
   /// * [String] id (required):
+  ///   Asset ID
   ///
   /// * [bool] edited:
   ///
   /// * [String] key:
+  ///   Access key for shared links
   ///
   /// * [AssetMediaSize] size:
   ///   Asset media size
