@@ -24974,7 +24974,6 @@
             "type": "string"
           },
           "enabled": {
-            "default": true,
             "description": "Workflow enabled",
             "type": "boolean"
           },
