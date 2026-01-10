@@ -9127,7 +9127,6 @@
             "in": "query",
             "description": "Filter by camera make",
             "schema": {
-              "nullable": true,
               "type": "string"
             }
           },
@@ -18284,13 +18283,11 @@
           "deletedAt": {
             "description": "Deletion date",
             "format": "date-time",
-            "nullable": true,
             "type": "string"
           },
           "hideAt": {
             "description": "Date when memory should be hidden",
             "format": "date-time",
-            "nullable": true,
             "type": "string"
           },
           "id": {
@@ -18313,13 +18310,11 @@
           "seenAt": {
             "description": "Date when memory was seen",
             "format": "date-time",
-            "nullable": true,
             "type": "string"
           },
           "showAt": {
             "description": "Date when memory should be shown",
             "format": "date-time",
-            "nullable": true,
             "type": "string"
           },
           "type": {
@@ -18498,7 +18493,6 @@
           },
           "make": {
             "description": "Filter by camera make",
-            "nullable": true,
             "type": "string"
           },
           "model": {
@@ -18667,7 +18661,6 @@
         "properties": {
           "data": {
             "description": "Additional notification data",
-            "nullable": true,
             "type": "object"
           },
           "description": {
@@ -18759,7 +18752,6 @@
           "readAt": {
             "description": "Date when notification was read",
             "format": "date-time",
-            "nullable": true,
             "type": "string"
           },
           "title": {
@@ -20212,7 +20204,6 @@
           },
           "make": {
             "description": "Filter by camera make",
-            "nullable": true,
             "type": "string"
           },
           "model": {
@@ -21487,7 +21478,6 @@
           },
           "make": {
             "description": "Filter by camera make",
-            "nullable": true,
             "type": "string"
           },
           "model": {
@@ -21736,7 +21726,6 @@
           },
           "make": {
             "description": "Filter by camera make",
-            "nullable": true,
             "type": "string"
           },
           "model": {
