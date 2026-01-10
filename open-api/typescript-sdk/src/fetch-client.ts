@@ -488,7 +488,7 @@ export type AssetResponseDto = {
     /** Duplicate group ID */
     duplicateId?: string | null;
     /** Video duration (for videos) */
-    duration?: string;
+    duration: string;
     /** EXIF metadata */
     exifInfo?: ExifResponseDto;
     /** The actual UTC timestamp when the file was created/captured, preserving timezone information. This is the authoritative timestamp for chronological sorting within timeline groups. Combined with timezone data, this can be used to determine the exact moment the photo was taken. */
@@ -498,7 +498,7 @@ export type AssetResponseDto = {
     /** Whether asset has metadata */
     hasMetadata: boolean;
     /** Asset height */
-    height?: number | null;
+    height: number | null;
     /** Asset ID */
     id: string;
     /** Is archived */
@@ -534,7 +534,7 @@ export type AssetResponseDto = {
     /** Associated tags */
     tags?: TagResponseDto[];
     /** Thumbhash for thumbnail generation */
-    thumbhash?: string | null;
+    thumbhash: string | null;
     /** Asset type */
     "type": AssetTypeEnum;
     /** Unassigned faces */
@@ -544,7 +544,7 @@ export type AssetResponseDto = {
     /** Asset visibility */
     visibility: AssetVisibility;
     /** Asset width */
-    width?: number | null;
+    width: number | null;
 };
 export type ContributorCountResponseDto = {
     /** Number of assets contributed */

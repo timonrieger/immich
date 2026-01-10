@@ -16878,9 +16878,11 @@
           "createdAt",
           "deviceAssetId",
           "deviceId",
+          "duration",
           "fileCreatedAt",
           "fileModifiedAt",
           "hasMetadata",
+          "height",
           "id",
           "isArchived",
           "isFavorite",
@@ -16890,9 +16892,11 @@
           "originalFileName",
           "originalPath",
           "ownerId",
+          "thumbhash",
           "type",
           "updatedAt",
-          "visibility"
+          "visibility",
+          "width"
         ],
         "type": "object"
       },

@@ -18,12 +18,12 @@ class AssetResponseDto {
     required this.deviceAssetId,
     required this.deviceId,
     this.duplicateId,
-    this.duration,
+    required this.duration,
     this.exifInfo,
     required this.fileCreatedAt,
     required this.fileModifiedAt,
     required this.hasMetadata,
-    this.height,
+    required this.height,
     required this.id,
     required this.isArchived,
     required this.isFavorite,
@@ -41,12 +41,12 @@ class AssetResponseDto {
     this.resized,
     this.stack,
     this.tags = const [],
-    this.thumbhash,
+    required this.thumbhash,
     required this.type,
     this.unassignedFaces = const [],
     required this.updatedAt,
     required this.visibility,
-    this.width,
+    required this.width,
   });
 
   /// Base64 encoded SHA1 hash
@@ -65,13 +65,7 @@ class AssetResponseDto {
   String? duplicateId;
 
   /// Video duration (for videos)
-  ///
-  /// Please note: This property should have been non-nullable! Since the specification file
-  /// does not include a default value (using the "default:" property), however, the generated
-  /// source code must fall back to having a nullable type.
-  /// Consider adding a "default:" property in the specification file to hide this note.
-  ///
-  String? duration;
+  String duration;
 
   /// EXIF metadata
   ///
@@ -226,7 +220,7 @@ class AssetResponseDto {
     (deviceAssetId.hashCode) +
     (deviceId.hashCode) +
     (duplicateId == null ? 0 : duplicateId!.hashCode) +
-    (duration == null ? 0 : duration!.hashCode) +
+    (duration.hashCode) +
     (exifInfo == null ? 0 : exifInfo!.hashCode) +
     (fileCreatedAt.hashCode) +
     (fileModifiedAt.hashCode) +
@@ -270,11 +264,7 @@ class AssetResponseDto {
     } else {
     //  json[r'duplicateId'] = null;
     }
-    if (this.duration != null) {
       json[r'duration'] = this.duration;
-    } else {
-    //  json[r'duration'] = null;
-    }
     if (this.exifInfo != null) {
       json[r'exifInfo'] = this.exifInfo;
     } else {
@@ -360,7 +350,7 @@ class AssetResponseDto {
         deviceAssetId: mapValueOfType<String>(json, r'deviceAssetId')!,
         deviceId: mapValueOfType<String>(json, r'deviceId')!,
         duplicateId: mapValueOfType<String>(json, r'duplicateId'),
-        duration: mapValueOfType<String>(json, r'duration'),
+        duration: mapValueOfType<String>(json, r'duration')!,
         exifInfo: ExifResponseDto.fromJson(json[r'exifInfo']),
         fileCreatedAt: mapDateTime(json, r'fileCreatedAt', r'')!,
         fileModifiedAt: mapDateTime(json, r'fileModifiedAt', r'')!,
@@ -444,9 +434,11 @@ class AssetResponseDto {
     'createdAt',
     'deviceAssetId',
     'deviceId',
+    'duration',
     'fileCreatedAt',
     'fileModifiedAt',
     'hasMetadata',
+    'height',
     'id',
     'isArchived',
     'isFavorite',
@@ -456,9 +448,11 @@ class AssetResponseDto {
     'originalFileName',
     'originalPath',
     'ownerId',
+    'thumbhash',
     'type',
     'updatedAt',
     'visibility',
+    'width',
   };
 }
 
