@@ -616,6 +616,7 @@
             "name": "id",
             "required": false,
             "in": "query",
+            "description": "User ID filter",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -625,6 +626,7 @@
             "name": "withDeleted",
             "required": false,
             "in": "query",
+            "description": "Include deleted users",
             "schema": {
               "type": "boolean"
             }
@@ -1222,6 +1224,7 @@
             "name": "isFavorite",
             "required": false,
             "in": "query",
+            "description": "Filter by favorite status",
             "schema": {
               "type": "boolean"
             }
@@ -1230,6 +1233,7 @@
             "name": "isTrashed",
             "required": false,
             "in": "query",
+            "description": "Filter by trash status",
             "schema": {
               "type": "boolean"
             }
@@ -1238,6 +1242,7 @@
             "name": "visibility",
             "required": false,
             "in": "query",
+            "description": "Filter by visibility",
             "schema": {
               "$ref": "#/components/schemas/AssetVisibility"
             }
@@ -1298,7 +1303,7 @@
             "name": "assetId",
             "required": false,
             "in": "query",
-            "description": "Only returns albums that contain the asset\nIgnores the shared parameter\nundefined: get all albums",
+            "description": "Filter albums containing this asset ID (ignores shared parameter)",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -1308,6 +1313,7 @@
             "name": "shared",
             "required": false,
             "in": "query",
+            "description": "Filter by shared status: true = only shared, false = only own, undefined = all",
             "schema": {
               "type": "boolean"
             }
@@ -1635,6 +1641,7 @@
             "name": "withoutAssets",
             "required": false,
             "in": "query",
+            "description": "Exclude assets from response",
             "schema": {
               "type": "boolean"
             }
@@ -3075,6 +3082,7 @@
             "name": "count",
             "required": false,
             "in": "query",
+            "description": "Number of random assets to return",
             "schema": {
               "minimum": 1,
               "type": "number"
@@ -3136,6 +3144,7 @@
             "name": "isFavorite",
             "required": false,
             "in": "query",
+            "description": "Filter by favorite status",
             "schema": {
               "type": "boolean"
             }
@@ -3144,6 +3153,7 @@
             "name": "isTrashed",
             "required": false,
             "in": "query",
+            "description": "Filter by trash status",
             "schema": {
               "type": "boolean"
             }
@@ -3152,6 +3162,7 @@
             "name": "visibility",
             "required": false,
             "in": "query",
+            "description": "Filter by visibility",
             "schema": {
               "$ref": "#/components/schemas/AssetVisibility"
             }
@@ -4052,6 +4063,7 @@
             "name": "size",
             "required": false,
             "in": "query",
+            "description": "Asset media size",
             "schema": {
               "$ref": "#/components/schemas/AssetMediaSize"
             }
@@ -5982,6 +5994,7 @@
             "name": "fileCreatedAfter",
             "required": false,
             "in": "query",
+            "description": "Filter assets created after this date",
             "schema": {
               "format": "date-time",
               "type": "string"
@@ -5991,6 +6004,7 @@
             "name": "fileCreatedBefore",
             "required": false,
             "in": "query",
+            "description": "Filter assets created before this date",
             "schema": {
               "format": "date-time",
               "type": "string"
@@ -6000,6 +6014,7 @@
             "name": "isArchived",
             "required": false,
             "in": "query",
+            "description": "Filter by archived status",
             "schema": {
               "type": "boolean"
             }
@@ -6008,6 +6023,7 @@
             "name": "isFavorite",
             "required": false,
             "in": "query",
+            "description": "Filter by favorite status",
             "schema": {
               "type": "boolean"
             }
@@ -6016,6 +6032,7 @@
             "name": "withPartners",
             "required": false,
             "in": "query",
+            "description": "Include partner assets",
             "schema": {
               "type": "boolean"
             }
@@ -6024,6 +6041,7 @@
             "name": "withSharedAlbums",
             "required": false,
             "in": "query",
+            "description": "Include shared album assets",
             "schema": {
               "type": "boolean"
             }
@@ -6085,6 +6103,7 @@
             "name": "lat",
             "required": true,
             "in": "query",
+            "description": "Latitude (-90 to 90)",
             "schema": {
               "format": "double",
               "type": "number"
@@ -6094,6 +6113,7 @@
             "name": "lon",
             "required": true,
             "in": "query",
+            "description": "Longitude (-180 to 180)",
             "schema": {
               "format": "double",
               "type": "number"
@@ -7362,6 +7382,7 @@
             "name": "direction",
             "required": true,
             "in": "query",
+            "description": "Partner direction",
             "schema": {
               "$ref": "#/components/schemas/PartnerDirection"
             }
@@ -7717,6 +7738,7 @@
             "name": "closestAssetId",
             "required": false,
             "in": "query",
+            "description": "Closest asset ID for similarity search",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -7726,6 +7748,7 @@
             "name": "closestPersonId",
             "required": false,
             "in": "query",
+            "description": "Closest person ID for similarity search",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -7758,6 +7781,7 @@
             "name": "withHidden",
             "required": false,
             "in": "query",
+            "description": "Include hidden people",
             "schema": {
               "type": "boolean"
             }
@@ -10801,6 +10825,7 @@
             "name": "albumId",
             "required": false,
             "in": "query",
+            "description": "Filter by album ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -10816,6 +10841,7 @@
                 "state": "Added"
               }
             ],
+            "description": "Filter by shared link ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -10946,6 +10972,7 @@
             "name": "password",
             "required": false,
             "in": "query",
+            "description": "Link password",
             "schema": {
               "example": "password",
               "type": "string"
@@ -10963,6 +10990,7 @@
             "name": "token",
             "required": false,
             "in": "query",
+            "description": "Access token",
             "schema": {
               "type": "string"
             }
@@ -11434,6 +11462,7 @@
             "name": "primaryAssetId",
             "required": false,
             "in": "query",
+            "description": "Filter by primary asset ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -14973,9 +15002,11 @@
       "APIKeyCreateDto": {
         "properties": {
           "name": {
+            "description": "API key name",
             "type": "string"
           },
           "permissions": {
+            "description": "List of permissions",
             "items": {
               "$ref": "#/components/schemas/Permission"
             },
@@ -14991,9 +15022,15 @@
       "APIKeyCreateResponseDto": {
         "properties": {
           "apiKey": {
-            "$ref": "#/components/schemas/APIKeyResponseDto"
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/APIKeyResponseDto"
+              }
+            ],
+            "description": "API key details"
           },
           "secret": {
+            "description": "API key secret (only shown once)",
             "type": "string"
           }
         },
@@ -15006,22 +15043,27 @@
       "APIKeyResponseDto": {
         "properties": {
           "createdAt": {
+            "description": "Creation date",
             "format": "date-time",
             "type": "string"
           },
           "id": {
+            "description": "API key ID",
             "type": "string"
           },
           "name": {
+            "description": "API key name",
             "type": "string"
           },
           "permissions": {
+            "description": "List of permissions",
             "items": {
               "$ref": "#/components/schemas/Permission"
             },
             "type": "array"
           },
           "updatedAt": {
+            "description": "Last update date",
             "format": "date-time",
             "type": "string"
           }
@@ -15038,9 +15080,11 @@
       "APIKeyUpdateDto": {
         "properties": {
           "name": {
+            "description": "API key name",
             "type": "string"
           },
           "permissions": {
+            "description": "List of permissions",
             "items": {
               "$ref": "#/components/schemas/Permission"
             },
@@ -15132,6 +15176,7 @@
       "AddUsersDto": {
         "properties": {
           "albumUsers": {
+            "description": "Album users to add",
             "items": {
               "$ref": "#/components/schemas/AlbumUserAddDto"
             },
@@ -15147,6 +15192,7 @@
       "AdminOnboardingUpdateDto": {
         "properties": {
           "isOnboarded": {
+            "description": "Is admin onboarded",
             "type": "boolean"
           }
         },
@@ -15158,54 +15204,67 @@
       "AlbumResponseDto": {
         "properties": {
           "albumName": {
+            "description": "Album name",
             "type": "string"
           },
           "albumThumbnailAssetId": {
+            "description": "Thumbnail asset ID",
             "nullable": true,
             "type": "string"
           },
           "albumUsers": {
+            "description": "Album users",
             "items": {
               "$ref": "#/components/schemas/AlbumUserResponseDto"
             },
             "type": "array"
           },
           "assetCount": {
+            "description": "Number of assets",
             "type": "integer"
           },
           "assets": {
+            "description": "Album assets",
             "items": {
               "$ref": "#/components/schemas/AssetResponseDto"
             },
             "type": "array"
           },
           "contributorCounts": {
+            "description": "Per-user contribution counts (shared albums only)",
             "items": {
               "$ref": "#/components/schemas/ContributorCountResponseDto"
             },
             "type": "array"
           },
           "createdAt": {
+            "description": "Creation date",
             "format": "date-time",
             "type": "string"
           },
           "description": {
+            "description": "Album description",
             "type": "string"
           },
           "endDate": {
+            "description": "End date (latest asset)",
             "format": "date-time",
             "type": "string"
           },
           "hasSharedLink": {
+            "description": "Has shared link",
             "type": "boolean"
           },
           "id": {
+            "description": "Album ID",
             "type": "string"
           },
           "isActivityEnabled": {
+            "description": "Activity feed enabled",
             "type": "boolean"
           },
           "lastModifiedAssetTimestamp": {
+            "description": "Last modified asset timestamp",
             "format": "date-time",
             "type": "string"
           },
@@ -15214,22 +15273,32 @@
               {
                 "$ref": "#/components/schemas/AssetOrder"
               }
-            ]
+            ],
+            "description": "Asset sort order"
           },
           "owner": {
-            "$ref": "#/components/schemas/UserResponseDto"
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/UserResponseDto"
+              }
+            ],
+            "description": "Album owner"
           },
           "ownerId": {
+            "description": "Owner user ID",
             "type": "string"
           },
           "shared": {
+            "description": "Is shared album",
             "type": "boolean"
           },
           "startDate": {
+            "description": "Start date (earliest asset)",
             "format": "date-time",
             "type": "string"
           },
           "updatedAt": {
+            "description": "Last update date",
             "format": "date-time",
             "type": "string"
           }
@@ -15255,12 +15324,15 @@
       "AlbumStatisticsResponseDto": {
         "properties": {
           "notShared": {
+            "description": "Number of non-shared albums",
             "type": "integer"
           },
           "owned": {
+            "description": "Number of owned albums",
             "type": "integer"
           },
           "shared": {
+            "description": "Number of shared albums",
             "type": "integer"
           }
         },
@@ -15279,9 +15351,11 @@
                 "$ref": "#/components/schemas/AlbumUserRole"
               }
             ],
-            "default": "editor"
+            "default": "editor",
+            "description": "Album user role"
           },
           "userId": {
+            "description": "User ID",
             "format": "uuid",
             "type": "string"
           }
@@ -15298,9 +15372,11 @@
               {
                 "$ref": "#/components/schemas/AlbumUserRole"
               }
-            ]
+            ],
+            "description": "Album user role"
           },
           "userId": {
+            "description": "User ID",
             "format": "uuid",
             "type": "string"
           }
@@ -15318,10 +15394,16 @@
               {
                 "$ref": "#/components/schemas/AlbumUserRole"
               }
-            ]
+            ],
+            "description": "Album user role"
           },
           "user": {
-            "$ref": "#/components/schemas/UserResponseDto"
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/UserResponseDto"
+              }
+            ],
+            "description": "User details"
           }
         },
         "required": [
@@ -15331,6 +15413,7 @@
         "type": "object"
       },
       "AlbumUserRole": {
+        "description": "Album user role",
         "enum": [
           "editor",
           "viewer"
@@ -15340,6 +15423,7 @@
       "AlbumsAddAssetsDto": {
         "properties": {
           "albumIds": {
+            "description": "Album IDs",
             "items": {
               "format": "uuid",
               "type": "string"
@@ -15347,6 +15431,7 @@
             "type": "array"
           },
           "assetIds": {
+            "description": "Asset IDs",
             "items": {
               "format": "uuid",
               "type": "string"
@@ -15367,9 +15452,11 @@
               {
                 "$ref": "#/components/schemas/BulkIdErrorReason"
               }
-            ]
+            ],
+            "description": "Error reason"
           },
           "success": {
+            "description": "Operation success",
             "type": "boolean"
           }
         },
@@ -15409,6 +15496,7 @@
       "AssetBulkDeleteDto": {
         "properties": {
           "force": {
+            "description": "Force delete even if in use",
             "type": "boolean"
           },
           "ids": {
@@ -15427,19 +15515,24 @@
       "AssetBulkUpdateDto": {
         "properties": {
           "dateTimeOriginal": {
+            "description": "Original date and time (ISO 8601)",
             "type": "string"
           },
           "dateTimeRelative": {
+            "description": "Relative time offset in seconds",
             "type": "number"
           },
           "description": {
+            "description": "Asset description",
             "type": "string"
           },
           "duplicateId": {
+            "description": "Duplicate asset ID",
             "nullable": true,
             "type": "string"
           },
           "ids": {
+            "description": "Asset IDs to update",
             "items": {
               "format": "uuid",
               "type": "string"
@@ -15447,20 +15540,25 @@
             "type": "array"
           },
           "isFavorite": {
+            "description": "Mark as favorite",
             "type": "boolean"
           },
           "latitude": {
+            "description": "Latitude coordinate",
             "type": "number"
           },
           "longitude": {
+            "description": "Longitude coordinate",
             "type": "number"
           },
           "rating": {
+            "description": "Rating (-1 to 5)",
             "maximum": 5,
             "minimum": -1,
             "type": "number"
           },
           "timeZone": {
+            "description": "Time zone (IANA timezone)",
             "type": "string"
           },
           "visibility": {
@@ -15468,7 +15566,8 @@
               {
                 "$ref": "#/components/schemas/AssetVisibility"
               }
-            ]
+            ],
+            "description": "Asset visibility"
           }
         },
         "required": [
@@ -15479,6 +15578,7 @@
       "AssetBulkUploadCheckDto": {
         "properties": {
           "assets": {
+            "description": "Assets to check",
             "items": {
               "$ref": "#/components/schemas/AssetBulkUploadCheckItem"
             },
@@ -15493,10 +15593,11 @@
       "AssetBulkUploadCheckItem": {
         "properties": {
           "checksum": {
-            "description": "base64 or hex encoded sha1 hash",
+            "description": "Base64 or hex encoded SHA1 hash",
             "type": "string"
           },
           "id": {
+            "description": "Asset ID",
             "type": "string"
           }
         },
@@ -15556,29 +15657,36 @@
         "properties": {
           "albums": {
             "default": true,
+            "description": "Copy album associations",
             "type": "boolean"
           },
           "favorite": {
             "default": true,
+            "description": "Copy favorite status",
             "type": "boolean"
           },
           "sharedLinks": {
             "default": true,
+            "description": "Copy shared links",
             "type": "boolean"
           },
           "sidecar": {
             "default": true,
+            "description": "Copy sidecar file",
             "type": "boolean"
           },
           "sourceId": {
+            "description": "Source asset ID",
             "format": "uuid",
             "type": "string"
           },
           "stack": {
             "default": true,
+            "description": "Copy stack association",
             "type": "boolean"
           },
           "targetId": {
+            "description": "Target asset ID",
             "format": "uuid",
             "type": "string"
           }
@@ -15592,10 +15700,12 @@
       "AssetDeltaSyncDto": {
         "properties": {
           "updatedAfter": {
+            "description": "Sync assets updated after this date",
             "format": "date-time",
             "type": "string"
           },
           "userIds": {
+            "description": "User IDs to sync",
             "items": {
               "format": "uuid",
               "type": "string"
@@ -15612,15 +15722,18 @@
       "AssetDeltaSyncResponseDto": {
         "properties": {
           "deleted": {
+            "description": "Deleted asset IDs",
             "items": {
               "type": "string"
             },
             "type": "array"
           },
           "needsFullSync": {
+            "description": "Whether full sync is needed",
             "type": "boolean"
           },
           "upserted": {
+            "description": "Upserted assets",
             "items": {
               "$ref": "#/components/schemas/AssetResponseDto"
             },
@@ -15759,29 +15872,37 @@
       "AssetFaceCreateDto": {
         "properties": {
           "assetId": {
+            "description": "Asset ID",
             "format": "uuid",
             "type": "string"
           },
           "height": {
+            "description": "Face bounding box height",
             "type": "integer"
           },
           "imageHeight": {
+            "description": "Image height in pixels",
             "type": "integer"
           },
           "imageWidth": {
+            "description": "Image width in pixels",
             "type": "integer"
           },
           "personId": {
+            "description": "Person ID",
             "format": "uuid",
             "type": "string"
           },
           "width": {
+            "description": "Face bounding box width",
             "type": "integer"
           },
           "x": {
+            "description": "Face bounding box X coordinate",
             "type": "integer"
           },
           "y": {
+            "description": "Face bounding box Y coordinate",
             "type": "integer"
           }
         },
@@ -15800,6 +15921,7 @@
       "AssetFaceDeleteDto": {
         "properties": {
           "force": {
+            "description": "Force delete even if person has other faces",
             "type": "boolean"
           }
         },
@@ -15811,25 +15933,32 @@
       "AssetFaceResponseDto": {
         "properties": {
           "boundingBoxX1": {
+            "description": "Bounding box X1 coordinate",
             "type": "integer"
           },
           "boundingBoxX2": {
+            "description": "Bounding box X2 coordinate",
             "type": "integer"
           },
           "boundingBoxY1": {
+            "description": "Bounding box Y1 coordinate",
             "type": "integer"
           },
           "boundingBoxY2": {
+            "description": "Bounding box Y2 coordinate",
             "type": "integer"
           },
           "id": {
+            "description": "Face ID",
             "format": "uuid",
             "type": "string"
           },
           "imageHeight": {
+            "description": "Image height in pixels",
             "type": "integer"
           },
           "imageWidth": {
+            "description": "Image width in pixels",
             "type": "integer"
           },
           "person": {
@@ -15838,6 +15967,7 @@
                 "$ref": "#/components/schemas/PersonResponseDto"
               }
             ],
+            "description": "Person associated with face",
             "nullable": true
           },
           "sourceType": {
@@ -15845,7 +15975,8 @@
               {
                 "$ref": "#/components/schemas/SourceType"
               }
-            ]
+            ],
+            "description": "Face detection source type"
           }
         },
         "required": [
@@ -15863,6 +15994,7 @@
       "AssetFaceUpdateDto": {
         "properties": {
           "data": {
+            "description": "Face update items",
             "items": {
               "$ref": "#/components/schemas/AssetFaceUpdateItem"
             },
@@ -15877,10 +16009,12 @@
       "AssetFaceUpdateItem": {
         "properties": {
           "assetId": {
+            "description": "Asset ID",
             "format": "uuid",
             "type": "string"
           },
           "personId": {
+            "description": "Person ID",
             "format": "uuid",
             "type": "string"
           }
@@ -15894,25 +16028,32 @@
       "AssetFaceWithoutPersonResponseDto": {
         "properties": {
           "boundingBoxX1": {
+            "description": "Bounding box X1 coordinate",
             "type": "integer"
           },
           "boundingBoxX2": {
+            "description": "Bounding box X2 coordinate",
             "type": "integer"
           },
           "boundingBoxY1": {
+            "description": "Bounding box Y1 coordinate",
             "type": "integer"
           },
           "boundingBoxY2": {
+            "description": "Bounding box Y2 coordinate",
             "type": "integer"
           },
           "id": {
+            "description": "Face ID",
             "format": "uuid",
             "type": "string"
           },
           "imageHeight": {
+            "description": "Image height in pixels",
             "type": "integer"
           },
           "imageWidth": {
+            "description": "Image width in pixels",
             "type": "integer"
           },
           "sourceType": {
@@ -15920,7 +16061,8 @@
               {
                 "$ref": "#/components/schemas/SourceType"
               }
-            ]
+            ],
+            "description": "Face detection source type"
           }
         },
         "required": [
@@ -15937,18 +16079,22 @@
       "AssetFullSyncDto": {
         "properties": {
           "lastId": {
+            "description": "Last asset ID (pagination)",
             "format": "uuid",
             "type": "string"
           },
           "limit": {
+            "description": "Maximum number of assets to return",
             "minimum": 1,
             "type": "integer"
           },
           "updatedUntil": {
+            "description": "Sync assets updated until this date",
             "format": "date-time",
             "type": "string"
           },
           "userId": {
+            "description": "Filter by user ID",
             "format": "uuid",
             "type": "string"
           }
@@ -15962,6 +16108,7 @@
       "AssetIdsDto": {
         "properties": {
           "assetIds": {
+            "description": "Asset IDs",
             "items": {
               "format": "uuid",
               "type": "string"
@@ -15998,6 +16145,7 @@
         "type": "object"
       },
       "AssetJobName": {
+        "description": "Job name",
         "enum": [
           "refresh-faces",
           "refresh-metadata",
@@ -16009,6 +16157,7 @@
       "AssetJobsDto": {
         "properties": {
           "assetIds": {
+            "description": "Asset IDs",
             "items": {
               "format": "uuid",
               "type": "string"
@@ -16020,7 +16169,8 @@
               {
                 "$ref": "#/components/schemas/AssetJobName"
               }
-            ]
+            ],
+            "description": "Job name"
           }
         },
         "required": [
@@ -16032,43 +16182,54 @@
       "AssetMediaCreateDto": {
         "properties": {
           "assetData": {
+            "description": "Asset file data",
             "format": "binary",
             "type": "string"
           },
           "deviceAssetId": {
+            "description": "Device asset ID",
             "type": "string"
           },
           "deviceId": {
+            "description": "Device ID",
             "type": "string"
           },
           "duration": {
+            "description": "Duration (for videos)",
             "type": "string"
           },
           "fileCreatedAt": {
+            "description": "File creation date",
             "format": "date-time",
             "type": "string"
           },
           "fileModifiedAt": {
+            "description": "File modification date",
             "format": "date-time",
             "type": "string"
           },
           "filename": {
+            "description": "Filename",
             "type": "string"
           },
           "isFavorite": {
+            "description": "Mark as favorite",
             "type": "boolean"
           },
           "livePhotoVideoId": {
+            "description": "Live photo video ID",
             "format": "uuid",
             "type": "string"
           },
           "metadata": {
+            "description": "Asset metadata items",
             "items": {
               "$ref": "#/components/schemas/AssetMetadataUpsertItemDto"
             },
             "type": "array"
           },
           "sidecarData": {
+            "description": "Sidecar file data",
             "format": "binary",
             "type": "string"
           },
@@ -16077,7 +16238,8 @@
               {
                 "$ref": "#/components/schemas/AssetVisibility"
               }
-            ]
+            ],
+            "description": "Asset visibility"
           }
         },
         "required": [
@@ -16092,27 +16254,34 @@
       "AssetMediaReplaceDto": {
         "properties": {
           "assetData": {
+            "description": "Asset file data",
             "format": "binary",
             "type": "string"
           },
           "deviceAssetId": {
+            "description": "Device asset ID",
             "type": "string"
           },
           "deviceId": {
+            "description": "Device ID",
             "type": "string"
           },
           "duration": {
+            "description": "Duration (for videos)",
             "type": "string"
           },
           "fileCreatedAt": {
+            "description": "File creation date",
             "format": "date-time",
             "type": "string"
           },
           "fileModifiedAt": {
+            "description": "File modification date",
             "format": "date-time",
             "type": "string"
           },
           "filename": {
+            "description": "Filename",
             "type": "string"
           }
         },
@@ -16163,6 +16332,7 @@
       "AssetMetadataBulkDeleteDto": {
         "properties": {
           "items": {
+            "description": "Metadata items to delete",
             "items": {
               "$ref": "#/components/schemas/AssetMetadataBulkDeleteItemDto"
             },
@@ -16177,10 +16347,12 @@
       "AssetMetadataBulkDeleteItemDto": {
         "properties": {
           "assetId": {
+            "description": "Asset ID",
             "format": "uuid",
             "type": "string"
           },
           "key": {
+            "description": "Metadata key",
             "type": "string"
           }
         },
@@ -16193,16 +16365,20 @@
       "AssetMetadataBulkResponseDto": {
         "properties": {
           "assetId": {
+            "description": "Asset ID",
             "type": "string"
           },
           "key": {
+            "description": "Metadata key",
             "type": "string"
           },
           "updatedAt": {
+            "description": "Last update date",
             "format": "date-time",
             "type": "string"
           },
           "value": {
+            "description": "Metadata value (object)",
             "type": "object"
           }
         },
@@ -16217,6 +16393,7 @@
       "AssetMetadataBulkUpsertDto": {
         "properties": {
           "items": {
+            "description": "Metadata items to upsert",
             "items": {
               "$ref": "#/components/schemas/AssetMetadataBulkUpsertItemDto"
             },
@@ -16231,13 +16408,16 @@
       "AssetMetadataBulkUpsertItemDto": {
         "properties": {
           "assetId": {
+            "description": "Asset ID",
             "format": "uuid",
             "type": "string"
           },
           "key": {
+            "description": "Metadata key",
             "type": "string"
           },
           "value": {
+            "description": "Metadata value (object)",
             "type": "object"
           }
         },
@@ -16251,13 +16431,16 @@
       "AssetMetadataResponseDto": {
         "properties": {
           "key": {
+            "description": "Metadata key",
             "type": "string"
           },
           "updatedAt": {
+            "description": "Last update date",
             "format": "date-time",
             "type": "string"
           },
           "value": {
+            "description": "Metadata value (object)",
             "type": "object"
           }
         },
@@ -16271,6 +16454,7 @@
       "AssetMetadataUpsertDto": {
         "properties": {
           "items": {
+            "description": "Metadata items to upsert",
             "items": {
               "$ref": "#/components/schemas/AssetMetadataUpsertItemDto"
             },
@@ -16285,9 +16469,11 @@
       "AssetMetadataUpsertItemDto": {
         "properties": {
           "key": {
+            "description": "Metadata key",
             "type": "string"
           },
           "value": {
+            "description": "Metadata value (object)",
             "type": "object"
           }
         },
@@ -16380,6 +16566,7 @@
         "type": "object"
       },
       "AssetOrder": {
+        "description": "Asset sort order",
         "enum": [
           "asc",
           "desc"
@@ -16608,12 +16795,15 @@
       "AssetStatsResponseDto": {
         "properties": {
           "images": {
+            "description": "Number of images",
             "type": "integer"
           },
           "total": {
+            "description": "Total number of assets",
             "type": "integer"
           },
           "videos": {
+            "description": "Number of videos",
             "type": "integer"
           }
         },
@@ -16654,18 +16844,23 @@
       "AuthStatusResponseDto": {
         "properties": {
           "expiresAt": {
+            "description": "Session expiration date",
             "type": "string"
           },
           "isElevated": {
+            "description": "Is elevated session",
             "type": "boolean"
           },
           "password": {
+            "description": "Has password set",
             "type": "boolean"
           },
           "pinCode": {
+            "description": "Has PIN code set",
             "type": "boolean"
           },
           "pinExpiresAt": {
+            "description": "PIN expiration date",
             "type": "string"
           }
         },
@@ -16689,6 +16884,7 @@
         "type": "object"
       },
       "BulkIdErrorReason": {
+        "description": "Error reason",
         "enum": [
           "duplicate",
           "no_permission",
@@ -16783,14 +16979,17 @@
         "properties": {
           "invalidateSessions": {
             "default": false,
+            "description": "Invalidate all other sessions",
             "type": "boolean"
           },
           "newPassword": {
+            "description": "New password (min 8 characters)",
             "example": "password",
             "minLength": 8,
             "type": "string"
           },
           "password": {
+            "description": "Current password",
             "example": "password",
             "type": "string"
           }
@@ -16804,6 +17003,7 @@
       "CheckExistingAssetsDto": {
         "properties": {
           "deviceAssetIds": {
+            "description": "Device asset IDs to check",
             "items": {
               "type": "string"
             },
@@ -16811,6 +17011,7 @@
             "type": "array"
           },
           "deviceId": {
+            "description": "Device ID",
             "type": "string"
           }
         },
@@ -16844,9 +17045,11 @@
       "ContributorCountResponseDto": {
         "properties": {
           "assetCount": {
+            "description": "Number of assets contributed",
             "type": "integer"
           },
           "userId": {
+            "description": "User ID",
             "type": "string"
           }
         },
@@ -16859,15 +17062,18 @@
       "CreateAlbumDto": {
         "properties": {
           "albumName": {
+            "description": "Album name",
             "type": "string"
           },
           "albumUsers": {
+            "description": "Album users",
             "items": {
               "$ref": "#/components/schemas/AlbumUserCreateDto"
             },
             "type": "array"
           },
           "assetIds": {
+            "description": "Initial asset IDs",
             "items": {
               "format": "uuid",
               "type": "string"
@@ -16875,6 +17081,7 @@
             "type": "array"
           },
           "description": {
+            "description": "Album description",
             "type": "string"
           }
         },
@@ -16886,6 +17093,7 @@
       "CreateLibraryDto": {
         "properties": {
           "exclusionPatterns": {
+            "description": "Exclusion patterns (max 128)",
             "items": {
               "type": "string"
             },
@@ -16894,6 +17102,7 @@
             "uniqueItems": true
           },
           "importPaths": {
+            "description": "Import paths (max 128)",
             "items": {
               "type": "string"
             },
@@ -16902,9 +17111,11 @@
             "uniqueItems": true
           },
           "name": {
+            "description": "Library name",
             "type": "string"
           },
           "ownerId": {
+            "description": "Owner user ID",
             "format": "uuid",
             "type": "string"
           }
@@ -17000,12 +17211,14 @@
       "DownloadArchiveInfo": {
         "properties": {
           "assetIds": {
+            "description": "Asset IDs in this archive",
             "items": {
               "type": "string"
             },
             "type": "array"
           },
           "size": {
+            "description": "Archive size in bytes",
             "type": "integer"
           }
         },
@@ -17018,14 +17231,17 @@
       "DownloadInfoDto": {
         "properties": {
           "albumId": {
+            "description": "Album ID to download",
             "format": "uuid",
             "type": "string"
           },
           "archiveSize": {
+            "description": "Archive size limit in bytes",
             "minimum": 1,
             "type": "integer"
           },
           "assetIds": {
+            "description": "Asset IDs to download",
             "items": {
               "format": "uuid",
               "type": "string"
@@ -17033,6 +17249,7 @@
             "type": "array"
           },
           "userId": {
+            "description": "User ID to download assets from",
             "format": "uuid",
             "type": "string"
           }
@@ -17058,12 +17275,14 @@
       "DownloadResponseDto": {
         "properties": {
           "archives": {
+            "description": "Archive information",
             "items": {
               "$ref": "#/components/schemas/DownloadArchiveInfo"
             },
             "type": "array"
           },
           "totalSize": {
+            "description": "Total size in bytes",
             "type": "integer"
           }
         },
@@ -17106,12 +17325,14 @@
       "DuplicateResponseDto": {
         "properties": {
           "assets": {
+            "description": "Duplicate assets",
             "items": {
               "$ref": "#/components/schemas/AssetResponseDto"
             },
             "type": "array"
           },
           "duplicateId": {
+            "description": "Duplicate group ID",
             "type": "string"
           }
         },
@@ -17275,6 +17496,7 @@
       "FaceDto": {
         "properties": {
           "id": {
+            "description": "Face ID",
             "format": "uuid",
             "type": "string"
           }
@@ -17360,7 +17582,8 @@
               {
                 "$ref": "#/components/schemas/ManualJobName"
               }
-            ]
+            ],
+            "description": "Job name"
           }
         },
         "required": [
@@ -17444,39 +17667,48 @@
       "LibraryResponseDto": {
         "properties": {
           "assetCount": {
+            "description": "Number of assets",
             "type": "integer"
           },
           "createdAt": {
+            "description": "Creation date",
             "format": "date-time",
             "type": "string"
           },
           "exclusionPatterns": {
+            "description": "Exclusion patterns",
             "items": {
               "type": "string"
             },
             "type": "array"
           },
           "id": {
+            "description": "Library ID",
             "type": "string"
           },
           "importPaths": {
+            "description": "Import paths",
             "items": {
               "type": "string"
             },
             "type": "array"
           },
           "name": {
+            "description": "Library name",
             "type": "string"
           },
           "ownerId": {
+            "description": "Owner user ID",
             "type": "string"
           },
           "refreshedAt": {
+            "description": "Last refresh date",
             "format": "date-time",
             "nullable": true,
             "type": "string"
           },
           "updatedAt": {
+            "description": "Last update date",
             "format": "date-time",
             "type": "string"
           }
@@ -17498,19 +17730,23 @@
         "properties": {
           "photos": {
             "default": 0,
+            "description": "Number of photos",
             "type": "integer"
           },
           "total": {
             "default": 0,
+            "description": "Total number of assets",
             "type": "integer"
           },
           "usage": {
             "default": 0,
+            "description": "Storage usage in bytes",
             "format": "int64",
             "type": "integer"
           },
           "videos": {
             "default": 0,
+            "description": "Number of videos",
             "type": "integer"
           }
         },
@@ -17525,9 +17761,11 @@
       "LicenseKeyDto": {
         "properties": {
           "activationKey": {
+            "description": "Activation key",
             "type": "string"
           },
           "licenseKey": {
+            "description": "License key (format: IM(SV|CL)(-XXXX){8})",
             "pattern": "/IM(SV|CL)(-[\\dA-Za-z]{4}){8}/",
             "type": "string"
           }
@@ -17541,13 +17779,16 @@
       "LicenseResponseDto": {
         "properties": {
           "activatedAt": {
+            "description": "Activation date",
             "format": "date-time",
             "type": "string"
           },
           "activationKey": {
+            "description": "Activation key",
             "type": "string"
           },
           "licenseKey": {
+            "description": "License key (format: IM(SV|CL)(-XXXX){8})",
             "pattern": "/IM(SV|CL)(-[\\dA-Za-z]{4}){8}/",
             "type": "string"
           }
@@ -17573,11 +17814,13 @@
       "LoginCredentialDto": {
         "properties": {
           "email": {
+            "description": "User email",
             "example": "testuser@email.com",
             "format": "email",
             "type": "string"
           },
           "password": {
+            "description": "User password",
             "example": "password",
             "type": "string"
           }
@@ -17591,27 +17834,35 @@
       "LoginResponseDto": {
         "properties": {
           "accessToken": {
+            "description": "Access token",
             "type": "string"
           },
           "isAdmin": {
+            "description": "Is admin user",
             "type": "boolean"
           },
           "isOnboarded": {
+            "description": "Is onboarded",
             "type": "boolean"
           },
           "name": {
+            "description": "User name",
             "type": "string"
           },
           "profileImagePath": {
+            "description": "Profile image path",
             "type": "string"
           },
           "shouldChangePassword": {
+            "description": "Should change password",
             "type": "boolean"
           },
           "userEmail": {
+            "description": "User email",
             "type": "string"
           },
           "userId": {
+            "description": "User ID",
             "type": "string"
           }
         },
@@ -17630,9 +17881,11 @@
       "LogoutResponseDto": {
         "properties": {
           "redirectUri": {
+            "description": "Redirect URI",
             "type": "string"
           },
           "successful": {
+            "description": "Logout successful",
             "type": "boolean"
           }
         },
@@ -17662,6 +17915,7 @@
         "type": "object"
       },
       "MaintenanceAction": {
+        "description": "Maintenance action",
         "enum": [
           "start",
           "end"
@@ -17671,6 +17925,7 @@
       "MaintenanceAuthDto": {
         "properties": {
           "username": {
+            "description": "Maintenance username",
             "type": "string"
           }
         },
@@ -17682,12 +17937,14 @@
       "MaintenanceLoginDto": {
         "properties": {
           "token": {
+            "description": "Maintenance token",
             "type": "string"
           }
         },
         "type": "object"
       },
       "ManualJobName": {
+        "description": "Job name",
         "enum": [
           "person-cleanup",
           "tag-cleanup",
@@ -17701,25 +17958,31 @@
       "MapMarkerResponseDto": {
         "properties": {
           "city": {
+            "description": "City name",
             "nullable": true,
             "type": "string"
           },
           "country": {
+            "description": "Country name",
             "nullable": true,
             "type": "string"
           },
           "id": {
+            "description": "Asset ID",
             "type": "string"
           },
           "lat": {
+            "description": "Latitude",
             "format": "double",
             "type": "number"
           },
           "lon": {
+            "description": "Longitude",
             "format": "double",
             "type": "number"
           },
           "state": {
+            "description": "State/Province name",
             "nullable": true,
             "type": "string"
           }
@@ -17737,14 +18000,17 @@
       "MapReverseGeocodeResponseDto": {
         "properties": {
           "city": {
+            "description": "City name",
             "nullable": true,
             "type": "string"
           },
           "country": {
+            "description": "Country name",
             "nullable": true,
             "type": "string"
           },
           "state": {
+            "description": "State/Province name",
             "nullable": true,
             "type": "string"
           }
@@ -17936,6 +18202,7 @@
       "MergePersonDto": {
         "properties": {
           "ids": {
+            "description": "Person IDs to merge",
             "items": {
               "format": "uuid",
               "type": "string"
@@ -18312,6 +18579,7 @@
       "OAuthAuthorizeResponseDto": {
         "properties": {
           "url": {
+            "description": "OAuth authorization URL",
             "type": "string"
           }
         },
@@ -18323,12 +18591,15 @@
       "OAuthCallbackDto": {
         "properties": {
           "codeVerifier": {
+            "description": "OAuth code verifier (PKCE)",
             "type": "string"
           },
           "state": {
+            "description": "OAuth state parameter",
             "type": "string"
           },
           "url": {
+            "description": "OAuth callback URL",
             "type": "string"
           }
         },
@@ -18340,12 +18611,15 @@
       "OAuthConfigDto": {
         "properties": {
           "codeChallenge": {
+            "description": "OAuth code challenge (PKCE)",
             "type": "string"
           },
           "redirectUri": {
+            "description": "OAuth redirect URI",
             "type": "string"
           },
           "state": {
+            "description": "OAuth state parameter",
             "type": "string"
           }
         },
@@ -18410,6 +18684,7 @@
       "OnboardingDto": {
         "properties": {
           "isOnboarded": {
+            "description": "Is user onboarded",
             "type": "boolean"
           }
         },
@@ -18421,6 +18696,7 @@
       "OnboardingResponseDto": {
         "properties": {
           "isOnboarded": {
+            "description": "Is user onboarded",
             "type": "boolean"
           }
         },
@@ -18432,6 +18708,7 @@
       "PartnerCreateDto": {
         "properties": {
           "sharedWithId": {
+            "description": "User ID to share with",
             "format": "uuid",
             "type": "string"
           }
@@ -18455,25 +18732,32 @@
               {
                 "$ref": "#/components/schemas/UserAvatarColor"
               }
-            ]
+            ],
+            "description": "Avatar color"
           },
           "email": {
+            "description": "User email",
             "type": "string"
           },
           "id": {
+            "description": "User ID",
             "type": "string"
           },
           "inTimeline": {
+            "description": "Show in timeline",
             "type": "boolean"
           },
           "name": {
+            "description": "User name",
             "type": "string"
           },
           "profileChangedAt": {
+            "description": "Profile change date",
             "format": "date-time",
             "type": "string"
           },
           "profileImagePath": {
+            "description": "Profile image path",
             "type": "string"
           }
         },
@@ -18490,6 +18774,7 @@
       "PartnerUpdateDto": {
         "properties": {
           "inTimeline": {
+            "description": "Show partner assets in timeline",
             "type": "boolean"
           }
         },
@@ -18518,6 +18803,7 @@
       "PeopleResponseDto": {
         "properties": {
           "hasNextPage": {
+            "description": "Whether there are more pages",
             "type": "boolean",
             "x-immich-history": [
               {
@@ -18532,15 +18818,18 @@
             "x-immich-state": "Stable"
           },
           "hidden": {
+            "description": "Number of hidden people",
             "type": "integer"
           },
           "people": {
+            "description": "List of people",
             "items": {
               "$ref": "#/components/schemas/PersonResponseDto"
             },
             "type": "array"
           },
           "total": {
+            "description": "Total number of people",
             "type": "integer"
           }
         },
@@ -18565,6 +18854,7 @@
       "PeopleUpdateDto": {
         "properties": {
           "people": {
+            "description": "People to update",
             "items": {
               "$ref": "#/components/schemas/PeopleUpdateItem"
             },
@@ -18579,33 +18869,35 @@
       "PeopleUpdateItem": {
         "properties": {
           "birthDate": {
-            "description": "Person date of birth.\nNote: the mobile app cannot currently set the birth date to null.",
+            "description": "Person date of birth",
             "format": "date",
             "nullable": true,
             "type": "string"
           },
           "color": {
+            "description": "Person color (hex)",
             "nullable": true,
             "type": "string"
           },
           "featureFaceAssetId": {
-            "description": "Asset is used to get the feature face thumbnail.",
+            "description": "Asset ID used for feature face thumbnail",
             "format": "uuid",
             "type": "string"
           },
           "id": {
-            "description": "Person id.",
+            "description": "Person ID",
             "type": "string"
           },
           "isFavorite": {
+            "description": "Mark as favorite",
             "type": "boolean"
           },
           "isHidden": {
-            "description": "Person visibility",
+            "description": "Person visibility (hidden)",
             "type": "boolean"
           },
           "name": {
-            "description": "Person name.",
+            "description": "Person name",
             "type": "string"
           }
         },
@@ -18615,6 +18907,7 @@
         "type": "object"
       },
       "Permission": {
+        "description": "List of permissions",
         "enum": [
           "all",
           "activity.create",
@@ -18771,24 +19064,26 @@
       "PersonCreateDto": {
         "properties": {
           "birthDate": {
-            "description": "Person date of birth.\nNote: the mobile app cannot currently set the birth date to null.",
+            "description": "Person date of birth",
             "format": "date",
             "nullable": true,
             "type": "string"
           },
           "color": {
+            "description": "Person color (hex)",
             "nullable": true,
             "type": "string"
           },
           "isFavorite": {
+            "description": "Mark as favorite",
             "type": "boolean"
           },
           "isHidden": {
-            "description": "Person visibility",
+            "description": "Person visibility (hidden)",
             "type": "boolean"
           },
           "name": {
-            "description": "Person name.",
+            "description": "Person name",
             "type": "string"
           }
         },
@@ -18797,11 +19092,13 @@
       "PersonResponseDto": {
         "properties": {
           "birthDate": {
+            "description": "Person date of birth",
             "format": "date",
             "nullable": true,
             "type": "string"
           },
           "color": {
+            "description": "Person color (hex)",
             "type": "string",
             "x-immich-history": [
               {
@@ -18816,9 +19113,11 @@
             "x-immich-state": "Stable"
           },
           "id": {
+            "description": "Person ID",
             "type": "string"
           },
           "isFavorite": {
+            "description": "Is favorite",
             "type": "boolean",
             "x-immich-history": [
               {
@@ -18833,15 +19132,19 @@
             "x-immich-state": "Stable"
           },
           "isHidden": {
+            "description": "Is hidden",
             "type": "boolean"
           },
           "name": {
+            "description": "Person name",
             "type": "string"
           },
           "thumbnailPath": {
+            "description": "Thumbnail path",
             "type": "string"
           },
           "updatedAt": {
+            "description": "Last update date",
             "format": "date-time",
             "type": "string",
             "x-immich-history": [
@@ -18869,6 +19172,7 @@
       "PersonStatisticsResponseDto": {
         "properties": {
           "assets": {
+            "description": "Number of assets",
             "type": "integer"
           }
         },
@@ -18880,29 +19184,31 @@
       "PersonUpdateDto": {
         "properties": {
           "birthDate": {
-            "description": "Person date of birth.\nNote: the mobile app cannot currently set the birth date to null.",
+            "description": "Person date of birth",
             "format": "date",
             "nullable": true,
             "type": "string"
           },
           "color": {
+            "description": "Person color (hex)",
             "nullable": true,
             "type": "string"
           },
           "featureFaceAssetId": {
-            "description": "Asset is used to get the feature face thumbnail.",
+            "description": "Asset ID used for feature face thumbnail",
             "format": "uuid",
             "type": "string"
           },
           "isFavorite": {
+            "description": "Mark as favorite",
             "type": "boolean"
           },
           "isHidden": {
-            "description": "Person visibility",
+            "description": "Person visibility (hidden)",
             "type": "boolean"
           },
           "name": {
-            "description": "Person name.",
+            "description": "Person name",
             "type": "string"
           }
         },
@@ -18911,11 +19217,13 @@
       "PersonWithFacesResponseDto": {
         "properties": {
           "birthDate": {
+            "description": "Person date of birth",
             "format": "date",
             "nullable": true,
             "type": "string"
           },
           "color": {
+            "description": "Person color (hex)",
             "type": "string",
             "x-immich-history": [
               {
@@ -18930,15 +19238,18 @@
             "x-immich-state": "Stable"
           },
           "faces": {
+            "description": "Face detections",
             "items": {
               "$ref": "#/components/schemas/AssetFaceWithoutPersonResponseDto"
             },
             "type": "array"
           },
           "id": {
+            "description": "Person ID",
             "type": "string"
           },
           "isFavorite": {
+            "description": "Is favorite",
             "type": "boolean",
             "x-immich-history": [
               {
@@ -18953,15 +19264,19 @@
             "x-immich-state": "Stable"
           },
           "isHidden": {
+            "description": "Is hidden",
             "type": "boolean"
           },
           "name": {
+            "description": "Person name",
             "type": "string"
           },
           "thumbnailPath": {
+            "description": "Thumbnail path",
             "type": "string"
           },
           "updatedAt": {
+            "description": "Last update date",
             "format": "date-time",
             "type": "string",
             "x-immich-history": [
@@ -18990,13 +19305,16 @@
       "PinCodeChangeDto": {
         "properties": {
           "newPinCode": {
+            "description": "New PIN code (4-6 digits)",
             "example": "123456",
             "type": "string"
           },
           "password": {
+            "description": "User password (required if PIN code is not provided)",
             "type": "string"
           },
           "pinCode": {
+            "description": "New PIN code (4-6 digits)",
             "example": "123456",
             "type": "string"
           }
@@ -19009,9 +19327,11 @@
       "PinCodeResetDto": {
         "properties": {
           "password": {
+            "description": "User password (required if PIN code is not provided)",
             "type": "string"
           },
           "pinCode": {
+            "description": "New PIN code (4-6 digits)",
             "example": "123456",
             "type": "string"
           }
@@ -19021,6 +19341,7 @@
       "PinCodeSetupDto": {
         "properties": {
           "pinCode": {
+            "description": "PIN code (4-6 digits)",
             "example": "123456",
             "type": "string"
           }
@@ -19058,28 +19379,35 @@
       "PluginActionResponseDto": {
         "properties": {
           "description": {
+            "description": "Action description",
             "type": "string"
           },
           "id": {
+            "description": "Action ID",
             "type": "string"
           },
           "methodName": {
+            "description": "Method name",
             "type": "string"
           },
           "pluginId": {
+            "description": "Plugin ID",
             "type": "string"
           },
           "schema": {
+            "description": "Action schema",
             "nullable": true,
             "type": "object"
           },
           "supportedContexts": {
+            "description": "Supported contexts",
             "items": {
               "$ref": "#/components/schemas/PluginContextType"
             },
             "type": "array"
           },
           "title": {
+            "description": "Action title",
             "type": "string"
           }
         },
@@ -19095,6 +19423,7 @@
         "type": "object"
       },
       "PluginContextType": {
+        "description": "Context type",
         "enum": [
           "asset",
           "album",
@@ -19105,28 +19434,35 @@
       "PluginFilterResponseDto": {
         "properties": {
           "description": {
+            "description": "Filter description",
             "type": "string"
           },
           "id": {
+            "description": "Filter ID",
             "type": "string"
           },
           "methodName": {
+            "description": "Method name",
             "type": "string"
           },
           "pluginId": {
+            "description": "Plugin ID",
             "type": "string"
           },
           "schema": {
+            "description": "Filter schema",
             "nullable": true,
             "type": "object"
           },
           "supportedContexts": {
+            "description": "Supported contexts",
             "items": {
               "$ref": "#/components/schemas/PluginContextType"
             },
             "type": "array"
           },
           "title": {
+            "description": "Filter title",
             "type": "string"
           }
         },
@@ -19144,39 +19480,49 @@
       "PluginResponseDto": {
         "properties": {
           "actions": {
+            "description": "Plugin actions",
             "items": {
               "$ref": "#/components/schemas/PluginActionResponseDto"
             },
             "type": "array"
           },
           "author": {
+            "description": "Plugin author",
             "type": "string"
           },
           "createdAt": {
+            "description": "Creation date",
             "type": "string"
           },
           "description": {
+            "description": "Plugin description",
             "type": "string"
           },
           "filters": {
+            "description": "Plugin filters",
             "items": {
               "$ref": "#/components/schemas/PluginFilterResponseDto"
             },
             "type": "array"
           },
           "id": {
+            "description": "Plugin ID",
             "type": "string"
           },
           "name": {
+            "description": "Plugin name",
             "type": "string"
           },
           "title": {
+            "description": "Plugin title",
             "type": "string"
           },
           "updatedAt": {
+            "description": "Last update date",
             "type": "string"
           },
           "version": {
+            "description": "Plugin version",
             "type": "string"
           }
         },
@@ -19201,14 +19547,16 @@
               {
                 "$ref": "#/components/schemas/PluginContextType"
               }
-            ]
+            ],
+            "description": "Context type"
           },
           "type": {
             "allOf": [
               {
                 "$ref": "#/components/schemas/PluginTriggerType"
               }
-            ]
+            ],
+            "description": "Trigger type"
           }
         },
         "required": [
@@ -19218,6 +19566,7 @@
         "type": "object"
       },
       "PluginTriggerType": {
+        "description": "Trigger type",
         "enum": [
           "AssetCreate",
           "PersonRecognized"
@@ -19710,10 +20059,12 @@
       "ReverseGeocodingStateResponseDto": {
         "properties": {
           "lastImportFileName": {
+            "description": "Last import file name",
             "nullable": true,
             "type": "string"
           },
           "lastUpdate": {
+            "description": "Last update timestamp",
             "nullable": true,
             "type": "string"
           }
@@ -20302,15 +20653,17 @@
       "SessionCreateDto": {
         "properties": {
           "deviceOS": {
+            "description": "Device OS",
             "type": "string"
           },
           "deviceType": {
+            "description": "Device type",
             "type": "string"
           },
           "duration": {
-            "description": "session duration, in seconds",
+            "description": "Session duration in seconds",
             "minimum": 1,
-            "type": "number"
+            "type": "integer"
           }
         },
         "type": "object"
@@ -20318,34 +20671,44 @@
       "SessionCreateResponseDto": {
         "properties": {
           "appVersion": {
+            "description": "App version",
             "nullable": true,
             "type": "string"
           },
           "createdAt": {
+            "description": "Creation date",
             "type": "string"
           },
           "current": {
+            "description": "Is current session",
             "type": "boolean"
           },
           "deviceOS": {
+            "description": "Device OS",
             "type": "string"
           },
           "deviceType": {
+            "description": "Device type",
             "type": "string"
           },
           "expiresAt": {
+            "description": "Expiration date",
             "type": "string"
           },
           "id": {
+            "description": "Session ID",
             "type": "string"
           },
           "isPendingSyncReset": {
+            "description": "Is pending sync reset",
             "type": "boolean"
           },
           "token": {
+            "description": "Session token",
             "type": "string"
           },
           "updatedAt": {
+            "description": "Last update date",
             "type": "string"
           }
         },
@@ -20365,31 +20728,40 @@
       "SessionResponseDto": {
         "properties": {
           "appVersion": {
+            "description": "App version",
             "nullable": true,
             "type": "string"
           },
           "createdAt": {
+            "description": "Creation date",
             "type": "string"
           },
           "current": {
+            "description": "Is current session",
             "type": "boolean"
           },
           "deviceOS": {
+            "description": "Device OS",
             "type": "string"
           },
           "deviceType": {
+            "description": "Device type",
             "type": "string"
           },
           "expiresAt": {
+            "description": "Expiration date",
             "type": "string"
           },
           "id": {
+            "description": "Session ID",
             "type": "string"
           },
           "isPendingSyncReset": {
+            "description": "Is pending sync reset",
             "type": "boolean"
           },
           "updatedAt": {
+            "description": "Last update date",
             "type": "string"
           }
         },
@@ -20408,9 +20780,11 @@
       "SessionUnlockDto": {
         "properties": {
           "password": {
+            "description": "User password (required if PIN code is not provided)",
             "type": "string"
           },
           "pinCode": {
+            "description": "New PIN code (4-6 digits)",
             "example": "123456",
             "type": "string"
           }
@@ -20420,6 +20794,7 @@
       "SessionUpdateDto": {
         "properties": {
           "isPendingSyncReset": {
+            "description": "Reset pending sync state",
             "type": "boolean"
           }
         },
@@ -20432,7 +20807,8 @@
               {
                 "$ref": "#/components/schemas/MaintenanceAction"
               }
-            ]
+            ],
+            "description": "Maintenance action"
           }
         },
         "required": [
@@ -20443,17 +20819,22 @@
       "SharedLinkCreateDto": {
         "properties": {
           "albumId": {
+            "description": "Album ID (for album sharing)",
             "format": "uuid",
             "type": "string"
           },
           "allowDownload": {
             "default": true,
+            "description": "Allow downloads",
             "type": "boolean"
           },
           "allowUpload": {
+            "default": false,
+            "description": "Allow uploads",
             "type": "boolean"
           },
           "assetIds": {
+            "description": "Asset IDs (for individual assets)",
             "items": {
               "format": "uuid",
               "type": "string"
@@ -20461,24 +20842,29 @@
             "type": "array"
           },
           "description": {
+            "description": "Link description",
             "nullable": true,
             "type": "string"
           },
           "expiresAt": {
             "default": null,
+            "description": "Expiration date",
             "format": "date-time",
             "nullable": true,
             "type": "string"
           },
           "password": {
+            "description": "Link password",
             "nullable": true,
             "type": "string"
           },
           "showMetadata": {
             "default": true,
+            "description": "Show metadata",
             "type": "boolean"
           },
           "slug": {
+            "description": "Custom URL slug",
             "nullable": true,
             "type": "string"
           },
@@ -20487,7 +20873,8 @@
               {
                 "$ref": "#/components/schemas/SharedLinkType"
               }
-            ]
+            ],
+            "description": "Shared link type"
           }
         },
         "required": [
@@ -20498,32 +20885,39 @@
       "SharedLinkEditDto": {
         "properties": {
           "allowDownload": {
+            "description": "Allow downloads",
             "type": "boolean"
           },
           "allowUpload": {
+            "description": "Allow uploads",
             "type": "boolean"
           },
           "changeExpiryTime": {
-            "description": "Few clients cannot send null to set the expiryTime to never.\nSetting this flag and not sending expiryAt is considered as null instead.\nClients that can send null values can ignore this.",
+            "description": "Change expiry time (set to true to remove expiry)",
             "type": "boolean"
           },
           "description": {
+            "description": "Link description",
             "nullable": true,
             "type": "string"
           },
           "expiresAt": {
+            "description": "Expiration date",
             "format": "date-time",
             "nullable": true,
             "type": "string"
           },
           "password": {
+            "description": "Link password",
             "nullable": true,
             "type": "string"
           },
           "showMetadata": {
+            "description": "Show metadata",
             "type": "boolean"
           },
           "slug": {
+            "description": "Custom URL slug",
             "nullable": true,
             "type": "string"
           }
@@ -20533,51 +20927,68 @@
       "SharedLinkResponseDto": {
         "properties": {
           "album": {
-            "$ref": "#/components/schemas/AlbumResponseDto"
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AlbumResponseDto"
+              }
+            ],
+            "description": "Shared album"
           },
           "allowDownload": {
+            "description": "Allow downloads",
             "type": "boolean"
           },
           "allowUpload": {
+            "description": "Allow uploads",
             "type": "boolean"
           },
           "assets": {
+            "description": "Shared assets",
             "items": {
               "$ref": "#/components/schemas/AssetResponseDto"
             },
             "type": "array"
           },
           "createdAt": {
+            "description": "Creation date",
             "format": "date-time",
             "type": "string"
           },
           "description": {
+            "description": "Link description",
             "nullable": true,
             "type": "string"
           },
           "expiresAt": {
+            "description": "Expiration date",
             "format": "date-time",
             "nullable": true,
             "type": "string"
           },
           "id": {
+            "description": "Shared link ID",
             "type": "string"
           },
           "key": {
+            "description": "Encryption key (base64url)",
             "type": "string"
           },
           "password": {
+            "description": "Has password",
             "nullable": true,
             "type": "string"
           },
           "showMetadata": {
+            "description": "Show metadata",
             "type": "boolean"
           },
           "slug": {
+            "description": "Custom URL slug",
             "nullable": true,
             "type": "string"
           },
           "token": {
+            "description": "Access token",
             "nullable": true,
             "type": "string"
           },
@@ -20586,9 +20997,11 @@
               {
                 "$ref": "#/components/schemas/SharedLinkType"
               }
-            ]
+            ],
+            "description": "Shared link type"
           },
           "userId": {
+            "description": "Owner user ID",
             "type": "string"
           }
         },
@@ -20610,6 +21023,7 @@
         "type": "object"
       },
       "SharedLinkType": {
+        "description": "Shared link type",
         "enum": [
           "ALBUM",
           "INDIVIDUAL"
@@ -20647,15 +21061,18 @@
       "SignUpDto": {
         "properties": {
           "email": {
+            "description": "User email",
             "example": "testuser@email.com",
             "format": "email",
             "type": "string"
           },
           "name": {
+            "description": "User name",
             "example": "Admin",
             "type": "string"
           },
           "password": {
+            "description": "User password",
             "example": "password",
             "type": "string"
           }
@@ -20820,6 +21237,7 @@
         "type": "object"
       },
       "SourceType": {
+        "description": "Face detection source type",
         "enum": [
           "machine-learning",
           "exif",
@@ -20830,7 +21248,7 @@
       "StackCreateDto": {
         "properties": {
           "assetIds": {
-            "description": "first asset becomes the primary",
+            "description": "Asset IDs (first becomes primary, min 2)",
             "items": {
               "format": "uuid",
               "type": "string"
@@ -20847,15 +21265,18 @@
       "StackResponseDto": {
         "properties": {
           "assets": {
+            "description": "Stack assets",
             "items": {
               "$ref": "#/components/schemas/AssetResponseDto"
             },
             "type": "array"
           },
           "id": {
+            "description": "Stack ID",
             "type": "string"
           },
           "primaryAssetId": {
+            "description": "Primary asset ID",
             "type": "string"
           }
         },
@@ -20869,6 +21290,7 @@
       "StackUpdateDto": {
         "properties": {
           "primaryAssetId": {
+            "description": "Primary asset ID",
             "format": "uuid",
             "type": "string"
           }
@@ -21008,6 +21430,7 @@
       "SyncAckDeleteDto": {
         "properties": {
           "types": {
+            "description": "Sync entity types to delete acks for",
             "items": {
               "$ref": "#/components/schemas/SyncEntityType"
             },
@@ -21019,6 +21442,7 @@
       "SyncAckDto": {
         "properties": {
           "ack": {
+            "description": "Acknowledgment ID",
             "type": "string"
           },
           "type": {
@@ -21026,7 +21450,8 @@
               {
                 "$ref": "#/components/schemas/SyncEntityType"
               }
-            ]
+            ],
+            "description": "Sync entity type"
           }
         },
         "required": [
@@ -21038,6 +21463,7 @@
       "SyncAckSetDto": {
         "properties": {
           "acks": {
+            "description": "Acknowledgment IDs (max 1000)",
             "items": {
               "type": "string"
             },
@@ -21602,6 +22028,7 @@
         "type": "object"
       },
       "SyncEntityType": {
+        "description": "Sync entity type",
         "enum": [
           "AuthUserV1",
           "UserV1",
@@ -21863,6 +22290,7 @@
         "type": "object"
       },
       "SyncRequestType": {
+        "description": "Sync request types",
         "enum": [
           "AlbumsV1",
           "AlbumUsersV1",
@@ -21934,9 +22362,11 @@
       "SyncStreamDto": {
         "properties": {
           "reset": {
+            "description": "Reset sync state",
             "type": "boolean"
           },
           "types": {
+            "description": "Sync request types",
             "items": {
               "$ref": "#/components/schemas/SyncRequestType"
             },
@@ -22960,6 +23390,7 @@
       "TagBulkAssetsDto": {
         "properties": {
           "assetIds": {
+            "description": "Asset IDs",
             "items": {
               "format": "uuid",
               "type": "string"
@@ -22967,6 +23398,7 @@
             "type": "array"
           },
           "tagIds": {
+            "description": "Tag IDs",
             "items": {
               "format": "uuid",
               "type": "string"
@@ -22983,6 +23415,7 @@
       "TagBulkAssetsResponseDto": {
         "properties": {
           "count": {
+            "description": "Number of assets tagged",
             "type": "integer"
           }
         },
@@ -22994,13 +23427,16 @@
       "TagCreateDto": {
         "properties": {
           "color": {
+            "description": "Tag color (hex)",
             "pattern": "^#?([0-9A-F]{3}|[0-9A-F]{4}|[0-9A-F]{6}|[0-9A-F]{8})$",
             "type": "string"
           },
           "name": {
+            "description": "Tag name",
             "type": "string"
           },
           "parentId": {
+            "description": "Parent tag ID",
             "format": "uuid",
             "nullable": true,
             "type": "string"
@@ -23014,26 +23450,33 @@
       "TagResponseDto": {
         "properties": {
           "color": {
+            "description": "Tag color (hex)",
             "type": "string"
           },
           "createdAt": {
+            "description": "Creation date",
             "format": "date-time",
             "type": "string"
           },
           "id": {
+            "description": "Tag ID",
             "type": "string"
           },
           "name": {
+            "description": "Tag name",
             "type": "string"
           },
           "parentId": {
+            "description": "Parent tag ID",
             "type": "string"
           },
           "updatedAt": {
+            "description": "Last update date",
             "format": "date-time",
             "type": "string"
           },
           "value": {
+            "description": "Tag value (full path)",
             "type": "string"
           }
         },
@@ -23049,6 +23492,7 @@
       "TagUpdateDto": {
         "properties": {
           "color": {
+            "description": "Tag color (hex)",
             "nullable": true,
             "type": "string"
           }
@@ -23058,6 +23502,7 @@
       "TagUpsertDto": {
         "properties": {
           "tags": {
+            "description": "Tag names to upsert",
             "items": {
               "type": "string"
             },
@@ -23347,6 +23792,7 @@
       "TrashResponseDto": {
         "properties": {
           "count": {
+            "description": "Number of items in trash",
             "type": "integer"
           }
         },
@@ -23358,16 +23804,20 @@
       "UpdateAlbumDto": {
         "properties": {
           "albumName": {
+            "description": "Album name",
             "type": "string"
           },
           "albumThumbnailAssetId": {
+            "description": "Album thumbnail asset ID",
             "format": "uuid",
             "type": "string"
           },
           "description": {
+            "description": "Album description",
             "type": "string"
           },
           "isActivityEnabled": {
+            "description": "Enable activity feed",
             "type": "boolean"
           },
           "order": {
@@ -23375,7 +23825,8 @@
               {
                 "$ref": "#/components/schemas/AssetOrder"
               }
-            ]
+            ],
+            "description": "Asset sort order"
           }
         },
         "type": "object"
@@ -23387,7 +23838,8 @@
               {
                 "$ref": "#/components/schemas/AlbumUserRole"
               }
-            ]
+            ],
+            "description": "Album user role"
           }
         },
         "required": [
@@ -23398,26 +23850,33 @@
       "UpdateAssetDto": {
         "properties": {
           "dateTimeOriginal": {
+            "description": "Original date and time (ISO 8601)",
             "type": "string"
           },
           "description": {
+            "description": "Asset description",
             "type": "string"
           },
           "isFavorite": {
+            "description": "Mark as favorite",
             "type": "boolean"
           },
           "latitude": {
+            "description": "Latitude coordinate",
             "type": "number"
           },
           "livePhotoVideoId": {
+            "description": "Live photo video ID",
             "format": "uuid",
             "nullable": true,
             "type": "string"
           },
           "longitude": {
+            "description": "Longitude coordinate",
             "type": "number"
           },
           "rating": {
+            "description": "Rating (-1 to 5)",
             "maximum": 5,
             "minimum": -1,
             "type": "number"
@@ -23427,7 +23886,8 @@
               {
                 "$ref": "#/components/schemas/AssetVisibility"
               }
-            ]
+            ],
+            "description": "Asset visibility"
           }
         },
         "type": "object"
@@ -23435,6 +23895,7 @@
       "UpdateLibraryDto": {
         "properties": {
           "exclusionPatterns": {
+            "description": "Exclusion patterns (max 128)",
             "items": {
               "type": "string"
             },
@@ -23443,6 +23904,7 @@
             "uniqueItems": true
           },
           "importPaths": {
+            "description": "Import paths (max 128)",
             "items": {
               "type": "string"
             },
@@ -23451,6 +23913,7 @@
             "uniqueItems": true
           },
           "name": {
+            "description": "Library name",
             "type": "string"
           }
         },
@@ -23508,34 +23971,43 @@
                 "$ref": "#/components/schemas/UserAvatarColor"
               }
             ],
+            "description": "Avatar color",
             "nullable": true
           },
           "email": {
+            "description": "User email",
             "format": "email",
             "type": "string"
           },
           "isAdmin": {
+            "description": "Grant admin privileges",
             "type": "boolean"
           },
           "name": {
+            "description": "User name",
             "type": "string"
           },
           "notify": {
+            "description": "Send notification email",
             "type": "boolean"
           },
           "password": {
+            "description": "User password",
             "type": "string"
           },
           "quotaSizeInBytes": {
+            "description": "Storage quota in bytes",
             "format": "int64",
             "minimum": 0,
             "nullable": true,
             "type": "integer"
           },
           "shouldChangePassword": {
+            "description": "Require password change on next login",
             "type": "boolean"
           },
           "storageLabel": {
+            "description": "Storage label",
             "nullable": true,
             "type": "string"
           }
@@ -23550,6 +24022,7 @@
       "UserAdminDeleteDto": {
         "properties": {
           "force": {
+            "description": "Force delete even if user has assets",
             "type": "boolean"
           }
         },
@@ -23562,24 +24035,30 @@
               {
                 "$ref": "#/components/schemas/UserAvatarColor"
               }
-            ]
+            ],
+            "description": "Avatar color"
           },
           "createdAt": {
+            "description": "Creation date",
             "format": "date-time",
             "type": "string"
           },
           "deletedAt": {
+            "description": "Deletion date",
             "format": "date-time",
             "nullable": true,
             "type": "string"
           },
           "email": {
+            "description": "User email",
             "type": "string"
           },
           "id": {
+            "description": "User ID",
             "type": "string"
           },
           "isAdmin": {
+            "description": "Is admin user",
             "type": "boolean"
           },
           "license": {
@@ -23588,32 +24067,40 @@
                 "$ref": "#/components/schemas/UserLicense"
               }
             ],
+            "description": "User license",
             "nullable": true
           },
           "name": {
+            "description": "User name",
             "type": "string"
           },
           "oauthId": {
+            "description": "OAuth ID",
             "type": "string"
           },
           "profileChangedAt": {
+            "description": "Profile change date",
             "format": "date-time",
             "type": "string"
           },
           "profileImagePath": {
+            "description": "Profile image path",
             "type": "string"
           },
           "quotaSizeInBytes": {
+            "description": "Storage quota in bytes",
             "format": "int64",
             "nullable": true,
             "type": "integer"
           },
           "quotaUsageInBytes": {
+            "description": "Storage usage in bytes",
             "format": "int64",
             "nullable": true,
             "type": "integer"
           },
           "shouldChangePassword": {
+            "description": "Require password change on next login",
             "type": "boolean"
           },
           "status": {
@@ -23621,13 +24108,16 @@
               {
                 "$ref": "#/components/schemas/UserStatus"
               }
-            ]
+            ],
+            "description": "User status"
           },
           "storageLabel": {
+            "description": "Storage label",
             "nullable": true,
             "type": "string"
           },
           "updatedAt": {
+            "description": "Last update date",
             "format": "date-time",
             "type": "string"
           }
@@ -23661,36 +24151,45 @@
                 "$ref": "#/components/schemas/UserAvatarColor"
               }
             ],
+            "description": "Avatar color",
             "nullable": true
           },
           "email": {
+            "description": "User email",
             "format": "email",
             "type": "string"
           },
           "isAdmin": {
+            "description": "Grant admin privileges",
             "type": "boolean"
           },
           "name": {
+            "description": "User name",
             "type": "string"
           },
           "password": {
+            "description": "User password",
             "type": "string"
           },
           "pinCode": {
+            "description": "PIN code",
             "example": "123456",
             "nullable": true,
             "type": "string"
           },
           "quotaSizeInBytes": {
+            "description": "Storage quota in bytes",
             "format": "int64",
             "minimum": 0,
             "nullable": true,
             "type": "integer"
           },
           "shouldChangePassword": {
+            "description": "Require password change on next login",
             "type": "boolean"
           },
           "storageLabel": {
+            "description": "Storage label",
             "nullable": true,
             "type": "string"
           }
@@ -23698,6 +24197,7 @@
         "type": "object"
       },
       "UserAvatarColor": {
+        "description": "Avatar color",
         "enum": [
           "primary",
           "pink",
@@ -23715,13 +24215,16 @@
       "UserLicense": {
         "properties": {
           "activatedAt": {
+            "description": "Activation date",
             "format": "date-time",
             "type": "string"
           },
           "activationKey": {
+            "description": "Activation key",
             "type": "string"
           },
           "licenseKey": {
+            "description": "License key",
             "type": "string"
           }
         },
@@ -23839,22 +24342,28 @@
               {
                 "$ref": "#/components/schemas/UserAvatarColor"
               }
-            ]
+            ],
+            "description": "Avatar color"
           },
           "email": {
+            "description": "User email",
             "type": "string"
           },
           "id": {
+            "description": "User ID",
             "type": "string"
           },
           "name": {
+            "description": "User name",
             "type": "string"
           },
           "profileChangedAt": {
+            "description": "Profile change date",
             "format": "date-time",
             "type": "string"
           },
           "profileImagePath": {
+            "description": "Profile image path",
             "type": "string"
           }
         },
@@ -23869,6 +24378,7 @@
         "type": "object"
       },
       "UserStatus": {
+        "description": "User status",
         "enum": [
           "active",
           "removing",
@@ -23884,16 +24394,20 @@
                 "$ref": "#/components/schemas/UserAvatarColor"
               }
             ],
+            "description": "Avatar color",
             "nullable": true
           },
           "email": {
+            "description": "User email",
             "format": "email",
             "type": "string"
           },
           "name": {
+            "description": "User name",
             "type": "string"
           },
           "password": {
+            "description": "User password (deprecated, use change password endpoint)",
             "type": "string"
           }
         },
@@ -23902,6 +24416,7 @@
       "ValidateAccessTokenResponseDto": {
         "properties": {
           "authStatus": {
+            "description": "Authentication status",
             "type": "boolean"
           }
         },
@@ -23913,6 +24428,7 @@
       "ValidateLibraryDto": {
         "properties": {
           "exclusionPatterns": {
+            "description": "Exclusion patterns (max 128)",
             "items": {
               "type": "string"
             },
@@ -23921,6 +24437,7 @@
             "uniqueItems": true
           },
           "importPaths": {
+            "description": "Import paths to validate (max 128)",
             "items": {
               "type": "string"
             },
@@ -23934,13 +24451,16 @@
       "ValidateLibraryImportPathResponseDto": {
         "properties": {
           "importPath": {
+            "description": "Import path",
             "type": "string"
           },
           "isValid": {
             "default": false,
+            "description": "Is valid",
             "type": "boolean"
           },
           "message": {
+            "description": "Validation message",
             "type": "string"
           }
         },
@@ -23953,6 +24473,7 @@
       "ValidateLibraryResponseDto": {
         "properties": {
           "importPaths": {
+            "description": "Validation results for import paths",
             "items": {
               "$ref": "#/components/schemas/ValidateLibraryImportPathResponseDto"
             },
@@ -23964,10 +24485,12 @@
       "VersionCheckStateResponseDto": {
         "properties": {
           "checkedAt": {
+            "description": "Last check timestamp",
             "nullable": true,
             "type": "string"
           },
           "releaseVersion": {
+            "description": "Release version",
             "nullable": true,
             "type": "string"
           }
@@ -23999,9 +24522,11 @@
       "WorkflowActionItemDto": {
         "properties": {
           "actionConfig": {
+            "description": "Action configuration",
             "type": "object"
           },
           "pluginActionId": {
+            "description": "Plugin action ID",
             "format": "uuid",
             "type": "string"
           }
@@ -24014,19 +24539,24 @@
       "WorkflowActionResponseDto": {
         "properties": {
           "actionConfig": {
+            "description": "Action configuration",
             "nullable": true,
             "type": "object"
           },
           "id": {
+            "description": "Action ID",
             "type": "string"
           },
           "order": {
-            "type": "number"
+            "description": "Action order",
+            "type": "integer"
           },
           "pluginActionId": {
+            "description": "Plugin action ID",
             "type": "string"
           },
           "workflowId": {
+            "description": "Workflow ID",
             "type": "string"
           }
         },
@@ -24042,24 +24572,30 @@
       "WorkflowCreateDto": {
         "properties": {
           "actions": {
+            "description": "Workflow actions",
             "items": {
               "$ref": "#/components/schemas/WorkflowActionItemDto"
             },
             "type": "array"
           },
           "description": {
+            "description": "Workflow description",
             "type": "string"
           },
           "enabled": {
+            "default": true,
+            "description": "Workflow enabled",
             "type": "boolean"
           },
           "filters": {
+            "description": "Workflow filters",
             "items": {
               "$ref": "#/components/schemas/WorkflowFilterItemDto"
             },
             "type": "array"
           },
           "name": {
+            "description": "Workflow name",
             "type": "string"
           },
           "triggerType": {
@@ -24067,7 +24603,8 @@
               {
                 "$ref": "#/components/schemas/PluginTriggerType"
               }
-            ]
+            ],
+            "description": "Workflow trigger type"
           }
         },
         "required": [
@@ -24081,9 +24618,11 @@
       "WorkflowFilterItemDto": {
         "properties": {
           "filterConfig": {
+            "description": "Filter configuration",
             "type": "object"
           },
           "pluginFilterId": {
+            "description": "Plugin filter ID",
             "format": "uuid",
             "type": "string"
           }
@@ -24096,19 +24635,24 @@
       "WorkflowFilterResponseDto": {
         "properties": {
           "filterConfig": {
+            "description": "Filter configuration",
             "nullable": true,
             "type": "object"
           },
           "id": {
+            "description": "Filter ID",
             "type": "string"
           },
           "order": {
-            "type": "number"
+            "description": "Filter order",
+            "type": "integer"
           },
           "pluginFilterId": {
+            "description": "Plugin filter ID",
             "type": "string"
           },
           "workflowId": {
+            "description": "Workflow ID",
             "type": "string"
           }
         },
@@ -24124,34 +24668,42 @@
       "WorkflowResponseDto": {
         "properties": {
           "actions": {
+            "description": "Workflow actions",
             "items": {
               "$ref": "#/components/schemas/WorkflowActionResponseDto"
             },
             "type": "array"
           },
           "createdAt": {
+            "description": "Creation date",
             "type": "string"
           },
           "description": {
+            "description": "Workflow description",
             "type": "string"
           },
           "enabled": {
+            "description": "Workflow enabled",
             "type": "boolean"
           },
           "filters": {
+            "description": "Workflow filters",
             "items": {
               "$ref": "#/components/schemas/WorkflowFilterResponseDto"
             },
             "type": "array"
           },
           "id": {
+            "description": "Workflow ID",
             "type": "string"
           },
           "name": {
+            "description": "Workflow name",
             "nullable": true,
             "type": "string"
           },
           "ownerId": {
+            "description": "Owner user ID",
             "type": "string"
           },
           "triggerType": {
@@ -24159,7 +24711,8 @@
               {
                 "$ref": "#/components/schemas/PluginTriggerType"
               }
-            ]
+            ],
+            "description": "Workflow trigger type"
           }
         },
         "required": [
@@ -24178,24 +24731,29 @@
       "WorkflowUpdateDto": {
         "properties": {
           "actions": {
+            "description": "Workflow actions",
             "items": {
               "$ref": "#/components/schemas/WorkflowActionItemDto"
             },
             "type": "array"
           },
           "description": {
+            "description": "Workflow description",
             "type": "string"
           },
           "enabled": {
+            "description": "Workflow enabled",
             "type": "boolean"
           },
           "filters": {
+            "description": "Workflow filters",
             "items": {
               "$ref": "#/components/schemas/WorkflowFilterItemDto"
             },
             "type": "array"
           },
           "name": {
+            "description": "Workflow name",
             "type": "string"
           },
           "triggerType": {
@@ -24203,7 +24761,8 @@
               {
                 "$ref": "#/components/schemas/PluginTriggerType"
               }
-            ]
+            ],
+            "description": "Workflow trigger type"
           }
         },
         "type": "object"
