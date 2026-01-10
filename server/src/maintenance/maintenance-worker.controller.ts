@@ -3,14 +3,14 @@ import { ApiBody, ApiTags } from '@nestjs/swagger';
 import { Request, Response } from 'express';
 import { MaintenanceAuthDto, MaintenanceLoginDto, SetMaintenanceModeDto } from 'src/dtos/maintenance.dto';
 import { ServerConfigDto } from 'src/dtos/server.dto';
-import { ImmichCookie, MaintenanceAction } from 'src/enum';
+import { ApiTag, ImmichCookie, MaintenanceAction } from 'src/enum';
 import { MaintenanceRoute } from 'src/maintenance/maintenance-auth.guard';
 import { MaintenanceWorkerService } from 'src/maintenance/maintenance-worker.service';
 import { GetLoginDetails } from 'src/middleware/auth.guard';
 import { LoginDetails } from 'src/services/auth.service';
 import { respondWithCookie } from 'src/utils/response';
 
-@ApiTags('Maintenance')
+@ApiTags(ApiTag.Maintenance)
 @Controller()
 export class MaintenanceWorkerController {
   constructor(private service: MaintenanceWorkerService) {}
