@@ -79,7 +79,7 @@ export class AssetMediaCreateDto extends AssetMediaBase {
   @ValidateUUID({ optional: true })
   livePhotoVideoId?: string;
 
-  @ApiPropertyOptional({ description: 'Asset metadata items', type: [AssetMetadataUpsertItemDto] })
+  @ApiPropertyOptional({ description: 'Asset metadata items', type: () => [AssetMetadataUpsertItemDto] })
   @Transform(({ value }) => {
     try {
       const json = JSON.parse(value);
