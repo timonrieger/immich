@@ -67,7 +67,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved activities"
           }
         },
         "security": [
@@ -126,7 +126,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Activity created successfully"
           }
         },
         "security": [
@@ -197,7 +197,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved activity statistics"
           }
         },
         "security": [
@@ -251,7 +251,7 @@
         ],
         "responses": {
           "204": {
-            "description": ""
+            "description": "Activity deleted successfully"
           }
         },
         "security": [
@@ -294,7 +294,7 @@
         "parameters": [],
         "responses": {
           "204": {
-            "description": ""
+            "description": "All OAuth accounts unlinked successfully"
           }
         },
         "security": [
@@ -349,7 +349,7 @@
         },
         "responses": {
           "201": {
-            "description": ""
+            "description": "Maintenance mode updated successfully"
           }
         },
         "security": [
@@ -407,7 +407,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Maintenance mode login created successfully"
           }
         },
         "summary": "Log into maintenance mode",
@@ -452,7 +452,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Notification created successfully"
           }
         },
         "security": [
@@ -523,7 +523,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully rendered email template"
           }
         },
         "security": [
@@ -584,7 +584,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Test email sent successfully"
           }
         },
         "security": [
@@ -657,7 +657,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully searched users"
           }
         },
         "security": [
@@ -717,7 +717,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "User created successfully"
           }
         },
         "security": [
@@ -790,7 +790,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "User deleted successfully"
           }
         },
         "security": [
@@ -850,7 +850,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved user"
           }
         },
         "security": [
@@ -921,7 +921,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "User updated successfully"
           }
         },
         "security": [
@@ -983,7 +983,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved user preferences"
           }
         },
         "security": [
@@ -1054,7 +1054,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "User preferences updated successfully"
           }
         },
         "security": [
@@ -1116,7 +1116,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "User restored successfully"
           }
         },
         "security": [
@@ -1181,7 +1181,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved user sessions"
           }
         },
         "security": [
@@ -1270,7 +1270,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved user statistics"
           }
         },
         "security": [
@@ -1344,7 +1344,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved albums"
           }
         },
         "security": [
@@ -1403,7 +1403,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Album created successfully"
           }
         },
         "security": [
@@ -1483,7 +1483,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Assets added to albums successfully"
           }
         },
         "security": [
@@ -1533,7 +1533,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved album statistics"
           }
         },
         "security": [
@@ -1587,7 +1587,7 @@
         ],
         "responses": {
           "204": {
-            "description": ""
+            "description": "Album deleted successfully"
           }
         },
         "security": [
@@ -1673,7 +1673,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved album"
           }
         },
         "security": [
@@ -1743,7 +1743,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Album updated successfully"
           }
         },
         "security": [
@@ -1818,7 +1818,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Assets removed from album successfully"
           }
         },
         "security": [
@@ -1909,7 +1909,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Assets added to album successfully"
           }
         },
         "security": [
@@ -1972,7 +1972,7 @@
         ],
         "responses": {
           "204": {
-            "description": ""
+            "description": "User removed from album successfully"
           }
         },
         "security": [
@@ -2044,7 +2044,7 @@
         },
         "responses": {
           "204": {
-            "description": ""
+            "description": "User role updated successfully"
           }
         },
         "security": [
@@ -2116,7 +2116,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Users added to album successfully"
           }
         },
         "security": [
@@ -2169,7 +2169,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved API keys"
           }
         },
         "security": [
@@ -2228,7 +2228,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "API key created successfully"
           }
         },
         "security": [
@@ -2278,7 +2278,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved current API key"
           }
         },
         "security": [
@@ -2331,7 +2331,7 @@
         ],
         "responses": {
           "204": {
-            "description": ""
+            "description": "API key deleted successfully"
           }
         },
         "security": [
@@ -2390,7 +2390,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved API key"
           }
         },
         "security": [
@@ -2460,7 +2460,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "API key updated successfully"
           }
         },
         "security": [
@@ -2514,7 +2514,7 @@
         },
         "responses": {
           "204": {
-            "description": ""
+            "description": "Assets deleted successfully"
           }
         },
         "security": [
@@ -2663,7 +2663,7 @@
         },
         "responses": {
           "204": {
-            "description": ""
+            "description": "Assets updated successfully"
           }
         },
         "security": [
@@ -2724,7 +2724,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully checked bulk upload"
           }
         },
         "security": [
@@ -2778,7 +2778,7 @@
         },
         "responses": {
           "204": {
-            "description": ""
+            "description": "Asset copied successfully"
           }
         },
         "security": [
@@ -2842,7 +2842,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved asset IDs by device"
           }
         },
         "security": [
@@ -2899,7 +2899,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully checked existing assets"
           }
         },
         "security": [
@@ -2952,7 +2952,7 @@
         },
         "responses": {
           "204": {
-            "description": ""
+            "description": "Asset job started successfully"
           }
         },
         "security": [
@@ -3005,7 +3005,7 @@
         },
         "responses": {
           "204": {
-            "description": ""
+            "description": "Asset metadata deleted successfully"
           }
         },
         "security": [
@@ -3063,7 +3063,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Asset metadata updated successfully"
           }
         },
         "security": [
@@ -3124,7 +3124,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved random assets"
           }
         },
         "security": [
@@ -3200,7 +3200,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved asset statistics"
           }
         },
         "security": [
@@ -3279,7 +3279,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved asset"
           }
         },
         "security": [
@@ -3349,7 +3349,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Asset updated successfully"
           }
         },
         "security": [
@@ -3403,7 +3403,7 @@
         ],
         "responses": {
           "204": {
-            "description": ""
+            "description": "Asset edits removed successfully"
           }
         },
         "security": [
@@ -3458,7 +3458,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved asset edits"
           }
         },
         "security": [
@@ -3524,7 +3524,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Asset edits applied successfully"
           }
         },
         "security": [
@@ -3584,7 +3584,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved asset metadata"
           }
         },
         "security": [
@@ -3657,7 +3657,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Asset metadata updated successfully"
           }
         },
         "security": [
@@ -3720,7 +3720,7 @@
         ],
         "responses": {
           "204": {
-            "description": ""
+            "description": "Asset metadata deleted successfully"
           }
         },
         "security": [
@@ -3788,7 +3788,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved asset metadata by key"
           }
         },
         "security": [
@@ -3852,7 +3852,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved asset OCR data"
           }
         },
         "security": [
@@ -3942,7 +3942,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully downloaded file"
           }
         },
         "security": [
@@ -4128,7 +4128,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully downloaded file"
           }
         },
         "security": [
@@ -4208,7 +4208,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully downloaded file"
           }
         },
         "security": [
@@ -4269,7 +4269,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Admin user created successfully"
           }
         },
         "summary": "Register admin",
@@ -4318,7 +4318,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Password changed successfully"
           }
         },
         "security": [
@@ -4379,7 +4379,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully logged in"
           }
         },
         "summary": "Login",
@@ -4417,7 +4417,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully logged out"
           }
         },
         "security": [
@@ -4470,7 +4470,7 @@
         },
         "responses": {
           "204": {
-            "description": ""
+            "description": "PIN code reset successfully"
           }
         },
         "security": [
@@ -4522,7 +4522,7 @@
         },
         "responses": {
           "204": {
-            "description": ""
+            "description": "PIN code setup successfully"
           }
         },
         "security": [
@@ -4574,7 +4574,7 @@
         },
         "responses": {
           "204": {
-            "description": ""
+            "description": "PIN code changed successfully"
           }
         },
         "security": [
@@ -4617,7 +4617,7 @@
         "parameters": [],
         "responses": {
           "204": {
-            "description": ""
+            "description": "Auth session locked successfully"
           }
         },
         "security": [
@@ -4670,7 +4670,7 @@
         },
         "responses": {
           "204": {
-            "description": ""
+            "description": "Auth session unlocked successfully"
           }
         },
         "security": [
@@ -4719,7 +4719,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved auth status"
           }
         },
         "security": [
@@ -4753,7 +4753,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Access token validated successfully"
           }
         },
         "security": [
@@ -4833,7 +4833,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully downloaded file"
           }
         },
         "security": [
@@ -4913,7 +4913,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved download information"
           }
         },
         "security": [
@@ -4967,7 +4967,7 @@
         },
         "responses": {
           "204": {
-            "description": ""
+            "description": "Duplicates deleted successfully"
           }
         },
         "security": [
@@ -5018,7 +5018,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved duplicates"
           }
         },
         "security": [
@@ -5072,7 +5072,7 @@
         ],
         "responses": {
           "204": {
-            "description": ""
+            "description": "Duplicate deleted successfully"
           }
         },
         "security": [
@@ -5136,7 +5136,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved faces for asset"
           }
         },
         "security": [
@@ -5188,7 +5188,7 @@
         },
         "responses": {
           "201": {
-            "description": ""
+            "description": "Face created successfully"
           }
         },
         "security": [
@@ -5253,7 +5253,7 @@
         },
         "responses": {
           "204": {
-            "description": ""
+            "description": "Face deleted successfully"
           }
         },
         "security": [
@@ -5323,7 +5323,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Face reassigned successfully"
           }
         },
         "security": [
@@ -5374,7 +5374,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved queue counts and status"
           }
         },
         "security": [
@@ -5432,7 +5432,7 @@
         },
         "responses": {
           "204": {
-            "description": ""
+            "description": "Job created successfully"
           }
         },
         "security": [
@@ -5505,7 +5505,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Queue command executed successfully"
           }
         },
         "security": [
@@ -5564,7 +5564,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved libraries"
           }
         },
         "security": [
@@ -5624,7 +5624,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Library created successfully"
           }
         },
         "security": [
@@ -5679,7 +5679,7 @@
         ],
         "responses": {
           "204": {
-            "description": ""
+            "description": "Library deleted successfully"
           }
         },
         "security": [
@@ -5739,7 +5739,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved library"
           }
         },
         "security": [
@@ -5810,7 +5810,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Library updated successfully"
           }
         },
         "security": [
@@ -5865,7 +5865,7 @@
         ],
         "responses": {
           "204": {
-            "description": ""
+            "description": "Library scan queued successfully"
           }
         },
         "security": [
@@ -5927,7 +5927,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved library statistics"
           }
         },
         "security": [
@@ -6000,7 +6000,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Library settings validated successfully"
           }
         },
         "security": [
@@ -6110,7 +6110,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved map markers"
           }
         },
         "security": [
@@ -6183,7 +6183,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully reverse geocoded coordinates"
           }
         },
         "security": [
@@ -6292,7 +6292,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved memories"
           }
         },
         "security": [
@@ -6351,7 +6351,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Memory created successfully"
           }
         },
         "security": [
@@ -6458,7 +6458,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved memory statistics"
           }
         },
         "security": [
@@ -6512,7 +6512,7 @@
         ],
         "responses": {
           "204": {
-            "description": ""
+            "description": "Memory deleted successfully"
           }
         },
         "security": [
@@ -6571,7 +6571,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved memory"
           }
         },
         "security": [
@@ -6641,7 +6641,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Memory updated successfully"
           }
         },
         "security": [
@@ -6716,7 +6716,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Assets removed from memory successfully"
           }
         },
         "security": [
@@ -6789,7 +6789,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Assets added to memory successfully"
           }
         },
         "security": [
@@ -6843,7 +6843,7 @@
         },
         "responses": {
           "204": {
-            "description": ""
+            "description": "Notifications deleted successfully"
           }
         },
         "security": [
@@ -6932,7 +6932,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved notifications"
           }
         },
         "security": [
@@ -6984,7 +6984,7 @@
         },
         "responses": {
           "204": {
-            "description": ""
+            "description": "Notifications updated successfully"
           }
         },
         "security": [
@@ -7038,7 +7038,7 @@
         ],
         "responses": {
           "204": {
-            "description": ""
+            "description": "Notification deleted successfully"
           }
         },
         "security": [
@@ -7097,7 +7097,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved notification"
           }
         },
         "security": [
@@ -7167,7 +7167,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Notification updated successfully"
           }
         },
         "security": [
@@ -7228,7 +7228,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "OAuth authorization initiated successfully"
           }
         },
         "summary": "Start OAuth",
@@ -7277,7 +7277,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "OAuth authorization completed successfully"
           }
         },
         "summary": "Finish OAuth",
@@ -7326,7 +7326,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "OAuth account linked successfully"
           }
         },
         "security": [
@@ -7368,7 +7368,7 @@
         "parameters": [],
         "responses": {
           "200": {
-            "description": ""
+            "description": "Redirected to mobile app"
           }
         },
         "summary": "Redirect OAuth to mobile",
@@ -7406,7 +7406,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "OAuth account unlinked successfully"
           }
         },
         "security": [
@@ -7468,7 +7468,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved partners"
           }
         },
         "security": [
@@ -7527,7 +7527,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Partner created successfully"
           }
         },
         "security": [
@@ -7581,7 +7581,7 @@
         ],
         "responses": {
           "204": {
-            "description": ""
+            "description": "Partner removed successfully"
           }
         },
         "security": [
@@ -7641,7 +7641,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Partner created successfully"
           }
         },
         "security": [
@@ -7709,7 +7709,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Partner updated successfully"
           }
         },
         "security": [
@@ -7763,7 +7763,7 @@
         },
         "responses": {
           "204": {
-            "description": ""
+            "description": "People deleted successfully"
           }
         },
         "security": [
@@ -7864,7 +7864,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved people"
           }
         },
         "security": [
@@ -7923,7 +7923,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Person created successfully"
           }
         },
         "security": [
@@ -7985,7 +7985,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "People updated successfully"
           }
         },
         "security": [
@@ -8039,7 +8039,7 @@
         ],
         "responses": {
           "204": {
-            "description": ""
+            "description": "Person deleted successfully"
           }
         },
         "security": [
@@ -8098,7 +8098,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved person"
           }
         },
         "security": [
@@ -8168,7 +8168,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Person updated successfully"
           }
         },
         "security": [
@@ -8243,7 +8243,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "People merged successfully"
           }
         },
         "security": [
@@ -8318,7 +8318,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Faces reassigned successfully"
           }
         },
         "security": [
@@ -8379,7 +8379,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved person statistics"
           }
         },
         "security": [
@@ -8441,7 +8441,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully downloaded file"
           }
         },
         "security": [
@@ -8494,7 +8494,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved plugins"
           }
         },
         "security": [
@@ -8543,7 +8543,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved plugin triggers"
           }
         },
         "security": [
@@ -8600,7 +8600,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved plugin"
           }
         },
         "security": [
@@ -8649,7 +8649,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved queues"
           }
         },
         "security": [
@@ -8706,7 +8706,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved queue"
           }
         },
         "security": [
@@ -8772,7 +8772,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Queue updated successfully"
           }
         },
         "security": [
@@ -8833,7 +8833,7 @@
         },
         "responses": {
           "204": {
-            "description": ""
+            "description": "Queue emptied successfully"
           }
         },
         "security": [
@@ -8903,7 +8903,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved queue jobs"
           }
         },
         "security": [
@@ -8953,7 +8953,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved assets by city"
           }
         },
         "security": [
@@ -9006,7 +9006,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved explore data"
           }
         },
         "security": [
@@ -9381,7 +9381,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved large assets"
           }
         },
         "security": [
@@ -9442,7 +9442,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully searched assets by metadata"
           }
         },
         "security": [
@@ -9514,7 +9514,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully searched people"
           }
         },
         "security": [
@@ -9577,7 +9577,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully searched places"
           }
         },
         "security": [
@@ -9641,7 +9641,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved random assets"
           }
         },
         "security": [
@@ -9702,7 +9702,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully performed smart search"
           }
         },
         "security": [
@@ -9763,7 +9763,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved asset statistics"
           }
         },
         "security": [
@@ -9891,7 +9891,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved search suggestions"
           }
         },
         "security": [
@@ -9941,7 +9941,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved server information"
           }
         },
         "security": [
@@ -9991,7 +9991,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved APK links"
           }
         },
         "security": [
@@ -10041,7 +10041,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved server configuration"
           }
         },
         "summary": "Get config",
@@ -10079,7 +10079,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved server features"
           }
         },
         "summary": "Get features",
@@ -10110,7 +10110,7 @@
         "parameters": [],
         "responses": {
           "204": {
-            "description": ""
+            "description": "Server license deleted successfully"
           }
         },
         "security": [
@@ -10159,7 +10159,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved server license"
           },
           "404": {
             "description": ""
@@ -10222,7 +10222,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Server license set successfully"
           }
         },
         "security": [
@@ -10273,7 +10273,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved supported media types"
           }
         },
         "summary": "Get supported media types",
@@ -10311,7 +10311,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Pong"
           }
         },
         "summary": "Ping",
@@ -10349,7 +10349,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved server statistics"
           }
         },
         "security": [
@@ -10400,7 +10400,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved storage information"
           }
         },
         "security": [
@@ -10450,7 +10450,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved theme"
           }
         },
         "summary": "Get theme",
@@ -10488,7 +10488,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved server version"
           }
         },
         "summary": "Get server version",
@@ -10526,7 +10526,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved version check status"
           }
         },
         "security": [
@@ -10579,7 +10579,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved version history"
           }
         },
         "summary": "Get version history",
@@ -10610,7 +10610,7 @@
         "parameters": [],
         "responses": {
           "204": {
-            "description": ""
+            "description": "All sessions deleted successfully"
           }
         },
         "security": [
@@ -10661,7 +10661,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved sessions"
           }
         },
         "security": [
@@ -10720,7 +10720,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Session created successfully"
           }
         },
         "security": [
@@ -10774,7 +10774,7 @@
         ],
         "responses": {
           "204": {
-            "description": ""
+            "description": "Session deleted successfully"
           }
         },
         "security": [
@@ -10844,7 +10844,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Session updated successfully"
           }
         },
         "security": [
@@ -10898,7 +10898,7 @@
         ],
         "responses": {
           "204": {
-            "description": ""
+            "description": "Session locked successfully"
           }
         },
         "security": [
@@ -10978,7 +10978,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved shared links"
           }
         },
         "security": [
@@ -11037,7 +11037,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Shared link created successfully"
           }
         },
         "security": [
@@ -11125,7 +11125,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved current shared link"
           }
         },
         "security": [
@@ -11178,7 +11178,7 @@
         ],
         "responses": {
           "204": {
-            "description": ""
+            "description": "Shared link deleted successfully"
           }
         },
         "security": [
@@ -11237,7 +11237,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved shared link"
           }
         },
         "security": [
@@ -11307,7 +11307,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Shared link updated successfully"
           }
         },
         "security": [
@@ -11400,7 +11400,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Assets removed from shared link successfully"
           }
         },
         "security": [
@@ -11490,7 +11490,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Assets added to shared link successfully"
           }
         },
         "security": [
@@ -11543,7 +11543,7 @@
         },
         "responses": {
           "204": {
-            "description": ""
+            "description": "Stacks deleted successfully"
           }
         },
         "security": [
@@ -11605,7 +11605,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved stacks"
           }
         },
         "security": [
@@ -11664,7 +11664,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Stack created successfully"
           }
         },
         "security": [
@@ -11718,7 +11718,7 @@
         ],
         "responses": {
           "204": {
-            "description": ""
+            "description": "Stack deleted successfully"
           }
         },
         "security": [
@@ -11777,7 +11777,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved stack"
           }
         },
         "security": [
@@ -11847,7 +11847,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Stack updated successfully"
           }
         },
         "security": [
@@ -11911,7 +11911,7 @@
         ],
         "responses": {
           "204": {
-            "description": ""
+            "description": "Asset removed from stack successfully"
           }
         },
         "security": [
@@ -11965,7 +11965,7 @@
         },
         "responses": {
           "204": {
-            "description": ""
+            "description": "Acknowledgements deleted successfully"
           }
         },
         "security": [
@@ -12016,7 +12016,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved acknowledgements"
           }
         },
         "security": [
@@ -12068,7 +12068,7 @@
         },
         "responses": {
           "204": {
-            "description": ""
+            "description": "Acknowledgements set successfully"
           }
         },
         "security": [
@@ -12130,7 +12130,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved delta sync"
           }
         },
         "security": [
@@ -12191,7 +12191,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved full sync"
           }
         },
         "security": [
@@ -12241,7 +12241,7 @@
         },
         "responses": {
           "200": {
-            "description": ""
+            "description": "Successfully streamed sync changes"
           }
         },
         "security": [
@@ -12291,7 +12291,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved system configuration"
           }
         },
         "security": [
@@ -12351,7 +12351,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "System configuration updated successfully"
           }
         },
         "security": [
@@ -12402,7 +12402,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved system configuration defaults"
           }
         },
         "security": [
@@ -12453,7 +12453,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved storage template options"
           }
         },
         "security": [
@@ -12504,7 +12504,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved admin onboarding status"
           }
         },
         "security": [
@@ -12557,7 +12557,7 @@
         },
         "responses": {
           "204": {
-            "description": ""
+            "description": "Admin onboarding updated successfully"
           }
         },
         "security": [
@@ -12608,7 +12608,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved reverse geocoding state"
           }
         },
         "security": [
@@ -12659,7 +12659,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved version check state"
           }
         },
         "security": [
@@ -12713,7 +12713,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved tags"
           }
         },
         "security": [
@@ -12772,7 +12772,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Tag created successfully"
           }
         },
         "security": [
@@ -12834,7 +12834,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Tags upserted successfully"
           }
         },
         "security": [
@@ -12895,7 +12895,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Assets tagged successfully"
           }
         },
         "security": [
@@ -12949,7 +12949,7 @@
         ],
         "responses": {
           "204": {
-            "description": ""
+            "description": "Tag deleted successfully"
           }
         },
         "security": [
@@ -13008,7 +13008,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved tag"
           }
         },
         "security": [
@@ -13078,7 +13078,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Tag updated successfully"
           }
         },
         "security": [
@@ -13153,7 +13153,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Assets untagged successfully"
           }
         },
         "security": [
@@ -13226,7 +13226,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Assets tagged successfully"
           }
         },
         "security": [
@@ -13408,7 +13408,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved time bucket"
           }
         },
         "security": [
@@ -13579,7 +13579,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved time buckets"
           }
         },
         "security": [
@@ -13625,7 +13625,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Trash emptied successfully"
           }
         },
         "security": [
@@ -13675,7 +13675,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Trash restored successfully"
           }
         },
         "security": [
@@ -13736,7 +13736,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Assets restored successfully"
           }
         },
         "security": [
@@ -13789,7 +13789,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved users"
           }
         },
         "security": [
@@ -13839,7 +13839,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved current user"
           }
         },
         "security": [
@@ -13898,7 +13898,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Current user updated successfully"
           }
         },
         "security": [
@@ -13941,7 +13941,7 @@
         "parameters": [],
         "responses": {
           "204": {
-            "description": ""
+            "description": "User license deleted successfully"
           }
         },
         "security": [
@@ -13989,7 +13989,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved user license"
           }
         },
         "security": [
@@ -14048,7 +14048,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "User license set successfully"
           }
         },
         "security": [
@@ -14091,7 +14091,7 @@
         "parameters": [],
         "responses": {
           "204": {
-            "description": ""
+            "description": "User onboarding deleted successfully"
           }
         },
         "security": [
@@ -14139,7 +14139,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved user onboarding"
           }
         },
         "security": [
@@ -14198,7 +14198,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "User onboarding updated successfully"
           }
         },
         "security": [
@@ -14248,7 +14248,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved user preferences"
           }
         },
         "security": [
@@ -14307,7 +14307,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "User preferences updated successfully"
           }
         },
         "security": [
@@ -14350,7 +14350,7 @@
         "parameters": [],
         "responses": {
           "204": {
-            "description": ""
+            "description": "User profile image deleted successfully"
           }
         },
         "security": [
@@ -14470,7 +14470,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved user"
           }
         },
         "security": [
@@ -14532,7 +14532,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully downloaded file"
           }
         },
         "security": [
@@ -14595,7 +14595,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved assets by original path"
           }
         },
         "security": [
@@ -14647,7 +14647,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved unique paths"
           }
         },
         "security": [
@@ -14699,7 +14699,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved workflows"
           }
         },
         "security": [
@@ -14754,7 +14754,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Workflow created successfully"
           }
         },
         "security": [
@@ -14804,7 +14804,7 @@
         ],
         "responses": {
           "204": {
-            "description": ""
+            "description": "Workflow deleted successfully"
           }
         },
         "security": [
@@ -14859,7 +14859,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Successfully retrieved workflow"
           }
         },
         "security": [
@@ -14925,7 +14925,7 @@
                 }
               }
             },
-            "description": ""
+            "description": "Workflow updated successfully"
           }
         },
         "security": [
@@ -15136,6 +15136,7 @@
     },
     "schemas": {
       "APIKeyCreateDto": {
+        "description": "API key creation request with name and permissions",
         "properties": {
           "name": {
             "description": "API key name",
@@ -15156,6 +15157,7 @@
         "type": "object"
       },
       "APIKeyCreateResponseDto": {
+        "description": "API key creation response with secret",
         "properties": {
           "apiKey": {
             "allOf": [
@@ -15177,6 +15179,7 @@
         "type": "object"
       },
       "APIKeyResponseDto": {
+        "description": "API key response with permissions",
         "properties": {
           "createdAt": {
             "description": "Creation date",
@@ -15214,6 +15217,7 @@
         "type": "object"
       },
       "APIKeyUpdateDto": {
+        "description": "API key update request with optional name and permissions",
         "properties": {
           "name": {
             "description": "API key name",
@@ -15231,6 +15235,7 @@
         "type": "object"
       },
       "ActivityCreateDto": {
+        "description": "Activity creation request with type and optional comment",
         "properties": {
           "albumId": {
             "description": "Album ID",
@@ -15262,6 +15267,7 @@
         "type": "object"
       },
       "ActivityResponseDto": {
+        "description": "Activity response containing like or comment information",
         "properties": {
           "assetId": {
             "description": "Asset ID (if activity is for an asset)",
@@ -15308,6 +15314,7 @@
         "type": "object"
       },
       "ActivityStatisticsResponseDto": {
+        "description": "Activity statistics with comment and like counts",
         "properties": {
           "comments": {
             "description": "Number of comments",
@@ -15325,6 +15332,7 @@
         "type": "object"
       },
       "AddUsersDto": {
+        "description": "Add multiple users to album request",
         "properties": {
           "albumUsers": {
             "description": "Album users to add",
@@ -15341,6 +15349,7 @@
         "type": "object"
       },
       "AdminOnboardingUpdateDto": {
+        "description": "Admin onboarding update request with onboarded status",
         "properties": {
           "isOnboarded": {
             "description": "Is admin onboarded",
@@ -15353,6 +15362,7 @@
         "type": "object"
       },
       "AlbumResponseDto": {
+        "description": "Album response with assets and metadata",
         "properties": {
           "albumName": {
             "description": "Album name",
@@ -15473,6 +15483,7 @@
         "type": "object"
       },
       "AlbumStatisticsResponseDto": {
+        "description": "Album statistics with count breakdown",
         "properties": {
           "notShared": {
             "description": "Number of non-shared albums",
@@ -15495,6 +15506,7 @@
         "type": "object"
       },
       "AlbumUserAddDto": {
+        "description": "Album user addition with user ID and role",
         "properties": {
           "role": {
             "allOf": [
@@ -15517,6 +15529,7 @@
         "type": "object"
       },
       "AlbumUserCreateDto": {
+        "description": "Album user creation with user ID and role",
         "properties": {
           "role": {
             "allOf": [
@@ -15539,6 +15552,7 @@
         "type": "object"
       },
       "AlbumUserResponseDto": {
+        "description": "Album user response with role",
         "properties": {
           "role": {
             "allOf": [
@@ -15572,6 +15586,7 @@
         "type": "string"
       },
       "AlbumsAddAssetsDto": {
+        "description": "Add assets to multiple albums request",
         "properties": {
           "albumIds": {
             "description": "Album IDs",
@@ -15597,6 +15612,7 @@
         "type": "object"
       },
       "AlbumsAddAssetsResponseDto": {
+        "description": "Album add assets operation response",
         "properties": {
           "error": {
             "allOf": [
@@ -15647,6 +15663,7 @@
         "type": "object"
       },
       "AssetBulkDeleteDto": {
+        "description": "Bulk asset delete request with IDs and optional force flag",
         "properties": {
           "force": {
             "description": "Force delete even if in use",
@@ -15667,6 +15684,7 @@
         "type": "object"
       },
       "AssetBulkUpdateDto": {
+        "description": "Bulk asset update request with IDs and update fields",
         "properties": {
           "dateTimeOriginal": {
             "description": "Original date and time",
@@ -15730,6 +15748,7 @@
         "type": "object"
       },
       "AssetBulkUploadCheckDto": {
+        "description": "Asset bulk upload check request with assets array",
         "properties": {
           "assets": {
             "description": "Assets to check",
@@ -15745,6 +15764,7 @@
         "type": "object"
       },
       "AssetBulkUploadCheckItem": {
+        "description": "Asset bulk upload check item with ID and checksum",
         "properties": {
           "checksum": {
             "description": "Base64 or hex encoded SHA1 hash",
@@ -15762,6 +15782,7 @@
         "type": "object"
       },
       "AssetBulkUploadCheckResponseDto": {
+        "description": "Bulk upload check response with results",
         "properties": {
           "results": {
             "description": "Upload check results",
@@ -15814,6 +15835,7 @@
         "type": "object"
       },
       "AssetCopyDto": {
+        "description": "Asset copy request with source, target, and copy options",
         "properties": {
           "albums": {
             "default": true,
@@ -15858,6 +15880,7 @@
         "type": "object"
       },
       "AssetDeltaSyncDto": {
+        "description": "Delta asset sync request with date and user IDs",
         "properties": {
           "updatedAfter": {
             "description": "Sync assets updated after this date",
@@ -15880,6 +15903,7 @@
         "type": "object"
       },
       "AssetDeltaSyncResponseDto": {
+        "description": "Asset delta sync response with changes",
         "properties": {
           "deleted": {
             "description": "Deleted asset IDs",
@@ -15917,6 +15941,7 @@
         "type": "string"
       },
       "AssetEditActionCrop": {
+        "description": "Asset edit action for cropping",
         "properties": {
           "action": {
             "allOf": [
@@ -15942,6 +15967,7 @@
         "type": "object"
       },
       "AssetEditActionListDto": {
+        "description": "Asset edit actions list",
         "properties": {
           "edits": {
             "description": "List of edit actions to apply (crop, rotate, or mirror)",
@@ -15968,6 +15994,7 @@
         "type": "object"
       },
       "AssetEditActionMirror": {
+        "description": "Asset edit action for mirroring",
         "properties": {
           "action": {
             "allOf": [
@@ -15993,6 +16020,7 @@
         "type": "object"
       },
       "AssetEditActionRotate": {
+        "description": "Asset edit action for rotation",
         "properties": {
           "action": {
             "allOf": [
@@ -16050,6 +16078,7 @@
         "type": "object"
       },
       "AssetFaceCreateDto": {
+        "description": "Create face detection request",
         "properties": {
           "assetId": {
             "description": "Asset ID",
@@ -16099,6 +16128,7 @@
         "type": "object"
       },
       "AssetFaceDeleteDto": {
+        "description": "Delete face request with force flag",
         "properties": {
           "force": {
             "description": "Force delete even if person has other faces",
@@ -16111,6 +16141,7 @@
         "type": "object"
       },
       "AssetFaceResponseDto": {
+        "description": "Face response with person data",
         "properties": {
           "boundingBoxX1": {
             "description": "Bounding box X1 coordinate",
@@ -16172,6 +16203,7 @@
         "type": "object"
       },
       "AssetFaceUpdateDto": {
+        "description": "Update face associations request",
         "properties": {
           "data": {
             "description": "Face update items",
@@ -16187,6 +16219,7 @@
         "type": "object"
       },
       "AssetFaceUpdateItem": {
+        "description": "Face update item with IDs",
         "properties": {
           "assetId": {
             "description": "Asset ID",
@@ -16206,6 +16239,7 @@
         "type": "object"
       },
       "AssetFaceWithoutPersonResponseDto": {
+        "description": "Face response without person data",
         "properties": {
           "boundingBoxX1": {
             "description": "Bounding box X1 coordinate",
@@ -16257,6 +16291,7 @@
         "type": "object"
       },
       "AssetFullSyncDto": {
+        "description": "Full asset sync request with pagination and date filter",
         "properties": {
           "lastId": {
             "description": "Last asset ID (pagination)",
@@ -16286,6 +16321,7 @@
         "type": "object"
       },
       "AssetIdsDto": {
+        "description": "Asset IDs request parameter",
         "properties": {
           "assetIds": {
             "description": "Asset IDs",
@@ -16302,6 +16338,7 @@
         "type": "object"
       },
       "AssetIdsResponseDto": {
+        "description": "Asset ID operation response",
         "properties": {
           "assetId": {
             "description": "Asset ID",
@@ -16338,6 +16375,7 @@
         "type": "string"
       },
       "AssetJobsDto": {
+        "description": "Asset job request with IDs and job name",
         "properties": {
           "assetIds": {
             "description": "Asset IDs",
@@ -16363,6 +16401,7 @@
         "type": "object"
       },
       "AssetMediaCreateDto": {
+        "description": "Asset media creation request with file data and optional metadata",
         "properties": {
           "assetData": {
             "description": "Asset file data",
@@ -16435,6 +16474,7 @@
         "type": "object"
       },
       "AssetMediaReplaceDto": {
+        "description": "Asset media replace request with file data",
         "properties": {
           "assetData": {
             "description": "Asset file data",
@@ -16478,6 +16518,7 @@
         "type": "object"
       },
       "AssetMediaResponseDto": {
+        "description": "Asset media upload response",
         "properties": {
           "id": {
             "description": "Asset media ID",
@@ -16516,6 +16557,7 @@
         "type": "string"
       },
       "AssetMetadataBulkDeleteDto": {
+        "description": "Bulk asset metadata delete request",
         "properties": {
           "items": {
             "description": "Metadata items to delete",
@@ -16531,6 +16573,7 @@
         "type": "object"
       },
       "AssetMetadataBulkDeleteItemDto": {
+        "description": "Bulk asset metadata delete item with asset ID and key",
         "properties": {
           "assetId": {
             "description": "Asset ID",
@@ -16549,6 +16592,7 @@
         "type": "object"
       },
       "AssetMetadataBulkResponseDto": {
+        "description": "Bulk asset metadata response with asset ID",
         "properties": {
           "assetId": {
             "description": "Asset ID",
@@ -16577,6 +16621,7 @@
         "type": "object"
       },
       "AssetMetadataBulkUpsertDto": {
+        "description": "Bulk asset metadata upsert request",
         "properties": {
           "items": {
             "description": "Metadata items to upsert",
@@ -16592,6 +16637,7 @@
         "type": "object"
       },
       "AssetMetadataBulkUpsertItemDto": {
+        "description": "Bulk asset metadata upsert item with asset ID, key, and value",
         "properties": {
           "assetId": {
             "description": "Asset ID",
@@ -16615,6 +16661,7 @@
         "type": "object"
       },
       "AssetMetadataResponseDto": {
+        "description": "Asset metadata response with key value",
         "properties": {
           "key": {
             "description": "Metadata key",
@@ -16638,6 +16685,7 @@
         "type": "object"
       },
       "AssetMetadataUpsertDto": {
+        "description": "Asset metadata upsert request",
         "properties": {
           "items": {
             "description": "Metadata items to upsert",
@@ -16653,6 +16701,7 @@
         "type": "object"
       },
       "AssetMetadataUpsertItemDto": {
+        "description": "Asset metadata upsert item with key and value",
         "properties": {
           "key": {
             "description": "Metadata key",
@@ -16670,6 +16719,7 @@
         "type": "object"
       },
       "AssetOcrResponseDto": {
+        "description": "OCR response with text detection boxes",
         "properties": {
           "assetId": {
             "format": "uuid",
@@ -16760,6 +16810,7 @@
         "type": "string"
       },
       "AssetResponseDto": {
+        "description": "Asset response with metadata and details",
         "properties": {
           "checksum": {
             "description": "Base64 encoded SHA1 hash",
@@ -16996,6 +17047,7 @@
         "type": "object"
       },
       "AssetStackResponseDto": {
+        "description": "Asset stack response with primary asset",
         "properties": {
           "assetCount": {
             "description": "Number of assets in stack",
@@ -17018,6 +17070,7 @@
         "type": "object"
       },
       "AssetStatsResponseDto": {
+        "description": "Asset statistics response with counts",
         "properties": {
           "images": {
             "description": "Number of images",
@@ -17069,6 +17122,7 @@
         "type": "string"
       },
       "AuthStatusResponseDto": {
+        "description": "Authentication status response",
         "properties": {
           "expiresAt": {
             "description": "Session expiration date",
@@ -17122,6 +17176,7 @@
         "type": "string"
       },
       "BulkIdResponseDto": {
+        "description": "Bulk ID operation response",
         "properties": {
           "error": {
             "description": "Error reason if failed",
@@ -17149,6 +17204,7 @@
         "type": "object"
       },
       "BulkIdsDto": {
+        "description": "Bulk IDs request with array of UUIDs",
         "properties": {
           "ids": {
             "description": "IDs to process",
@@ -17165,6 +17221,7 @@
         "type": "object"
       },
       "CLIPConfig": {
+        "description": "CLIP model configuration",
         "properties": {
           "enabled": {
             "description": "Whether the task is enabled",
@@ -17212,6 +17269,7 @@
         "type": "object"
       },
       "ChangePasswordDto": {
+        "description": "Change password request with current and new password",
         "properties": {
           "invalidateSessions": {
             "default": false,
@@ -17237,6 +17295,7 @@
         "type": "object"
       },
       "CheckExistingAssetsDto": {
+        "description": "Check existing assets request with device asset IDs and device ID",
         "properties": {
           "deviceAssetIds": {
             "description": "Device asset IDs to check",
@@ -17258,6 +17317,7 @@
         "type": "object"
       },
       "CheckExistingAssetsResponseDto": {
+        "description": "Existing assets check response",
         "properties": {
           "existingIds": {
             "description": "Existing asset IDs",
@@ -17280,6 +17340,7 @@
         "type": "string"
       },
       "ContributorCountResponseDto": {
+        "description": "Contributor count response with asset count",
         "properties": {
           "assetCount": {
             "description": "Number of assets contributed",
@@ -17297,6 +17358,7 @@
         "type": "object"
       },
       "CreateAlbumDto": {
+        "description": "Album creation request with name, description, users, and assets",
         "properties": {
           "albumName": {
             "description": "Album name",
@@ -17328,6 +17390,7 @@
         "type": "object"
       },
       "CreateLibraryDto": {
+        "description": "Library creation request with owner, name, import paths, and exclusion patterns",
         "properties": {
           "exclusionPatterns": {
             "description": "Exclusion patterns (max 128)",
@@ -17363,6 +17426,7 @@
         "type": "object"
       },
       "CreateProfileImageDto": {
+        "description": "Profile image creation request with image file",
         "properties": {
           "file": {
             "description": "Profile image file",
@@ -17376,6 +17440,7 @@
         "type": "object"
       },
       "CreateProfileImageResponseDto": {
+        "description": "Profile image creation response",
         "properties": {
           "profileChangedAt": {
             "description": "Profile image change date",
@@ -17399,6 +17464,7 @@
         "type": "object"
       },
       "CropParameters": {
+        "description": "Crop parameters with coordinates and dimensions",
         "properties": {
           "height": {
             "description": "Height of the crop",
@@ -17430,6 +17496,7 @@
         "type": "object"
       },
       "DatabaseBackupConfig": {
+        "description": "Database backup configuration with enabled flag, cron expression, and retention count",
         "properties": {
           "cronExpression": {
             "type": "string"
@@ -17450,6 +17517,7 @@
         "type": "object"
       },
       "DownloadArchiveInfo": {
+        "description": "Download archive information with size and asset IDs",
         "properties": {
           "assetIds": {
             "description": "Asset IDs in this archive",
@@ -17470,6 +17538,7 @@
         "type": "object"
       },
       "DownloadInfoDto": {
+        "description": "Download info query parameters with asset, album, or user filters",
         "properties": {
           "albumId": {
             "description": "Album ID to download",
@@ -17516,6 +17585,7 @@
         "type": "object"
       },
       "DownloadResponseDto": {
+        "description": "Download response with archive info",
         "properties": {
           "archives": {
             "description": "Archive information",
@@ -17550,6 +17620,7 @@
         "type": "object"
       },
       "DuplicateDetectionConfig": {
+        "description": "Duplicate detection configuration with maximum distance threshold",
         "properties": {
           "enabled": {
             "description": "Whether the task is enabled",
@@ -17570,6 +17641,7 @@
         "type": "object"
       },
       "DuplicateResponseDto": {
+        "description": "Duplicate assets response",
         "properties": {
           "assets": {
             "description": "Duplicate assets",
@@ -17629,6 +17701,7 @@
         "type": "object"
       },
       "ExifResponseDto": {
+        "description": "EXIF metadata response with camera details",
         "properties": {
           "city": {
             "default": null,
@@ -17769,6 +17842,7 @@
         "type": "object"
       },
       "FaceDto": {
+        "description": "Face identifier request",
         "properties": {
           "id": {
             "description": "Face ID",
@@ -17782,6 +17856,7 @@
         "type": "object"
       },
       "FacialRecognitionConfig": {
+        "description": "Facial recognition configuration with confidence scores and distance thresholds",
         "properties": {
           "enabled": {
             "description": "Whether the task is enabled",
@@ -17860,6 +17935,7 @@
         "type": "string"
       },
       "JobCreateDto": {
+        "description": "Job creation request with job name",
         "properties": {
           "name": {
             "allOf": [
@@ -17950,6 +18026,7 @@
         "type": "object"
       },
       "LibraryResponseDto": {
+        "description": "Library response with import paths",
         "properties": {
           "assetCount": {
             "description": "Number of assets",
@@ -18012,6 +18089,7 @@
         "type": "object"
       },
       "LibraryStatsResponseDto": {
+        "description": "Library statistics with asset counts",
         "properties": {
           "photos": {
             "default": 0,
@@ -18097,6 +18175,7 @@
         "type": "string"
       },
       "LoginCredentialDto": {
+        "description": "Login credentials with email and password",
         "properties": {
           "email": {
             "description": "User email",
@@ -18117,6 +18196,7 @@
         "type": "object"
       },
       "LoginResponseDto": {
+        "description": "Login response with access token",
         "properties": {
           "accessToken": {
             "description": "Access token",
@@ -18164,6 +18244,7 @@
         "type": "object"
       },
       "LogoutResponseDto": {
+        "description": "Logout response with redirect URI",
         "properties": {
           "redirectUri": {
             "description": "Redirect URI",
@@ -18208,6 +18289,7 @@
         "type": "string"
       },
       "MaintenanceAuthDto": {
+        "description": "Maintenance authentication response with username",
         "properties": {
           "username": {
             "description": "Maintenance username",
@@ -18220,6 +18302,7 @@
         "type": "object"
       },
       "MaintenanceLoginDto": {
+        "description": "Maintenance login request with optional token",
         "properties": {
           "token": {
             "description": "Maintenance token",
@@ -18241,6 +18324,7 @@
         "type": "string"
       },
       "MapMarkerResponseDto": {
+        "description": "Map marker response with coordinates",
         "properties": {
           "city": {
             "description": "City name",
@@ -18283,6 +18367,7 @@
         "type": "object"
       },
       "MapReverseGeocodeResponseDto": {
+        "description": "Reverse geocoding response with location",
         "properties": {
           "city": {
             "description": "City name",
@@ -18341,6 +18426,7 @@
         "type": "object"
       },
       "MemoryCreateDto": {
+        "description": "Memory creation request with type, data, date, and optional assets",
         "properties": {
           "assetIds": {
             "description": "Asset IDs to associate with memory",
@@ -18389,6 +18475,7 @@
         "type": "object"
       },
       "MemoryResponseDto": {
+        "description": "Memory response with associated assets",
         "properties": {
           "assets": {
             "description": "Associated assets",
@@ -18483,6 +18570,7 @@
         "type": "string"
       },
       "MemoryStatisticsResponseDto": {
+        "description": "Memory statistics response with total count",
         "properties": {
           "total": {
             "description": "Total number of memories",
@@ -18501,6 +18589,7 @@
         "type": "string"
       },
       "MemoryUpdateDto": {
+        "description": "Memory update request with optional fields",
         "properties": {
           "isSaved": {
             "description": "Is memory saved",
@@ -18520,6 +18609,7 @@
         "type": "object"
       },
       "MergePersonDto": {
+        "description": "Merge persons request with IDs",
         "properties": {
           "ids": {
             "description": "Person IDs to merge",
@@ -18536,6 +18626,7 @@
         "type": "object"
       },
       "MetadataSearchDto": {
+        "description": "Metadata search query with asset and file filters",
         "properties": {
           "albumIds": {
             "description": "Filter by album IDs",
@@ -18772,6 +18863,7 @@
         "type": "string"
       },
       "MirrorParameters": {
+        "description": "Mirror parameters with axis",
         "properties": {
           "axis": {
             "allOf": [
@@ -18788,6 +18880,7 @@
         "type": "object"
       },
       "NotificationCreateDto": {
+        "description": "Notification creation request",
         "properties": {
           "data": {
             "description": "Additional notification data",
@@ -18837,6 +18930,7 @@
         "type": "object"
       },
       "NotificationDeleteAllDto": {
+        "description": "Bulk notification delete request with IDs",
         "properties": {
           "ids": {
             "description": "Notification IDs to delete",
@@ -18853,6 +18947,7 @@
         "type": "object"
       },
       "NotificationDto": {
+        "description": "Notification response with details",
         "properties": {
           "createdAt": {
             "description": "Creation date",
@@ -18927,6 +19022,7 @@
         "type": "string"
       },
       "NotificationUpdateAllDto": {
+        "description": "Bulk notification update request with IDs and read date",
         "properties": {
           "ids": {
             "description": "Notification IDs to update",
@@ -18949,6 +19045,7 @@
         "type": "object"
       },
       "NotificationUpdateDto": {
+        "description": "Notification update request with read date",
         "properties": {
           "readAt": {
             "description": "Date when notification was read",
@@ -18960,6 +19057,7 @@
         "type": "object"
       },
       "OAuthAuthorizeResponseDto": {
+        "description": "OAuth authorization URL response",
         "properties": {
           "url": {
             "description": "OAuth authorization URL",
@@ -18972,6 +19070,7 @@
         "type": "object"
       },
       "OAuthCallbackDto": {
+        "description": "OAuth callback request with URL and optional state/code verifier",
         "properties": {
           "codeVerifier": {
             "description": "OAuth code verifier (PKCE)",
@@ -18992,6 +19091,7 @@
         "type": "object"
       },
       "OAuthConfigDto": {
+        "description": "OAuth configuration request with redirect URI and optional PKCE parameters",
         "properties": {
           "codeChallenge": {
             "description": "OAuth code challenge (PKCE)",
@@ -19019,6 +19119,7 @@
         "type": "string"
       },
       "OcrConfig": {
+        "description": "OCR configuration with resolution and confidence score thresholds",
         "properties": {
           "enabled": {
             "description": "Whether the task is enabled",
@@ -19058,6 +19159,7 @@
         "type": "object"
       },
       "OnThisDayDto": {
+        "description": "On this day memory data with year",
         "properties": {
           "year": {
             "description": "Year for on this day memory",
@@ -19071,6 +19173,7 @@
         "type": "object"
       },
       "OnboardingDto": {
+        "description": "Onboarding status request",
         "properties": {
           "isOnboarded": {
             "description": "Is user onboarded",
@@ -19083,6 +19186,7 @@
         "type": "object"
       },
       "OnboardingResponseDto": {
+        "description": "Onboarding status response",
         "properties": {
           "isOnboarded": {
             "description": "Is user onboarded",
@@ -19095,6 +19199,7 @@
         "type": "object"
       },
       "PartnerCreateDto": {
+        "description": "Partner creation request with user ID",
         "properties": {
           "sharedWithId": {
             "description": "User ID to share with",
@@ -19115,6 +19220,7 @@
         "type": "string"
       },
       "PartnerResponseDto": {
+        "description": "Partner response with user details",
         "properties": {
           "avatarColor": {
             "allOf": [
@@ -19161,6 +19267,7 @@
         "type": "object"
       },
       "PartnerUpdateDto": {
+        "description": "Partner update request with timeline visibility",
         "properties": {
           "inTimeline": {
             "description": "Show partner assets in timeline",
@@ -19192,6 +19299,7 @@
         "type": "object"
       },
       "PeopleResponseDto": {
+        "description": "People list response with pagination",
         "properties": {
           "hasNextPage": {
             "description": "Whether there are more pages",
@@ -19245,6 +19353,7 @@
         "type": "object"
       },
       "PeopleUpdateDto": {
+        "description": "Bulk update people request",
         "properties": {
           "people": {
             "description": "People to update",
@@ -19260,6 +19369,7 @@
         "type": "object"
       },
       "PeopleUpdateItem": {
+        "description": "Person update item with ID",
         "properties": {
           "birthDate": {
             "description": "Person date of birth",
@@ -19455,6 +19565,7 @@
         "type": "string"
       },
       "PersonCreateDto": {
+        "description": "Create person request data",
         "properties": {
           "birthDate": {
             "description": "Person date of birth",
@@ -19483,6 +19594,7 @@
         "type": "object"
       },
       "PersonResponseDto": {
+        "description": "Person response with face information",
         "properties": {
           "birthDate": {
             "description": "Person date of birth",
@@ -19563,6 +19675,7 @@
         "type": "object"
       },
       "PersonStatisticsResponseDto": {
+        "description": "Person statistics response with counts",
         "properties": {
           "assets": {
             "description": "Number of assets",
@@ -19575,6 +19688,7 @@
         "type": "object"
       },
       "PersonUpdateDto": {
+        "description": "Update person request data",
         "properties": {
           "birthDate": {
             "description": "Person date of birth",
@@ -19608,6 +19722,7 @@
         "type": "object"
       },
       "PersonWithFacesResponseDto": {
+        "description": "Person response with face detections",
         "properties": {
           "birthDate": {
             "description": "Person date of birth",
@@ -19696,6 +19811,7 @@
         "type": "object"
       },
       "PinCodeChangeDto": {
+        "description": "PIN code change request with old and new PIN",
         "properties": {
           "newPinCode": {
             "description": "New PIN code (4-6 digits)",
@@ -19718,6 +19834,7 @@
         "type": "object"
       },
       "PinCodeResetDto": {
+        "description": "PIN code reset request with optional PIN or password",
         "properties": {
           "password": {
             "description": "User password (required if PIN code is not provided)",
@@ -19732,6 +19849,7 @@
         "type": "object"
       },
       "PinCodeSetupDto": {
+        "description": "PIN code setup request",
         "properties": {
           "pinCode": {
             "description": "PIN code (4-6 digits)",
@@ -19745,6 +19863,7 @@
         "type": "object"
       },
       "PlacesResponseDto": {
+        "description": "Place response with coordinates",
         "properties": {
           "admin1name": {
             "description": "Administrative level 1 name (state/province)",
@@ -19775,6 +19894,7 @@
         "type": "object"
       },
       "PluginActionResponseDto": {
+        "description": "Plugin action response with schema",
         "properties": {
           "description": {
             "description": "Action description",
@@ -19830,6 +19950,7 @@
         "type": "string"
       },
       "PluginFilterResponseDto": {
+        "description": "Plugin filter response with schema",
         "properties": {
           "description": {
             "description": "Filter description",
@@ -19876,6 +19997,7 @@
         "type": "object"
       },
       "PluginResponseDto": {
+        "description": "Plugin response with filters and actions",
         "properties": {
           "actions": {
             "description": "Plugin actions",
@@ -19939,6 +20061,7 @@
         "type": "object"
       },
       "PluginTriggerResponseDto": {
+        "description": "Plugin trigger response with context",
         "properties": {
           "contextType": {
             "allOf": [
@@ -20013,6 +20136,7 @@
         "type": "string"
       },
       "QueueCommandDto": {
+        "description": "Queue command request with command and optional force flag",
         "properties": {
           "command": {
             "allOf": [
@@ -20033,6 +20157,7 @@
         "type": "object"
       },
       "QueueDeleteDto": {
+        "description": "Queue delete request with optional failed flag",
         "properties": {
           "failed": {
             "description": "If true, will also remove failed jobs from the queue.",
@@ -20053,6 +20178,7 @@
         "type": "object"
       },
       "QueueJobResponseDto": {
+        "description": "Queue job response with data",
         "properties": {
           "data": {
             "description": "Job data payload",
@@ -20117,6 +20243,7 @@
         "type": "string"
       },
       "QueueResponseDto": {
+        "description": "Queue response with statistics",
         "properties": {
           "isPaused": {
             "description": "Whether the queue is paused",
@@ -20147,6 +20274,7 @@
         "type": "object"
       },
       "QueueResponseLegacyDto": {
+        "description": "Queue response legacy with status and job counts",
         "properties": {
           "jobCounts": {
             "allOf": [
@@ -20172,6 +20300,7 @@
         "type": "object"
       },
       "QueueStatisticsDto": {
+        "description": "Queue statistics with job counts by status",
         "properties": {
           "active": {
             "description": "Number of active jobs",
@@ -20209,6 +20338,7 @@
         "type": "object"
       },
       "QueueStatusLegacyDto": {
+        "description": "Queue status legacy response with active and paused flags",
         "properties": {
           "isActive": {
             "description": "Whether the queue is currently active (has running jobs)",
@@ -20226,6 +20356,7 @@
         "type": "object"
       },
       "QueueUpdateDto": {
+        "description": "Queue update request with optional pause flag",
         "properties": {
           "isPaused": {
             "description": "Whether to pause the queue",
@@ -20235,6 +20366,7 @@
         "type": "object"
       },
       "QueuesResponseLegacyDto": {
+        "description": "Queues response legacy with all queue names mapped to queue responses",
         "properties": {
           "backgroundTask": {
             "$ref": "#/components/schemas/QueueResponseLegacyDto"
@@ -20314,6 +20446,7 @@
         "type": "object"
       },
       "RandomSearchDto": {
+        "description": "Random search query with optional stacked and people filters",
         "properties": {
           "albumIds": {
             "description": "Filter by album IDs",
@@ -20527,6 +20660,7 @@
         "type": "string"
       },
       "ReverseGeocodingStateResponseDto": {
+        "description": "Reverse geocoding state response",
         "properties": {
           "lastImportFileName": {
             "description": "Last import file name",
@@ -20546,6 +20680,7 @@
         "type": "object"
       },
       "RotateParameters": {
+        "description": "Rotation parameters with angle",
         "properties": {
           "angle": {
             "description": "Rotation angle in degrees",
@@ -20558,6 +20693,7 @@
         "type": "object"
       },
       "SearchAlbumResponseDto": {
+        "description": "Album search results response",
         "properties": {
           "count": {
             "description": "Number of albums in this page",
@@ -20591,6 +20727,7 @@
         "type": "object"
       },
       "SearchAssetResponseDto": {
+        "description": "Asset search results response",
         "properties": {
           "count": {
             "description": "Number of assets in this page",
@@ -20629,6 +20766,7 @@
         "type": "object"
       },
       "SearchExploreItem": {
+        "description": "Search explore item with asset",
         "properties": {
           "data": {
             "allOf": [
@@ -20650,6 +20788,7 @@
         "type": "object"
       },
       "SearchExploreResponseDto": {
+        "description": "Search explore response with items",
         "properties": {
           "fieldName": {
             "description": "Explore field name",
@@ -20670,6 +20809,7 @@
         "type": "object"
       },
       "SearchFacetCountResponseDto": {
+        "description": "Search facet count response",
         "properties": {
           "count": {
             "description": "Number of assets with this facet value",
@@ -20687,6 +20827,7 @@
         "type": "object"
       },
       "SearchFacetResponseDto": {
+        "description": "Search facet response with counts",
         "properties": {
           "counts": {
             "description": "Facet counts",
@@ -20707,6 +20848,7 @@
         "type": "object"
       },
       "SearchResponseDto": {
+        "description": "Search response with albums and assets",
         "properties": {
           "albums": {
             "allOf": [
@@ -20732,6 +20874,7 @@
         "type": "object"
       },
       "SearchStatisticsResponseDto": {
+        "description": "Search statistics response with total",
         "properties": {
           "total": {
             "description": "Total number of matching assets",
@@ -20755,6 +20898,7 @@
         "type": "string"
       },
       "ServerAboutResponseDto": {
+        "description": "Server information and version details",
         "properties": {
           "build": {
             "description": "Build identifier",
@@ -20849,6 +20993,7 @@
         "type": "object"
       },
       "ServerApkLinksDto": {
+        "description": "Server APK download links response",
         "properties": {
           "arm64v8a": {
             "description": "APK download link for ARM64 v8a architecture",
@@ -20876,6 +21021,7 @@
         "type": "object"
       },
       "ServerConfigDto": {
+        "description": "Server configuration response",
         "properties": {
           "externalDomain": {
             "description": "External domain URL",
@@ -20938,6 +21084,7 @@
         "type": "object"
       },
       "ServerFeaturesDto": {
+        "description": "Server features response with flags",
         "properties": {
           "configFile": {
             "description": "Whether config file is available",
@@ -21020,6 +21167,7 @@
         "type": "object"
       },
       "ServerMediaTypesResponseDto": {
+        "description": "Server supported media types response",
         "properties": {
           "image": {
             "description": "Supported image MIME types",
@@ -21051,6 +21199,7 @@
         "type": "object"
       },
       "ServerPingResponse": {
+        "description": "Server ping response",
         "properties": {
           "res": {
             "example": "pong",
@@ -21064,6 +21213,7 @@
         "type": "object"
       },
       "ServerStatsResponseDto": {
+        "description": "Server statistics response with usage",
         "properties": {
           "photos": {
             "default": 0,
@@ -21122,6 +21272,7 @@
         "type": "object"
       },
       "ServerStorageResponseDto": {
+        "description": "Server storage response with usage",
         "properties": {
           "diskAvailable": {
             "description": "Available disk space (human-readable format)",
@@ -21168,6 +21319,7 @@
         "type": "object"
       },
       "ServerThemeDto": {
+        "description": "Server theme configuration",
         "properties": {
           "customCss": {
             "description": "Custom CSS for theming",
@@ -21180,6 +21332,7 @@
         "type": "object"
       },
       "ServerVersionHistoryResponseDto": {
+        "description": "Server version history response",
         "properties": {
           "createdAt": {
             "description": "When this version was first seen",
@@ -21203,6 +21356,7 @@
         "type": "object"
       },
       "ServerVersionResponseDto": {
+        "description": "Server version response with numbers",
         "properties": {
           "major": {
             "description": "Major version number",
@@ -21225,6 +21379,7 @@
         "type": "object"
       },
       "SessionCreateDto": {
+        "description": "Session creation request with optional duration and device information",
         "properties": {
           "deviceOS": {
             "description": "Device OS",
@@ -21243,6 +21398,7 @@
         "type": "object"
       },
       "SessionCreateResponseDto": {
+        "description": "Session creation response with token",
         "properties": {
           "appVersion": {
             "description": "App version",
@@ -21300,6 +21456,7 @@
         "type": "object"
       },
       "SessionResponseDto": {
+        "description": "Session response with device information",
         "properties": {
           "appVersion": {
             "description": "App version",
@@ -21352,6 +21509,7 @@
         "type": "object"
       },
       "SessionUnlockDto": {
+        "description": "Session unlock request with PIN or password",
         "properties": {
           "password": {
             "description": "User password (required if PIN code is not provided)",
@@ -21366,6 +21524,7 @@
         "type": "object"
       },
       "SessionUpdateDto": {
+        "description": "Session update request with optional pending sync reset flag",
         "properties": {
           "isPendingSyncReset": {
             "description": "Reset pending sync state",
@@ -21375,6 +21534,7 @@
         "type": "object"
       },
       "SetMaintenanceModeDto": {
+        "description": "Set maintenance mode request with action",
         "properties": {
           "action": {
             "allOf": [
@@ -21391,6 +21551,7 @@
         "type": "object"
       },
       "SharedLinkCreateDto": {
+        "description": "Shared link creation request with type, assets/album, and options",
         "properties": {
           "albumId": {
             "description": "Album ID (for album sharing)",
@@ -21457,6 +21618,7 @@
         "type": "object"
       },
       "SharedLinkEditDto": {
+        "description": "Shared link edit request with optional fields",
         "properties": {
           "allowDownload": {
             "description": "Allow downloads",
@@ -21499,6 +21661,7 @@
         "type": "object"
       },
       "SharedLinkResponseDto": {
+        "description": "Shared link response with assets",
         "properties": {
           "album": {
             "allOf": [
@@ -21637,6 +21800,7 @@
         "type": "object"
       },
       "SignUpDto": {
+        "description": "User sign up request with email, password, and name",
         "properties": {
           "email": {
             "description": "User email",
@@ -21663,6 +21827,7 @@
         "type": "object"
       },
       "SmartSearchDto": {
+        "description": "Smart search query with natural language or asset reference",
         "properties": {
           "albumIds": {
             "description": "Filter by album IDs",
@@ -21859,6 +22024,7 @@
         "type": "string"
       },
       "StackCreateDto": {
+        "description": "Stack creation request with asset IDs",
         "properties": {
           "assetIds": {
             "description": "Asset IDs (first becomes primary, min 2)",
@@ -21876,6 +22042,7 @@
         "type": "object"
       },
       "StackResponseDto": {
+        "description": "Stack response with assets",
         "properties": {
           "assets": {
             "description": "Stack assets",
@@ -21901,6 +22068,7 @@
         "type": "object"
       },
       "StackUpdateDto": {
+        "description": "Stack update request with optional primary asset ID",
         "properties": {
           "primaryAssetId": {
             "description": "Primary asset ID",
@@ -21911,6 +22079,7 @@
         "type": "object"
       },
       "StatisticsSearchDto": {
+        "description": "Statistics search query with optional description filter",
         "properties": {
           "albumIds": {
             "description": "Filter by album IDs",
@@ -22070,6 +22239,7 @@
         "type": "object"
       },
       "SyncAckDeleteDto": {
+        "description": "Sync acknowledgment delete request with optional entity types",
         "properties": {
           "types": {
             "description": "Sync entity types to delete acks for",
@@ -22082,6 +22252,7 @@
         "type": "object"
       },
       "SyncAckDto": {
+        "description": "Sync acknowledgment request with entity type and ID",
         "properties": {
           "ack": {
             "description": "Acknowledgment ID",
@@ -22103,6 +22274,7 @@
         "type": "object"
       },
       "SyncAckSetDto": {
+        "description": "Sync acknowledgment set request with array of IDs",
         "properties": {
           "acks": {
             "description": "Acknowledgment IDs (max 1000)",
@@ -23002,6 +23174,7 @@
         "type": "object"
       },
       "SyncStreamDto": {
+        "description": "Sync stream request with types and optional reset flag",
         "properties": {
           "reset": {
             "description": "Reset sync state",
@@ -23117,6 +23290,7 @@
         "type": "object"
       },
       "SystemConfigBackupsDto": {
+        "description": "System backup configuration with database settings",
         "properties": {
           "database": {
             "$ref": "#/components/schemas/DatabaseBackupConfig"
@@ -23128,6 +23302,7 @@
         "type": "object"
       },
       "SystemConfigDto": {
+        "description": "System configuration response",
         "properties": {
           "backup": {
             "allOf": [
@@ -23324,6 +23499,7 @@
         "type": "object"
       },
       "SystemConfigFFmpegDto": {
+        "description": "FFmpeg configuration with video/audio codecs, encoding settings, and hardware acceleration",
         "properties": {
           "accel": {
             "allOf": [
@@ -23518,6 +23694,7 @@
         "type": "object"
       },
       "SystemConfigImageDto": {
+        "description": "Image processing configuration with thumbnail, preview, fullsize settings, colorspace, and embedded extraction",
         "properties": {
           "colorspace": {
             "allOf": [
@@ -23928,6 +24105,7 @@
         "type": "object"
       },
       "SystemConfigSmtpDto": {
+        "description": "SMTP email configuration with enabled flag, from/reply-to addresses, and transport settings",
         "properties": {
           "enabled": {
             "description": "Whether SMTP email notifications are enabled",
@@ -24036,6 +24214,7 @@
         "type": "object"
       },
       "SystemConfigTemplateStorageOptionDto": {
+        "description": "Storage template format options for date/time components",
         "properties": {
           "dayOptions": {
             "description": "Available day format options for storage template",
@@ -24118,6 +24297,7 @@
         "type": "object"
       },
       "SystemConfigThemeDto": {
+        "description": "Theme configuration with custom CSS",
         "properties": {
           "customCss": {
             "description": "Custom CSS for theming",
@@ -24158,6 +24338,7 @@
         "type": "object"
       },
       "TagBulkAssetsDto": {
+        "description": "Tag bulk assets request with tag IDs and asset IDs",
         "properties": {
           "assetIds": {
             "description": "Asset IDs",
@@ -24183,6 +24364,7 @@
         "type": "object"
       },
       "TagBulkAssetsResponseDto": {
+        "description": "Tag bulk assets operation response",
         "properties": {
           "count": {
             "description": "Number of assets tagged",
@@ -24195,6 +24377,7 @@
         "type": "object"
       },
       "TagCreateDto": {
+        "description": "Tag creation request with name, optional parent, and color",
         "properties": {
           "color": {
             "description": "Tag color (hex)",
@@ -24218,6 +24401,7 @@
         "type": "object"
       },
       "TagResponseDto": {
+        "description": "Tag response with metadata",
         "properties": {
           "color": {
             "description": "Tag color (hex)",
@@ -24260,6 +24444,7 @@
         "type": "object"
       },
       "TagUpdateDto": {
+        "description": "Tag update request with optional color",
         "properties": {
           "color": {
             "description": "Tag color (hex)",
@@ -24270,6 +24455,7 @@
         "type": "object"
       },
       "TagUpsertDto": {
+        "description": "Tag upsert request with tag names",
         "properties": {
           "tags": {
             "description": "Tag names to upsert",
@@ -24317,6 +24503,7 @@
         "type": "object"
       },
       "TemplateDto": {
+        "description": "Email template request with template name",
         "properties": {
           "template": {
             "description": "Template name",
@@ -24329,6 +24516,7 @@
         "type": "object"
       },
       "TemplateResponseDto": {
+        "description": "Email template response with HTML",
         "properties": {
           "html": {
             "description": "Template HTML content",
@@ -24346,6 +24534,7 @@
         "type": "object"
       },
       "TestEmailResponseDto": {
+        "description": "Test email response with message ID",
         "properties": {
           "messageId": {
             "description": "Email message ID",
@@ -24358,6 +24547,7 @@
         "type": "object"
       },
       "TimeBucketAssetResponseDto": {
+        "description": "Time bucket asset response with IDs",
         "properties": {
           "city": {
             "description": "Array of city names extracted from EXIF GPS data",
@@ -24520,6 +24710,7 @@
         "type": "object"
       },
       "TimeBucketsResponseDto": {
+        "description": "Time buckets response with counts",
         "properties": {
           "count": {
             "description": "Number of assets in this time bucket",
@@ -24568,6 +24759,7 @@
         "type": "string"
       },
       "TrashResponseDto": {
+        "description": "Trash count response",
         "properties": {
           "count": {
             "description": "Number of items in trash",
@@ -24580,6 +24772,7 @@
         "type": "object"
       },
       "UpdateAlbumDto": {
+        "description": "Album update request with optional fields",
         "properties": {
           "albumName": {
             "description": "Album name",
@@ -24610,6 +24803,7 @@
         "type": "object"
       },
       "UpdateAlbumUserDto": {
+        "description": "Update album user role request",
         "properties": {
           "role": {
             "allOf": [
@@ -24626,6 +24820,7 @@
         "type": "object"
       },
       "UpdateAssetDto": {
+        "description": "Asset update request with optional live photo video ID",
         "properties": {
           "dateTimeOriginal": {
             "description": "Original date and time",
@@ -24671,6 +24866,7 @@
         "type": "object"
       },
       "UpdateLibraryDto": {
+        "description": "Library update request with optional name, import paths, and exclusion patterns",
         "properties": {
           "exclusionPatterns": {
             "description": "Exclusion patterns (max 128)",
@@ -24698,6 +24894,7 @@
         "type": "object"
       },
       "UsageByUserDto": {
+        "description": "Storage usage by user response",
         "properties": {
           "photos": {
             "description": "Number of photos",
@@ -24750,6 +24947,7 @@
         "type": "object"
       },
       "UserAdminCreateDto": {
+        "description": "User admin creation request",
         "properties": {
           "avatarColor": {
             "allOf": [
@@ -24806,6 +25004,7 @@
         "type": "object"
       },
       "UserAdminDeleteDto": {
+        "description": "User admin delete request with optional force flag",
         "properties": {
           "force": {
             "description": "Force delete even if user has assets",
@@ -24815,6 +25014,7 @@
         "type": "object"
       },
       "UserAdminResponseDto": {
+        "description": "Admin user response with extended details",
         "properties": {
           "avatarColor": {
             "allOf": [
@@ -24930,6 +25130,7 @@
         "type": "object"
       },
       "UserAdminUpdateDto": {
+        "description": "User admin update request with optional fields",
         "properties": {
           "avatarColor": {
             "allOf": [
@@ -24999,6 +25200,7 @@
         "type": "string"
       },
       "UserLicense": {
+        "description": "User license information with license key, activation key, and activation date",
         "properties": {
           "activatedAt": {
             "description": "Activation date",
@@ -25030,6 +25232,7 @@
         "type": "string"
       },
       "UserPreferencesResponseDto": {
+        "description": "User preferences response",
         "properties": {
           "albums": {
             "allOf": [
@@ -25136,6 +25339,7 @@
         "type": "object"
       },
       "UserPreferencesUpdateDto": {
+        "description": "User preferences update request with optional preferences for albums, folders, memories, people, ratings, shared links, tags, avatar, email notifications, download, purchase, and cast",
         "properties": {
           "albums": {
             "allOf": [
@@ -25237,6 +25441,7 @@
         "type": "object"
       },
       "UserResponseDto": {
+        "description": "User response with profile information",
         "properties": {
           "avatarColor": {
             "allOf": [
@@ -25288,6 +25493,7 @@
         "type": "string"
       },
       "UserUpdateMeDto": {
+        "description": "Update current user profile request",
         "properties": {
           "avatarColor": {
             "allOf": [
@@ -25315,6 +25521,7 @@
         "type": "object"
       },
       "ValidateAccessTokenResponseDto": {
+        "description": "Access token validation response",
         "properties": {
           "authStatus": {
             "description": "Authentication status",
@@ -25327,6 +25534,7 @@
         "type": "object"
       },
       "ValidateLibraryDto": {
+        "description": "Library validation request with import paths and exclusion patterns",
         "properties": {
           "exclusionPatterns": {
             "description": "Exclusion patterns (max 128)",
@@ -25350,6 +25558,7 @@
         "type": "object"
       },
       "ValidateLibraryImportPathResponseDto": {
+        "description": "Library import path validation response",
         "properties": {
           "importPath": {
             "description": "Import path",
@@ -25372,6 +25581,7 @@
         "type": "object"
       },
       "ValidateLibraryResponseDto": {
+        "description": "Library validation response with results",
         "properties": {
           "importPaths": {
             "description": "Validation results for import paths",
@@ -25384,6 +25594,7 @@
         "type": "object"
       },
       "VersionCheckStateResponseDto": {
+        "description": "Version check state response",
         "properties": {
           "checkedAt": {
             "description": "Last check timestamp",
@@ -25421,6 +25632,7 @@
         "type": "string"
       },
       "WorkflowActionItemDto": {
+        "description": "Workflow action item with plugin action ID and configuration",
         "properties": {
           "actionConfig": {
             "description": "Action configuration",
@@ -25438,6 +25650,7 @@
         "type": "object"
       },
       "WorkflowActionResponseDto": {
+        "description": "Workflow action response with schema",
         "properties": {
           "actionConfig": {
             "description": "Action configuration",
@@ -25471,6 +25684,7 @@
         "type": "object"
       },
       "WorkflowCreateDto": {
+        "description": "Workflow creation request with trigger type, name, filters, and actions",
         "properties": {
           "actions": {
             "description": "Workflow actions",
@@ -25516,6 +25730,7 @@
         "type": "object"
       },
       "WorkflowFilterItemDto": {
+        "description": "Workflow filter item with plugin filter ID and configuration",
         "properties": {
           "filterConfig": {
             "description": "Filter configuration",
@@ -25533,6 +25748,7 @@
         "type": "object"
       },
       "WorkflowFilterResponseDto": {
+        "description": "Workflow filter response with schema",
         "properties": {
           "filterConfig": {
             "description": "Filter configuration",
@@ -25566,6 +25782,7 @@
         "type": "object"
       },
       "WorkflowResponseDto": {
+        "description": "Workflow response with filters and actions",
         "properties": {
           "actions": {
             "description": "Workflow actions",
@@ -25629,6 +25846,7 @@
         "type": "object"
       },
       "WorkflowUpdateDto": {
+        "description": "Workflow update request with optional fields",
         "properties": {
           "actions": {
             "description": "Workflow actions",
