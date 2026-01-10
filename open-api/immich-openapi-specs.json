@@ -3394,6 +3394,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Asset ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -3441,6 +3442,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Asset ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -3495,6 +3497,7 @@
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Asset ID",
             "schema": {
               "format": "uuid",
               "type": "string"
@@ -3894,6 +3897,7 @@
             "name": "edited",
             "required": false,
             "in": "query",
+            "description": "Return edited asset if available",
             "schema": {
               "default": false,
               "type": "boolean"
@@ -4070,6 +4074,7 @@
             "name": "edited",
             "required": false,
             "in": "query",
+            "description": "Return edited asset if available",
             "schema": {
               "default": false,
               "type": "boolean"

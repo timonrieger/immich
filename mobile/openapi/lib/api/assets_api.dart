@@ -352,11 +352,13 @@ class AssetsApi {
   ///   Asset ID
   ///
   /// * [bool] edited:
+  ///   Return edited asset if available
   ///
   /// * [String] key:
-  ///   Download key for shared links
+  ///   Access key for shared links
   ///
   /// * [String] slug:
+  ///   Access slug for shared links
   Future<Response> downloadAssetWithHttpInfo(String id, { bool? edited, String? key, String? slug, }) async {
     // ignore: prefer_const_declarations
     final apiPath = r'/assets/{id}/original'
@@ -403,11 +405,13 @@ class AssetsApi {
   ///   Asset ID
   ///
   /// * [bool] edited:
+  ///   Return edited asset if available
   ///
   /// * [String] key:
-  ///   Download key for shared links
+  ///   Access key for shared links
   ///
   /// * [String] slug:
+  ///   Access slug for shared links
   Future<MultipartFile?> downloadAsset(String id, { bool? edited, String? key, String? slug, }) async {
     final response = await downloadAssetWithHttpInfo(id,  edited: edited, key: key, slug: slug, );
     if (response.statusCode >= HttpStatus.badRequest) {
@@ -432,8 +436,10 @@ class AssetsApi {
   /// Parameters:
   ///
   /// * [String] id (required):
+  ///   Asset ID
   ///
   /// * [AssetEditActionListDto] assetEditActionListDto (required):
+  ///   List of edit actions (crop, rotate, mirror) to apply
   Future<Response> editAssetWithHttpInfo(String id, AssetEditActionListDto assetEditActionListDto,) async {
     // ignore: prefer_const_declarations
     final apiPath = r'/assets/{id}/edits'
@@ -467,8 +473,10 @@ class AssetsApi {
   /// Parameters:
   ///
   /// * [String] id (required):
+  ///   Asset ID
   ///
   /// * [AssetEditActionListDto] assetEditActionListDto (required):
+  ///   List of edit actions (crop, rotate, mirror) to apply
   Future<AssetEditsDto?> editAsset(String id, AssetEditActionListDto assetEditActionListDto,) async {
     final response = await editAssetWithHttpInfo(id, assetEditActionListDto,);
     if (response.statusCode >= HttpStatus.badRequest) {
@@ -555,6 +563,7 @@ class AssetsApi {
   /// Parameters:
   ///
   /// * [String] id (required):
+  ///   Asset ID
   Future<Response> getAssetEditsWithHttpInfo(String id,) async {
     // ignore: prefer_const_declarations
     final apiPath = r'/assets/{id}/edits'
@@ -588,6 +597,7 @@ class AssetsApi {
   /// Parameters:
   ///
   /// * [String] id (required):
+  ///   Asset ID
   Future<AssetEditsDto?> getAssetEdits(String id,) async {
     final response = await getAssetEditsWithHttpInfo(id,);
     if (response.statusCode >= HttpStatus.badRequest) {
@@ -615,8 +625,10 @@ class AssetsApi {
   ///   Asset ID
   ///
   /// * [String] key:
+  ///   Access key for shared links
   ///
   /// * [String] slug:
+  ///   Access slug for shared links
   Future<Response> getAssetInfoWithHttpInfo(String id, { String? key, String? slug, }) async {
     // ignore: prefer_const_declarations
     final apiPath = r'/assets/{id}'
@@ -660,8 +672,10 @@ class AssetsApi {
   ///   Asset ID
   ///
   /// * [String] key:
+  ///   Access key for shared links
   ///
   /// * [String] slug:
+  ///   Access slug for shared links
   Future<AssetResponseDto?> getAssetInfo(String id, { String? key, String? slug, }) async {
     final response = await getAssetInfoWithHttpInfo(id,  key: key, slug: slug, );
     if (response.statusCode >= HttpStatus.badRequest) {
@@ -1024,8 +1038,10 @@ class AssetsApi {
   ///   Asset ID
   ///
   /// * [String] key:
+  ///   Access key for shared links
   ///
   /// * [String] slug:
+  ///   Access slug for shared links
   Future<Response> playAssetVideoWithHttpInfo(String id, { String? key, String? slug, }) async {
     // ignore: prefer_const_declarations
     final apiPath = r'/assets/{id}/video/playback'
@@ -1069,8 +1085,10 @@ class AssetsApi {
   ///   Asset ID
   ///
   /// * [String] key:
+  ///   Access key for shared links
   ///
   /// * [String] slug:
+  ///   Access slug for shared links
   Future<MultipartFile?> playAssetVideo(String id, { String? key, String? slug, }) async {
     final response = await playAssetVideoWithHttpInfo(id,  key: key, slug: slug, );
     if (response.statusCode >= HttpStatus.badRequest) {
@@ -1095,6 +1113,7 @@ class AssetsApi {
   /// Parameters:
   ///
   /// * [String] id (required):
+  ///   Asset ID
   Future<Response> removeAssetEditsWithHttpInfo(String id,) async {
     // ignore: prefer_const_declarations
     final apiPath = r'/assets/{id}/edits'
@@ -1128,6 +1147,7 @@ class AssetsApi {
   /// Parameters:
   ///
   /// * [String] id (required):
+  ///   Asset ID
   Future<void> removeAssetEdits(String id,) async {
     final response = await removeAssetEditsWithHttpInfo(id,);
     if (response.statusCode >= HttpStatus.badRequest) {
@@ -1162,8 +1182,10 @@ class AssetsApi {
   ///   File modification date
   ///
   /// * [String] key:
+  ///   Access key for shared links
   ///
   /// * [String] slug:
+  ///   Access slug for shared links
   ///
   /// * [String] duration:
   ///   Duration (for videos)
@@ -1262,8 +1284,10 @@ class AssetsApi {
   ///   File modification date
   ///
   /// * [String] key:
+  ///   Access key for shared links
   ///
   /// * [String] slug:
+  ///   Access slug for shared links
   ///
   /// * [String] duration:
   ///   Duration (for videos)
@@ -1603,8 +1627,10 @@ class AssetsApi {
   ///   File modification date
   ///
   /// * [String] key:
+  ///   Access key for shared links
   ///
   /// * [String] slug:
+  ///   Access slug for shared links
   ///
   /// * [String] xImmichChecksum:
   ///   sha1 checksum that can be used for duplicate detection before the file is uploaded
@@ -1742,8 +1768,10 @@ class AssetsApi {
   ///   File modification date
   ///
   /// * [String] key:
+  ///   Access key for shared links
   ///
   /// * [String] slug:
+  ///   Access slug for shared links
   ///
   /// * [String] xImmichChecksum:
   ///   sha1 checksum that can be used for duplicate detection before the file is uploaded
@@ -1795,6 +1823,7 @@ class AssetsApi {
   ///   Asset ID
   ///
   /// * [bool] edited:
+  ///   Return edited asset if available
   ///
   /// * [String] key:
   ///   Access key for shared links
@@ -1803,6 +1832,7 @@ class AssetsApi {
   ///   Asset media size
   ///
   /// * [String] slug:
+  ///   Access slug for shared links
   Future<Response> viewAssetWithHttpInfo(String id, { bool? edited, String? key, AssetMediaSize? size, String? slug, }) async {
     // ignore: prefer_const_declarations
     final apiPath = r'/assets/{id}/thumbnail'
@@ -1852,6 +1882,7 @@ class AssetsApi {
   ///   Asset ID
   ///
   /// * [bool] edited:
+  ///   Return edited asset if available
   ///
   /// * [String] key:
   ///   Access key for shared links
@@ -1860,6 +1891,7 @@ class AssetsApi {
   ///   Asset media size
   ///
   /// * [String] slug:
+  ///   Access slug for shared links
   Future<MultipartFile?> viewAsset(String id, { bool? edited, String? key, AssetMediaSize? size, String? slug, }) async {
     final response = await viewAssetWithHttpInfo(id,  edited: edited, key: key, size: size, slug: slug, );
     if (response.statusCode >= HttpStatus.badRequest) {
